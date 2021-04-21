@@ -14,14 +14,14 @@
 </head>
 
 <body>
- 
+    <div class="grid">
     <!-- hlavička -->
 
-    <header class="header">
+    <header class="grid__header header">
         <!-- logo -->
-        <img src="images/Logo.png" alt="logo image" id="logo" />
+        <img src="images/Logo.png" class="header__item header__logo" alt="logo image" id="logo" />
         <!-- seznam s navigací -->
-        <nav>
+        <nav class="header__item">
             <ul class="menu">
                 <li class="menu__item">Home
                     <ul class="submenu">
@@ -55,22 +55,22 @@
                         <li class="submenu__item"><a href="faq.html">FAQ</a></li>
                     </ul>
                 </li>
-                <li><a href="home.html">Contact</a></li>
+                <li class="menu__item"><a href="home.html">Contact</a></li>
             </ul>
         </nav>
 
         <!-- pravé tlačítka -->
-        <ul class="profile-buttons">
+        <ul class="profile-buttons header__item">
             <li><i class="fab fa-facebook"></i></li>
             <li><i class="fab fa-youtube"></i></li>
             <li><i class="far fa-user-circle"></i>SIGN IN</li>
-            <li>MENU</li>
+            <li><img src="images/Bar.png"></li>
         </ul>
     </header>
 
 
     <!-- část o stránce -->
-    <section>
+    <section class="grid__whole lightblue-bg">
         <!-- nadpis -->
         <h1>---Welcome To EduPlus</h1>
         <h2>More than 1200 Online Courses</h2>
@@ -98,16 +98,20 @@
 
 
     <!-- obsah -->
-    <main>
-        <!-- Cathegories -->
-        <section>
+    
+        <!-- Categories -->
+        <main class="grid__section">
+            <section>
             <h2>---Popular Categories---</h2>
             <h3>Course Categories</h3>
             <div class="categories-flex">
+
             <article class="categories-flex__item">
+                <div class="category-wrapper">
                 <img src="images/01.jpg" alt="placeholder">
-                <h2 class="category-name">Graphic Design (UI)</h2>
-                <h3 class="category-type">Web Design Course</h3>
+                <h2 class="category-wrapper__name">Graphic Design (UI)</h2>
+                <h3 class="category-wrapper_type">Web Design Course</h3>
+                <div class="line"></div>
                 <dl class="def-list">
                     <dt><i class="fas fa-users"></i></dt>
                     <dd>250</dd>
@@ -115,13 +119,16 @@
                     <dt><i class="fas fa-book"></i></dt>
                     <dd>800+ Courses</dd>
                 </dl>
+            </div>
             </article>
+        
 
             <article class="categories-flex__item">
+                <div class="category-wrapper">
                 <img src="images/02.jpg" alt="placeholder">
-                <h2 class="category-name">Business Studies</h2>
-                <h3 class="category-type">Finance Business</h3>
-
+                <h2 class="category-wrapper__name">Business Studies</h2>
+                <h3 class="category-wrapper_type">Finance Business</h3>
+                <div class="line"></div>
                 <dl class="def-list">
                     <dt><i class="fas fa-users"></i></dt>
                     <dd>320</dd>
@@ -129,12 +136,15 @@
                     <dt><i class="fas fa-book"></i></dt>
                     <dd>750+ Courses</dd>
                 </dl>
+            </div>
             </article>
 
             <article class="categories-flex__item">
+                <div class="category-wrapper">
                 <img src="images/03.jpg" alt="placeholder">
-                <h2 class="category-name">Web Development</h2>
-                <h3 class="category-type">Web Design Course</h3>
+                <h2 class="category-wrapper__name">Web Development</h2>
+                <h3 class="category-wrapper_type">Web Design Course</h3>
+                <div class="line"></div>
                 <dl class="def-list">
                     <dt><i class="fas fa-users"></i></dt>
                     <dd>320</dd>
@@ -142,12 +152,15 @@
                     <dt><i class="fas fa-book"></i></dt>
                     <dd>750+ Courses</dd>
                 </dl>
+                </div>
             </article>
 
             <article class="categories-flex__item">
+                <div class="category-wrapper">
                 <img src="images/04.jpg" alt="placeholder">
-                <h2 class="category-name">Product Engineering</h2>
-                <h3 class="category-type">Web Design Course</h3>
+                <h2 class="category-wrapper__name">Product Engineering</h2>
+                <h3 class="category-wrapper_type">Web Design Course</h3>
+                <div class="line"></div>
                 <dl class="def-list">
                     <dt><i class="fas fa-users"></i></dt>
                     <dd>320</dd>
@@ -155,12 +168,15 @@
                     <dt><i class="fas fa-book"></i></dt>
                     <dd>750+ Courses</dd>
                 </dl>
+                </div>                
             </article>
 
             <article class="categories-flex__item">
+                <div class="category-wrapper">
                 <img src="images/05.jpg" alt="placeholder">
-                <h2 class="category-name">Basic Photography</h2>
-                <h3 class="category-type">Film Movies &amp; Photography</h3>
+                <h2 class="category-wrapper__name">Basic Photography</h2>
+                <h3 class="category-wrapper_type">Film Movies &amp; Photography</h3>
+                <div class="line"></div>
                 <dl class="def-list">
                     <dt><i class="fas fa-users"></i></dt>
                     <dd>320</dd>
@@ -168,12 +184,15 @@
                     <dt><i class="fas fa-book"></i></dt>
                     <dd>750+ Courses</dd>
                 </dl>
+                </div>
             </article>
 
             <article class="categories-flex__item">
+                <div class="category-wrapper">
                 <img src="images/06.jpg" alt="placeholder">
-                <h2 class="category-name">Medical &amp; Health</h2>
-                <h3 class="category-type">Doctors &amp; Nursing</h3>
+                <h2 class="category-wrapper__name">Medical &amp; Health</h2>
+                <h3 class="category-wrapper_type">Doctors &amp; Nursing</h3>
+                <div class="line"></div>
                 <dl class="def-list">
                     <dt><i class="fas fa-users"></i></dt>
                     <dd>320</dd>
@@ -181,12 +200,15 @@
                     <dt><i class="fas fa-book"></i></dt>
                     <dd>750+ Courses</dd>
                 </dl>
+                </div>
             </article>
 
             <article class="categories-flex__item">
+                <div class="category-wrapper">
                 <img src="images/07.jpg" alt="placeholder">
-                <h2 class="category-name">Marketing Strategy</h2>
-                <h3 class="category-type">Social Media Marketing</h3>
+                <h2 class="category-wrapper__name">Marketing Strategy</h2>
+                <h3 class="category-wrapper_type">Social Media Marketing</h3>
+                <div class="line"></div>
                 <dl class="def-list">
                     <dt><i class="fas fa-users"></i></dt>
                     <dd>250</dd>
@@ -194,12 +216,15 @@
                     <dt><i class="fas fa-book"></i></dt>
                     <dd>50+ Courses</dd>
                 </dl>
+                </div>
             </article>
 
             <article class="categories-flex__item">
+                <div class="category-wrapper">
                 <img src="images/08.jpg" alt="placeholder">
-                <h2 class="category-name">Mobile UI Design</h2>
-                <h3 class="category-type">Web Design Course</h3>
+                <h2 class="category-wrapper__name">Mobile UI Design</h2>
+                <h3 class="category-wrapper_type">Web Design Course</h3>
+                <div class="line"></div>
                 <dl class="def-list">
                     <dt><i class="fas fa-users"></i></dt>
                     <dd>320</dd>
@@ -207,36 +232,33 @@
                     <dt><i class="fas fa-book"></i></dt>
                     <dd>750+ Courses</dd>
                 </dl>
+                </div>
             </article>
             </div>
         </section>
+    </main>
 
         <!-- Courses -->
-        <section class="black-bg">
+        <section class="grid__section course-bg">
             <h2>---Popular Courses---</h2>
             <h3 class="white-heading">Available courses</h3>
-
             <div class="course-flex">
-            Repeat 3x
+            
             <article class="course-flex__item">
-                <img src="images/01.jpg" alt="people img">
-                <img class="avatar" src="images/05.jpg" alt="teacher img">
-                $59.95
-                English
-                <h4>Best Courses For Learning English Courses</h4>
-                <p>
+            <div class="course-wrapper">
+                <img class="course-wrapper__img" src="images/01.jpg" alt="people img">
+                <img class="course-wrapper__avatar" src="images/05.jpg" alt="teacher img">
+                <div class="course-wrapper__stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                <div class="course-wrapper__price">$59.95</div>
+                <div class="course-wrapper__type">ENGLISH</div>
+                <h2 class="course-wrapper__name">Best Courses For Learning English Courses</h2>
+                <h3 class="course-wrapper__instructor">Warner</h3>
+                <p class="course-wrapper__text">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id tortor.
                     Suspendisse sagittis ultrices augue.
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris
-                    tincidunt sem sed arcu.
-                    Nunc tincidunt ante vitae massa. Nullam faucibus mi quis velit. Sed ac dolor sit amet purus
-                    malesuada congue.
-                    Vivamus luctus egestas leo. Aenean fermentum risus id tortor. Duis pulvinar. Fusce suscipit libero
-                    eget elit.
-                    Nulla non lectus sed nisl molestie malesuada. Nulla non arcu lacinia neque faucibus fringilla.
-                    Integer imperdiet lectus quis justo. Vivamus porttitor turpis ac leo.
                 </p>
-                <dl class="categories-list">
+                <a class="course-wrapper__button" href="course.html">GET ENROLLED &rarr;</a>
+                <dl class="def-list">
                     <dt><i class="fas fa-users"></i></dt>
                     <dd>25</dd>
 
@@ -246,16 +268,70 @@
                     <dt><i class="far fa-comments"></i></dt>
                     <dd>2.5k</dd>
                 </dl>
+            </div>
             </article>
 
+            <article class="course-flex__item">
+                <div class="course-wrapper">
+                    <img class="course-wrapper__img" src="images/07.jpg" alt="people img">
+                    <img class="course-wrapper__avatar" src="images/05.jpg" alt="teacher img">
+                    <div class="course-wrapper__stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                    <div class="course-wrapper__price">$59.95</div>
+                    <div class="course-wrapper__type">BUSINESS</div>
+                    <h2 class="course-wrapper__name">Learning About It Consulting Business Solutions</h2>
+                    <h3 class="course-wrapper__instructor">Warner</h3>
+                    <p class="course-wrapper__text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id tortor.
+                        Suspendisse sagittis ultrices augue.
+                    </p>
+                    <a class="course-wrapper__button" href="course.html">GET ENROLLED &rarr;</a>
+                    <dl class="def-list">
+                        <dt><i class="fas fa-users"></i></dt>
+                        <dd>25</dd>
+    
+                        <dt><i class="far fa-clock"></i></dt>
+                        <dd>36hr</dd>
+    
+                        <dt><i class="far fa-comments"></i></dt>
+                        <dd>2.5k</dd>
+                    </dl>
+                </div>
+                </article>
 
+                <article class="course-flex__item">
+                    <div class="course-wrapper">
+                        <img class="course-wrapper__img" src="images/03.jpg" alt="people img">
+                        <img class="course-wrapper__avatar" src="images/05.jpg" alt="teacher img">
+                        <div class="course-wrapper__stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                        <div class="course-wrapper__price">$59.95</div>
+                        <div class="course-wrapper__type">DESIGN</div>
+                        <h2 class="course-wrapper__name">Introduced About Basic Web Design For Begginers</h2>
+                        <h3 class="course-wrapper__instructor">Warner</h3>
+                        <p class="course-wrapper__text">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id tortor.
+                            Suspendisse sagittis ultrices augue.
+                        </p>
+                        <a class="course-wrapper__button" href="course.html">GET ENROLLED &rarr;</a>
+                        <dl class="def-list">
+                            <dt><i class="fas fa-users"></i></dt>
+                            <dd>25</dd>
+        
+                            <dt><i class="far fa-clock"></i></dt>
+                            <dd>36hr</dd>
+        
+                            <dt><i class="far fa-comments"></i></dt>
+                            <dd>2.5k</dd>
+                        </dl>
+                    </div>
+                    </article>
+
+            <!-- flex -->
             </div>
-
-            <a class="view-courses-button" href="home.html">VIEV ALL COURSES &#8594;</a>
+           
+            <a class="view-courses-button" href="home.html">VIEW ALL COURSES &#8594;</a>
         </section>
-
         <!-- Photo Gallery -->
-        <section>
+        <section class="grid__section">
             <h2>--- Photo &amp; Album ---</h2>
             <h3>Campus Gallery</h3>
 
@@ -279,30 +355,99 @@
         </section>
 
         <!-- Team Members -->
-        <section>
+        
+        <section class="grid__section lightblue-bg">
             <h2>--- Team Members ---</h2>
             <h3>Expert Instructors</h3>
 
-            Repeat 4x
-            <article>
-                <img src="images/Bar.png" alt="Somalia D Silva img">
-                +
-                <ul>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-youtube"></i></li>
-                    <li><i class="fab fa-facebook"></i></li>
+            <div class="instructor-flex">
+            <article class="instructor-flex__item">
+                
+                <img class="instructor-img" src="images/01.jpg" width="200" alt="Somalia D Silva img">
+                <div class="instructor-open">+
+                <ul class="instructor-social">
+                    <li><a href="home.html"><i class="fab fa-twitter light-blue"></a></i></li>
+                    <li><a href="home.html"><i class="fab fa-youtube red"></a></i></li>
+                    <li><a href="home.html"><i class="fab fa-facebook blue"></a></i></li>
                 </ul>
-                <h4>Somalia D Silva</h4>
-                Main Teachers
-                <dl>
+                </div>
+                <h2 class="instructor-name">Somalia D Silva</h2>
+                <h3 class="instructor-focus">Math Teachers</h3>
+                <div class="line"></div>
+                <dl class="def-list">
                     <dt><i class="fas fa-book"></i></dt>
                     <dd>750+ Courses</dd>
                 </dl>
+      
             </article>
+
+            <article class="instructor-flex__item">
+                
+                <img class="instructor-img" src="images/05.jpg"  width="200" alt="Somalia D Silva img">
+                <div class="instructor-open">+
+                    <ul class="instructor-social">
+                        <li><a href="home.html"><i class="fab fa-twitter light-blue"></a></i></li>
+                        <li><a href="home.html"><i class="fab fa-youtube red"></a></i></li>
+                        <li><a href="home.html"><i class="fab fa-facebook blue"></a></i></li>
+                    </ul>
+                    </div>
+                <h2 class="instructor-name">Somalia D Silva</h2>
+                <h3 class="instructor-focus">Math Teachers</h3>
+                <div class="line"></div>
+                <dl class="def-list">
+                    <dt><i class="fas fa-book"></i></dt>
+                    <dd>750+ Courses</dd>
+                </dl>
+           
+            </article>
+
+            <article class="instructor-flex__item">
+            
+                <img class="instructor-img" src="images/04.jpg"  width="200" alt="Somalia D Silva img">
+                <div class="instructor-open">+
+                    <ul class="instructor-social">
+                        <li><a href="home.html"><i class="fab fa-twitter light-blue"></a></i></li>
+                        <li><a href="home.html"><i class="fab fa-youtube red"></a></i></li>
+                        <li><a href="home.html"><i class="fab fa-facebook blue"></a></i></li>
+                    </ul>
+                    </div>
+                <h2 class="instructor-name">Somalia D Silva</h2>
+                <h3 class="instructor-focus">Math Teachers</h3>
+                <div class="line"></div>
+                <dl class="def-list">
+                    <dt><i class="fas fa-book"></i></dt>
+                    <dd>750+ Courses</dd>
+                </dl>
+         
+            </article>
+
+            <article class="instructor-flex__item">
+             
+                <img class="instructor-img" src="images/02.jpg"  width="200" alt="Somalia D Silva img">
+                <div class="instructor-open">+
+                    <ul class="instructor-social">
+                        <li><a href="home.html"><i class="fab fa-twitter light-blue"></a></i></li>
+                        <li><a href="home.html"><i class="fab fa-youtube red"></a></i></li>
+                        <li><a href="home.html"><i class="fab fa-facebook blue"></a></i></li>
+                    </ul>
+                    </div>
+                <h2 class="instructor-name">Somalia D Silva</h2>
+                <h3 class="instructor-focus">Math Teachers</h3>
+                <div class="line"></div>
+                <dl class="def-list">
+                    <dt><i class="fas fa-book"></i></dt>
+                    <dd>750+ Courses</dd>
+                </dl>
+
+            </article>
+
+
+
+        </div>
         </section>
 
         <!-- Events -->
-        <section>
+        <section class="grid__section">
             <h2>--- Latest Events ---</h2>
             <h3>Upcoming Events</h3>
 
@@ -336,7 +481,7 @@
             </article>
 
          
-            <article>
+            <article class="grid__section">
                 <img src="images/Bar.png" alt="event img">
                 $20
                 <dl>
@@ -366,7 +511,7 @@
         </section>
 
         <!-- Student Feedback -->
-        <section>
+        <section class="grid__section">
             <h2>--- Students Feedback ---</h2>
             <h3>What Our Students Say</h3>
 
@@ -438,7 +583,7 @@
         </section>
 
         <!-- Career -->
-        <section>
+        <section class="grid__section">
             <h2>--- Build A Career</h2>
             <h3>Become an Instructor</h3>
 
@@ -489,7 +634,7 @@
             <a href="home.html">BECOME A PARTNER</a>
         </section>
 
-        <section>
+        <section class="grid__section">
             <h2>--- Articles &amp; Tips ---</h2>
             <h3>Latest News &amp; Blog</h3>
 
@@ -511,11 +656,11 @@
             </article>
         </section>
 
-    </main>
+   
 
 
     <!-- část se sponsory -->
-    <section class="sponsors">
+    <section class="sponsors grid__whole">
         <img class="sponsors__item" src="images/mountain_logo.png" alt="mountain sponsor">
         <img class="sponsors__item" src="images/circle_logo.png" alt="circle sponsor">
         <img class="sponsors__item" src="images/globe_logo.png" alt="globe sponsor">
@@ -524,7 +669,7 @@
     </section>
 
     <!-- patička -->
-    <footer class="footer">
+    <footer class="footer grid__footer">
         <!-- logo -->
         <img src="images/Logo(1).png" alt="logo img">
         <!-- sociální sítě -->
@@ -576,10 +721,13 @@
             <input type="email" placeholder="Enter Your Email">
             <button type="submit">&rarr;</button>
         </form>
+
+        <p>Copyright &copy; 2020 EduPlus All Rights Reserved.</p>
     </footer>
 
-    <p>Copyright &copy; 2020 EduPlus All Rights Reserved.</p>
+    
 
+</div>
 </body>
 
 </html>
