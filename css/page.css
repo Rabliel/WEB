@@ -1,105 +1,101 @@
-ul > li a {
-    text-decoration: none;
+/***************/
+/*** Overall ***/
+/***************/
+
+body{
+    padding:0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
 }
 
+/***************/
 /* Page layout */
+/***************/
+
 .grid {
+    padding: 0;
+    margin: 0;
     display:grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr;
-    grid-auto-rows: minmax(1fr,auto);
-    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px auto auto auto 1fr;
 }
 
-.grid__section{
-    grid-column: 2 / 4;
-    padding-bottom: 10%;
-    z-index: 10;
-}
+.grid__header{ grid-row: 1; }
 
-.grid__header{
-    grid-column: 1 / -1;
-    background-color:lightblue;
-    position: relative;
-}
+.grid__info{ grid-row:2; }
+
+.grid__content{ grid-row:3; }
+
+.grid__pre-footer{ grid-row: 4; }
 
 .grid__footer{
-    grid-column: 1 / -1
+    grid-row:5;
+    background-color: #062a35;
+    color:white;
+    padding:1rem 20% 1rem 20%;
 }
 
-.grid__part{
-    grid-column: 2 / 3;
-}
+/**************/
+/*** Header ***/
+/**************/
 
-.grid__aside{
-    grid-column: 3/4;
-}
-
-.grid__whole{
-    grid-column: 1 / -1;
-}
-
-
-/* Header */
 .header{
     display: flex;
-    justify-content: space-between;
-    align-content: center;
-}
-.header__item{
-    display: inline-block;
-}
-.header__logo{
-    max-width: 100%;
-    height: auto;
+    justify-content: flex-start;
+    background-color: #eaf4f7;
+    padding: 0.5rem 1rem;
 }
 
-.profile-buttons{
-    list-style-type: none;
-    border: 1px solid black;
-    width: 20%;
-}
-.profile-buttons > li{
-    display: inline;
-    margin-right: 5%;
-}
+.header__item{ flex:0 0 auto; }
 
-.profile-buttons > li > img{
-    max-width: 100%;
-    height: auto;
-}
-
-.profile-buttons > li{
-    font-size: 1.5em;
+.header :nth-last-child(2){
+    margin-right: auto;
+    margin-left: 0;
 }
 
 .menu, .submenu {
     list-style-type: none;
     padding: 0;  
     margin: 0;
-    font-size: 1.5em;
 }
 
 .menu{
     display:flex;
-    width: 100%;
-    border: 2px solid black;
     position: relative;
+    font-size: 1.2em;
 }  
 
 .menu a {
     display: block;
     padding: 1em;
-    border: 1px solid black;
+    color: #062a35;
+    text-decoration: none;
 }
 
 .menu__item{
-    flex:1;
-    background-color: yellow;
+    margin: 0 0.5rem 0 0.5rem;
+    font-weight: bold;
+}
+
+/* ukazatel dolu u menu*/
+.menu__item-caret{ font-size: 0.7em; }
+
+.menu__item:hover > a{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #ea5822;
 }
 
 .menu__item, .submenu__item a{
     text-decoration: none;
     color: black;
+}
+
+.submenu__item a{ background-color: white; }
+
+.submenu__item a:hover{
+    color:white;
+    background-color: #ea5822;
 }
 
 .menu__item:hover .submenu {
@@ -110,35 +106,184 @@ ul > li a {
 .submenu{
     display:none;
     position: absolute;
+    margin-top: 0.2rem;
 }
 
-.lightblue-bg{
-    background-color: lightblue;
+/* Right buttons in menu*/
+.profile-buttons{
+    list-style-type: none;
+    align-items: center;
 }
 
-/* Main page content*/
-
-section > h2{
-    color: orange;
+.profile-buttons  li{
+    display: inline-block;
     text-align: center;
-    font-size: 1em;
-}
-section > h3{
-    text-align: center;
-    font-size: 1.3em;
+    color:#062a35;
+    
 }
 
-.white-heading{
+.profile-buttons li a {
+    text-decoration: none;
+    display:block;
+    padding:4px;
+    margin-right:0.5rem;
+    color:#062a35;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/*******************/
+/*** Info panely ***/
+/*******************/
+
+/* Home info panel */
+.home-panel{ margin:0 20%; }
+
+.home-panel h1{
+    font-size: 1.2em;
+    color:#ea5822;
+}
+
+.home-panel h2{
+    font-size: 3em;
+    margin-top: 0;
+}
+
+.home-panel__form{
+    margin:1rem 0;
+    background-color: white;
+    width: 450px;
+    padding:10px;
+}
+
+.home-panel__form-input{
+    width: 350px;
+    font-size: 1.2em;
+    margin-left:25px;
+    border-style: none;
+}
+
+.home-panel__form-button{ 
+    background-color: #ea5822;
     color:white;
+    height: 50px;
+    width: 50px;
+    font-size: 1.1em;
+    border-style: none;
 }
 
-/* Categories*/
-.categories-flex{
+.home-panel__text{
+    color:gray;
+    font-size:0.8em;
+    font-family: 'Hind', sans-serif;
+}
+
+.home-panel__info{
+    display: flex;
+    width: 500px;
+}
+
+.home-panel__info-item:nth-child(2){
+    border-left: 2px solid #ea5822;
+    padding-left:10px;
+}
+
+.home-panel__info-item{
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.home-panel__info-item-icon{
+    font-size:2.5em;
+    color:#ea5822;
+}
+
+.home-panel__info-item-tel{
+    position: absolute;
+    top:40%;
+    left:25%;
+}
+
+.home-panel__info-item-text{
+    position: absolute;
+    left:25%;
+    top:10%;
+    font-size: 0.8em;
+    color:gray;
+}
+
+.stats-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position:relative;
+    top:55px;
+    margin:0 20%;
+}
+
+.stats-flex__item{
+    box-shadow: 0px 2px 2px 2px gray;
+    background-color: white;
+    margin:1rem;
+    width: 180px;
+    height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top:12px;
+    padding-left: 5px;
+    align-items: center;
+}
+
+.stats-flex__item-icon{
+    font-size: 40px;
+    color:#ea5822;
+    margin-right: 10px;
+}
+
+.stats-flex__item-count{
+    font-size: 35px;
+    color:#ea5822;
+    font-weight: bold;
+    margin-right: 60px;;
+}
+
+.stats-flex__item-text{
+    margin-left: 5px;
+    font-size: 15px;
+    color:gray;
+    font-weight: bold;
+    line-height: 30px;
+    font-family: 'Hind', sans-serif;
+}
+
+/*********************/
+/* Main page content */
+/*********************/
+
+main>section{ padding:3rem 0 2rem 0; }
+
+.content-flex{
     display:flex;
     justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
+    margin: 0 20% 0 20%;
 }
+
+.section__main-heading{
+    color: #ea5822;
+    text-align: center;
+    font-size: 1em;
+    margin: 1rem 0 1rem 0;
+}
+.section__secondary-heading{
+    text-align: center;
+    font-size: 1.3em;
+}
+
+/**************/
+/* Categories */
+/**************/
 
 .categories-flex__item{
     box-sizing: border-box;
@@ -147,9 +292,9 @@ section > h3{
     flex:0 1 auto;
 }
 
-.category-wrapper {
-    background-color: white;
-}
+/* hodne krat se vyskytuje*/
+.category-wrapper { background-color: white; }
+
 .category-wrapper img{
     max-width: 200px;
     max-height: 150px;
@@ -165,44 +310,36 @@ section > h3{
 .category-wrapper_type{
     font-size: 0.8em;
     margin-left:5%;
-    color:darkgray;
+    color:gray;
+    font-family: 'Hind', sans-serif;
 }
 
 .def-list{
     width: 90%;
-    margin:10% 5%;
+    margin:5% 0%;
+    font-weight: bold;
 }
 
 .def-list > dd{
     display: inline;
     font-size: 0.7em;
     color:gray;
-    margin:0 5% 0 1%;
+    margin:0 2% 0 1%;
 }
 .def-list > dt{
     display: inline-block;
     margin:0 0 0 10%;
     font-size: 0.7em;
-    color:orange;
+    color:#ea5822;
 }
 
-/* Course */
-.black-bg{
-    background-color: black;
-}
 
-.course-flex{
-    display:flex;
-    justify-content: space-between;
-    align-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 5%;
-    
-}
+/*************/
+/** Courses **/
+/*************/
 
-.course-flex__item{
-    flex:0 0 content;
-}
+/** home page courses **/
+.course-flex__item{ flex:0 0 content; }
 
 .course-wrapper {
     position: relative;
@@ -214,41 +351,14 @@ section > h3{
     border: 1px black solid;
 }
 
-.course-wrapper:hover{
-    background-color: orange;
-}
+.course-wrapper:hover{ background-color: #ea5822; }
 
-.course-wrapper--center{
-    margin:0 10% 0 10%;
-}
-.course-wrapper--right{
-    margin-left: 19%;
-}
+.course-wrapper__img { max-width: 100%; }
 
-.course-wrapper__img {
-    max-width: 100%;
-    margin:0;
-}
-
-.course-wrapper:hover .course-wrapper__img{
-    display: none;
-}
-
-/* 
-    Tady je pozadí courses kategorie
-    jenže když dám grid-column: 1/-1 nebo
-    1/4 (aby se roztáhlo přes celé tak to 
-    zmizí mimo obrazovku
-*/
-.course-bg{
-    background-color: black;
-    grid-row: 4;
-    grid-column: 1;
-}
-
+.course-wrapper:hover .course-wrapper__img{ display: none; }
 
 .course-wrapper__price{
-    background-color: orange;
+    background-color: #ea5822;
     color: white;
     border-radius: 20%;
     width:fit-content;
@@ -259,7 +369,7 @@ section > h3{
     font-weight: bold;
 }
 .course-wrapper:hover .course-wrapper__price{
-    color:orange;
+    color:#ea5822;
     background-color: white;
 }
 
@@ -278,7 +388,7 @@ section > h3{
 .course-wrapper:hover .course-wrapper__type{
     top: 5%;
     background-color: white;
-    color:orange;
+    color:#ea5822;
 }
 
 .course-wrapper__name{
@@ -304,7 +414,7 @@ section > h3{
 .course-wrapper__button{
     display: none;
     text-decoration: none;
-    color:orange;
+    color:#ea5822;
     background-color: white;
     width: fit-content;
     font-weight: bold;
@@ -314,16 +424,16 @@ section > h3{
     left:5%;
     top:82%;
 }
-.course-wrapper:hover .course-wrapper__button{
-    display: block;  
-}
+
+.course-wrapper:hover .course-wrapper__button{ display: block; }
 
 .course-wrapper__text{
     display: none;
     position: absolute;
     padding: 0 5%;
     color:white;
-    font-size: 0.9em;
+    font-size: 0.8em;
+    font-family: 'Hind', sans-serif;
 }
 .course-wrapper:hover .course-wrapper__text{
     display:block;
@@ -339,37 +449,32 @@ section > h3{
 
 .course-wrapper .def-list{
     position:absolute;
-    top: 80%;
+    top: 85%;
 }
 
-.course-wrapper:hover .def-list{
-    top:85%;
-}
+.course-wrapper:hover .def-list{ top:88%; }
 
-.course-wrapper:hover .def-list > dt{
-    color:white;
-}
-.course-wrapper:hover .def-list > dd{
-    color:white;
-}
+.course-wrapper:hover .def-list > dt{ color:white; }
+
+.course-wrapper:hover .def-list > dd{ color:white; }
 
 .course-wrapper__stars{
-    display:none;
     position: absolute;
-    top:5%;
+    top:60%;
     right:10%;
-    color:white;
+    color:#ea5822;
 }
+
 .course-wrapper:hover .course-wrapper__stars{
     display: block;
-
+    top:5%;
+    color:white;
 }
 
 .view-courses-button{
     border:1px solid gray;
     color: gray;
     font-size: 1.3em;
-    width:fit-content;
     text-decoration: none;
     padding:0 1%;
     font-weight: bold;
@@ -380,15 +485,10 @@ section > h3{
     background-color: yellow;
 }
 
-
+/***************/
 /* Instructors */
+/***************/
 
-.instructor-flex{
-    display: flex;
-    justify-content:space-between;
-    align-content: space-between;
-    flex-wrap: wrap;
-}
 .instructor-flex__item{
     position: relative;
     box-sizing: border-box;
@@ -398,24 +498,22 @@ section > h3{
 
 .instructor-open{
     color:white;
-    background-color: orange;
+    background-color: #ea5822;
     width: fit-content;
-    padding:4%;
+    padding:4.4%;
     font-weight: bold;
     position:absolute;
     top:42%;
     right:5%;  
 }
-.instructor-open:hover .instructor-social{
-    display: block;
-}
+.instructor-open:hover .instructor-social{ display: block; }
 
 .instructor-social{
     list-style: none;
     background-color: white;
-    color:orange;
+    color:#ea5822;
     position:absolute;
-    top: -270%;
+    top: -265%;
     right:0;
     display: none;
     padding: 0;
@@ -424,11 +522,6 @@ section > h3{
 .instructor-social > li{
     font-size: 1.25em;
     padding:2px;
-}
-
-.instructor-img{
-    max-width: 100%;
-    width: 180;
 }
 
 .instructor-name{
@@ -442,29 +535,157 @@ section > h3{
     margin-bottom: 0;
 }
 
-.wrapper .def-list{
-    margin: 10% 20%
+.wrapper .def-list{ margin: 10% 20% }
+
+
+
+
+/*******************/
+/*** News & blog ***/
+/*******************/
+
+.blog-flex__item{
+    position:relative;
+    box-sizing: border-box;
+    border:1px solid gray;
+    padding:0;
+    width: 260px;
+    font-weight: bold;
+    margin:1rem;
 }
+
+.blog-flex__item-avatar{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position:absolute;
+    bottom:5%;
+    left: 5%;
+}
+
+.blog-flex__item-goto{
+    display: block;
+    background-color: #062a35;
+    text-decoration: none;
+    position: absolute;
+    bottom:-1px;
+    right:0px;
+    padding:10px;
+    color:white;
+}
+
+.blog-flex__item-goto:hover{ background-color: #ea5822; }
+
+.blog-flex__item-heading{
+    font-size: 1.2em;
+    padding:0 5%;
+    margin-bottom: 25%;
+}
+
+.blog-flex__item-authorname{
+    position:absolute;
+    bottom: 3%;
+    left: 25%;
+    font-size: 0.9em;
+    color:#ea5822;
+}
+
+/*******************/
+/***** Career ******/
+/*******************/
+
+/* Home career */
+
+/* separating into 2 columns */ 
+
+.career-flex__item{
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.career-flex__item:nth-child(2){ padding: 5%; }
+
+.career-flex__item-front-img{
+    position: absolute;
+    top:150px;
+    left:175px;
+    z-index: 10;
+}
+
+.career-half-flex{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.career-half-flex__item{
+    width: 50%;
+    box-sizing: border-box;
+    margin: 0.5em 0;
+}
+.career-half-flex__item:nth-child(2){
+    border-left:2px solid gray;
+    padding-left:10px;
+    margin-bottom:1rem;
+}
+.career-half-flex__item:nth-child(1){
+    margin-bottom:1rem;
+    padding-right:5px;
+}
+
+.career-half-flex__item-icon{ font-size:2em; }
+
+.career-half-flex__item-text{
+    color:gray;
+    font-size:0.8em; 
+    font-family: 'Hind', sans-serif;
+}
+
+.career-half-flex__item-heading{
+    color:#062a35;
+    font-size: 1.5em;
+}
+
+.career-button{
+    display: block;
+    padding:5px;
+    background-color: white;
+    color:#062a35;
+    text-decoration: none;
+    padding: 10px 5px;
+    width: fit-content;
+    font-size: 0.80em;
+    font-weight: bold;
+    margin:0 auto;
+    
+}
+.career-button:hover{
+    background-color: #ea5822;
+    color:white;
+}
+
+
+
+/************************/
+/** Post content styles */
+/************************/
 
 /* Sponsors banner*/
 .sponsors{
-    background-color: orange;
+    background-color: #ea5822;
     display:flex;
-    justify-content:flex-start;
-    padding: 0 20%;
+    justify-content: space-around;
+    align-content: space-around;
+    padding: 1em 20%;
+    flex-wrap: wrap;
 }
 
-.sponsors__item{
-    flex:1 1 300px;
-    justify-content: space-evenly;
-}
 
-/* Footer styling*/
+/******************/
+/* Footer styling */
+/******************/
 
-.footer{
-    background-color:gray;
-    color:white;
-}
 
 .social{
     width:60%;
@@ -478,19 +699,88 @@ section > h3{
     display:inline;
     margin:0 100px 0 10px;
 }
+.footer__nav{ list-style: none; }
+.footer__nav > li > a{ color:white; }
+.two-columns{ columns:2; }
 
-.blue{
-    color:blue;
-}
-.light-blue{
-    color:lightblue;
-}
-.red{
-    color:red;
-}
+
+/*****************/
+/** Help styles **/
+/*****************/
 
 .line{
     height: 1px;
     background-color: black;
     margin:10% 10%;
+}
+
+
+/****************/
+/* Line classes */
+/****************/
+
+.align-text-start{ text-align: start; }
+
+.align-text-center { text-align: center; }
+
+/* social media */
+.blue{ color:blue; }
+
+.light-blue{ color:lightblue; }
+
+.red{ color:red; }
+
+/* backgrounds + text colors */
+.orange-bg{ background-color: #ea5822; }
+
+.lightblue-bg{ background-color: #eaf4f7; }
+
+.white-bg{ background-color: white; }
+
+.navy-bg{ background-color: #062a35; }
+
+.orange{ color:#ea5822; }
+
+.white{ color:white; }
+
+.relative-position{ position: relative; }
+
+.padding-bottom{padding-bottom: 2rem; }
+
+
+/** flexboxy **/
+.categories-flex{
+    display:flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 20% 0 20%;
+}
+.course-flex{
+    display:flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 20% 2rem 20%;
+}
+.instructor-flex{
+    display: flex;
+    justify-content:space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin:0 20% 0 20%;
+}
+.blog-flex{
+    display:flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 20% 2rem 20%;
+}
+.career-flex{
+    display:flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 20% 2rem 20%;
 }
