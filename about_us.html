@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="utf-8">
     <meta name="description"
@@ -11,58 +12,498 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/page.css">
 </head>
+
 <body>
     <div class="grid">
-    <!-- Header -->
-    
-    <!-- Banner -->
-    <div class="grid__section black-bg">
-    <section>
-        <h1>About Us</h1>
-        <h2>Home &gt; About Us</h2>
-    </section>
+        <!-- Header -->
+
+        <header class="header grid__header lightblue-bg">
+            <!-- logo -->
+            <img src="images/Logo.png" class="header__item" width="140" height="50" alt="logo image" id="logo" />
+            <!-- seznam s navigací -->
+            <nav class="header__item">
+                <ul class="menu">
+                    <li class="menu__item"><a href="home.html">Home <i
+                                class="fas fa-angle-down menu__item-caret"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="about_us.html">About Us</a></li>
+                            <li class="submenu__item"><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="courses.html">Courses <i
+                                class="fas fa-angle-down menu__item-caret"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="courses.html">Course</a></li>
+                            <li class="submenu__item"><a href="courses.html">Course List</a></li>
+                            <li class="submenu__item"><a href="course.html">Course Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="event_detail.html">Events <i
+                                class="fas fa-angle-down menu__item-caret"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="home.html">Event</a></li>
+                            <li class="submenu__item"><a href="home.html">Event List</a></li>
+                            <li class="submenu__item"><a href="event_detail.html">Event Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="home.html">Pages <i
+                                class="fas fa-angle-down menu__item-caret"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="home.html">Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="blog.html">Blog <i
+                                class="fas fa-angle-down menu__item-caret"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="blog.html">Blog</a></li>
+                            <li class="submenu__item"><a href="blog_detail.html">Blog Details</a></li>
+                            <li class="submenu__item"><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="home.html">Contact</a></li>
+
+                </ul>
+            </nav>
+
+            <!-- pravé tlačítka -->
+            <ul class="profile-buttons header__item">
+                <li><a href="home.html" class="orange-bg"><i class="fab fa-facebook white"></i></a></li>
+                <li><a href="home.html" class="white-bg"><i class="fab fa-youtube red"></i></a></li>
+                <li><a href="home.html" class="white-bg"><i class="far fa-user-circle orange"></i> SIGN IN</a></li>
+                <li><img src="images/Bar.png" height="24" width="24"></li>
+            </ul>
+        </header>
+        <!-- Banner -->
+        <section class="grid__info banner">
+            <h1 class="banner__main-heading">About Us</h1>
+            <h2 class="banner__secondary-heading">Home &gt; About Us</h2>
+        </section>
+
+        <main class="grid__content">
+            <!-- Welcome -->
+            <section>
+                <div class="half-flex">
+                    <!-- obrázky -->
+                    <div class="half-flex__item">
+
+                    </div>
+                    <div class="half-flex__item">
+                        <h2 class="section__main-heading align-text-start">--- Introduced About EduPlus</h2>
+                        <h3 class="section__secondary-heading align-text-start">Welcome To EduPlus</h3>
+                        <p class="gray">
+                            Vestibulum fermentum tortor id mi. Integer tempor. Aliquam ante. 
+                            Nunc auctor. Quisque porta.
+                            Aliquam ante. Nunc auctor. Vestibulum fermentum tortor id mi.
+                        </p>
+
+
+                        <h4>Proffesional &amp; Expert</h4>
+                        <p class="gray">Vestibulum fermentum tortor id mi. Integer tempor. Aliquam ante. Nunc auctor. Quisque porta.
+                            In
+                            dapibus augue non sapien. Aliquam id dolor.</p>
+
+                        <h4>Job Placement Support</h4>
+                        <p  class="gray">Vestibulum fermentum tortor id mi. Integer tempor. Aliquam ante. Nunc auctor. Quisque porta.
+                            In
+                            dapibus augue non sapien. Aliquam id dolor. </p>
+                            <a href="about_us.html">Learn more &rarr;</a>
+                    </div>
+                    
+                </div>
+
+                <!-- Stats panel -->
+                <div class="stats-flex">
+                    <div class="stats-flex__item">
+                        <i class="fas fa-users stats-flex__item-icon"></i>
+                        <span class="stats-flex__item-count">
+                            3045+
+                        </span>
+                        <span class="stats-flex__item-text">
+                            Satisfied Students
+                        </span>
+                    </div>
+
+                    <div class="stats-flex__item">
+                        <i class="fas fa-book stats-flex__item-icon""></i>
+                        <span class=" stats-flex__item-count">
+                            7852+
+                            </span>
+                            <span class="stats-flex__item-text">
+                                Available Courses
+                            </span>
+                    </div>
+
+                    <div class="stats-flex__item">
+                        <i class="fas fa-graduation-cap stats-flex__item-icon""></i>
+                        <span class=" stats-flex__item-count">
+                            9862+
+                            </span>
+                            <span class="stats-flex__item-text">
+                                Graduate Students
+                            </span>
+                    </div>
+
+                    <div class="stats-flex__item">
+                        <i class="fas fa-laptop-code stats-flex__item-icon""></i>                   
+                        <span class=" stats-flex__item-count">
+                            8963+
+                            </span>
+                            <span class="stats-flex__item-text">
+                                Active Students
+                            </span>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- okna z home -->
+
+            <section class="lightblue-bg">
+                <div class="half-flex">               
+                    <div class="half-flex__item">
+                        <h2 class="section__main-heading align-text-start">--- Who We Are</h2>
+                        <h3 class="section__secondary-heading align-text-start">Institue Goals</h3>
+                        <p class="gray">Vestibulum fermentum tortor id mi. Integer tempor. Aliquam ante. Nunc auctor. Quisque porta.
+                            In
+                            dapibus augue non sapien. Aliquam id dolor.</p>
+
+                        83 %
+                        Engineering Studies
+
+                        79%
+                        General &amp; Other Studies
+                    </div>
+
+                    <!-- about us video -->
+                    <div class="half-flex__item">
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Instrutors -->
+            <section class="lightblue-bg">
+                <h2 class="section__main-heading">- - - Team Members - - -</h2>
+                <h3 class="section__secondary-heading">Expert Instructors</h3>
+
+                <div class="instructor-flex padding-bottom">
+                    <article class="instructor-flex__item">
+
+                        <img src="images/01.jpg" width="202" alt="Somalia D Silva img">
+                        <div class="instructor-open">+
+                            <ul class="instructor-social">
+                                <li><a href="home.html"><i class="fab fa-twitter light-blue"></a></i></li>
+                                <li><a href="home.html"><i class="fab fa-youtube red"></a></i></li>
+                                <li><a href="home.html"><i class="fab fa-facebook blue"></a></i></li>
+                            </ul>
+                        </div>
+                        <h2 class="instructor-name">Somalia D Silva</h2>
+                        <h3 class="instructor-focus">Math Teacher</h3>
+                        <div class="line"></div>
+                        <dl class="def-list">
+                            <dt><i class="fas fa-book"></i></dt>
+                            <dd>750+ Courses</dd>
+                        </dl>
+
+                    </article>
+
+                    <article class="instructor-flex__item">
+
+                        <img src="images/05.jpg" width="203" alt="Somalia D Silva img">
+                        <div class="instructor-open">+
+                            <ul class="instructor-social">
+                                <li><a href="home.html"><i class="fab fa-twitter light-blue"></a></i></li>
+                                <li><a href="home.html"><i class="fab fa-youtube red"></a></i></li>
+                                <li><a href="home.html"><i class="fab fa-facebook blue"></a></i></li>
+                            </ul>
+                        </div>
+                        <h2 class="instructor-name">David D Warner</h2>
+                        <h3 class="instructor-focus">English Teacher</h3>
+                        <div class="line"></div>
+                        <dl class="def-list">
+                            <dt><i class="fas fa-book"></i></dt>
+                            <dd>750+ Courses</dd>
+                        </dl>
+
+                    </article>
+
+                    <article class="instructor-flex__item">
+
+                        <img src="images/04.jpg" width="203" alt="Somalia D Silva img">
+                        <div class="instructor-open">+
+                            <ul class="instructor-social">
+                                <li><a href="home.html"><i class="fab fa-twitter light-blue"></a></i></li>
+                                <li><a href="home.html"><i class="fab fa-youtube red"></a></i></li>
+                                <li><a href="home.html"><i class="fab fa-facebook blue"></a></i></li>
+                            </ul>
+                        </div>
+                        <h2 class="instructor-name">Xani Toni Crusse</h2>
+                        <h3 class="instructor-focus">Computer Teacher</h3>
+                        <div class="line"></div>
+                        <dl class="def-list">
+                            <dt><i class="fas fa-book"></i></dt>
+                            <dd>750+ Courses</dd>
+                        </dl>
+
+                    </article>
+
+                    <article class="instructor-flex__item">
+
+                        <img src="images/02.jpg" width="203" alt="Somalia D Silva img">
+                        <div class="instructor-open">+
+                            <ul class="instructor-social">
+                                <li><a href="home.html"><i class="fab fa-twitter light-blue"></a></i></li>
+                                <li><a href="home.html"><i class="fab fa-youtube red"></a></i></li>
+                                <li><a href="home.html"><i class="fab fa-facebook blue"></a></i></li>
+                            </ul>
+                        </div>
+                        <h2 class="instructor-name">Shaine Watson</h2>
+                        <h3 class="instructor-focus">Math Teachers</h3>
+                        <div class="line"></div>
+                        <dl class="def-list">
+                            <dt><i class="fas fa-book"></i></dt>
+                            <dd>750+ Courses</dd>
+                        </dl>
+
+                    </article>
+
+
+
+                </div>
+            </section>
+
+
+            <!-- Student Feedback -->
+            <section class="students-feedback-bg">
+                <h2 class="section__main-heading white">- - - Students Feedback - - -</h2>
+                <h3 class="section__secondary-heading white">What Our Students Say</h3>
+
+                <div class="students-flex padding-bottom">
+                    <div class="students-flex__item">
+                        <article class="students-message relative-position">
+                            <p class="student-message__main-text">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id
+                                tortor.
+                                Suspendisse sagittis ultrices augue.
+                            <p class="student-message__secondary-text">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id
+                                tortor.
+                                Suspendisse sagittis ultrices augue.
+                            </p>
+                            <img src="images/05.jpg" class="student-message__avatar" alt="founder img">
+                            <h2 class="student-message__name">Sousa Fernandes</h2>
+                            <h3 class="student-message__occupation">CEO &amp; Founder</h3>
+
+                            <div class="student-message__button-group">
+                                <a class="student-message__button lightblue-bg"><i class="fas fa-arrow-left"></i></a>
+                                <a class="student-message__button orange-bg"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+
+                            <div class="student-message__quote">
+                                <i class="fas fa-quote-left orange student-message__quote"></i>
+                            </div>
+                        </article>
+
+                        <!-- article na vymenu? -->
+                        <article style="display: none;" class="students-message relative-position">
+                            <p class="student-message__main-text">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id
+                                tortor.
+                                Suspendisse sagittis ultrices augue.
+                            <p class="student-message__secondary-text">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id
+                                tortor.
+                                Suspendisse sagittis ultrices augue.
+                            </p>
+                            <img src="images/05.jpg" class="student-message__avatar" alt="founder img">
+                            <h2 class="student-message__name">Sousa Fernandes</h2>
+                            <h3 class="student-message__occupation">CEO &amp; Founder</h3>
+
+                            <div class="student-message__button-group">
+                                <a class="student-message__button lightblue-bg"><i class="fas fa-arrow-left"></i></a>
+                                <a class="student-message__button orange-bg"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+
+                            <div class="student-message__quote">
+                                <i class="fas fa-quote-left orange student-message__quote"></i>
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <div class="students-flex__item relative-position">
+                        <img src="images/student1.png" alt="cover"
+                            class="student-img student-first-img absolute-position">
+                        <img src="images/student2.png" alt="cover"
+                            class="student-img student-second-img absolute-position">
+                        <img src="images/student3.png" alt="cover"
+                            class="student-img student-third-img absolute-position">
+                        <img src="images/student4.png" alt="cover"
+                            class="student-img student-fourth-img absolute-position">
+                        <img src="images/student5.png" alt="cover"
+                            class="student-img student-fifth-img absolute-position">
+                        <img src="images/student6.png" alt="cover"
+                            class="student-img student-sixth-img absolute-position">
+                        <img src="images/student7.png" alt="cover"
+                            class="student-img student-seventh-img absolute-position">
+                        <img src="images/student8.png" alt="cover"
+                            class="student-img student-eight-img absolute-position">
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Newb & Blog -->
+            <section>
+                <h2 class="section__main-heading">- - - Articles &amp; Tips - - -</h2>
+                <h3 class="section__secondary-heading">Latest News &amp; Blog</h3>
+
+                <div class="blog-flex padding-bottom">
+                    <article class="blog-flex__item">
+                        <img src="images/news1.png" width="258" alt="blog img">
+                        <img src="images/05.jpg" class="blog-flex__item-avatar" alt="author img">
+
+
+
+                        <dl class="def-list">
+                            <dt><i class="far fa-calendar-alt"></i></dt>
+                            <dd><time datetime="2020-11-25">25 NOV 2020</time></dd>
+
+                            <dt><i class="far fa-comments"></i></dt>
+                            <dd>COM(30)</dd>
+                        </dl>
+
+                        <h2 class="blog-flex__item-heading">Learning Resources in Challenec Times Online Workshop</h2>
+                        <h3 class="blog-flex__item-authorname">David Simala</h3>
+                        <a class="blog-flex__item-goto" href="blog_detail.html"><i class="fas fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="blog-flex__item">
+                        <img src="images/news2.png" width="258" alt="blog img">
+                        <img src="images/05.jpg" class="blog-flex__item-avatar" alt="author img">
+
+
+
+                        <dl class="def-list">
+                            <dt><i class="far fa-calendar-alt"></i></dt>
+                            <dd><time datetime="2020-11-25">25 NOV 2020</time></dd>
+
+                            <dt><i class="far fa-comments"></i></dt>
+                            <dd>COM(30)</dd>
+                        </dl>
+
+                        <h2 class="blog-flex__item-heading">Djang Highlights Models Admin And Harness Rela Tional
+                            Database</h2>
+                        <h3 class="blog-flex__item-authorname">David Simala</h3>
+                        <a class="blog-flex__item-goto" href="blog_detail.html"><i class="fas fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="blog-flex__item">
+                        <img src="images/news3.png" width="258" alt="blog img">
+                        <img src="images/05.jpg" class="blog-flex__item-avatar" alt="author img">
+
+
+
+                        <dl class="def-list">
+                            <dt><i class="far fa-calendar-alt"></i></dt>
+                            <dd><time datetime="2020-11-25">25 NOV 2020</time></dd>
+
+                            <dt><i class="far fa-comments"></i></dt>
+                            <dd>COM(30)</dd>
+                        </dl>
+
+                        <h2 class="blog-flex__item-heading">Smash Podcast Episode With Laura Kalbag What Is Online
+                            Privacy</h2>
+                        <h3 class="blog-flex__item-authorname">David Simala</h3>
+                        <a class="blog-flex__item-goto" href="blog_detail.html"><i class="fas fa-arrow-right"></i></a>
+                    </article>
+
+
+
+                </div>
+            </section>
+
+
+        </main>
+
+        <!-- Část před patičkou -->
+        <div class="grid__pre-footer">
+
+            <!-- část se sponsory -->
+            <section class="sponsors">
+                <img src="images/mountain_logo.png" alt="mountain sponsor">
+                <img src="images/circle_logo.png" alt="circle sponsor">
+                <img src="images/globe_logo.png" alt="globe sponsor">
+                <img src="images/paper_logo.png" alt="paper sponsor">
+                <img src="images/sumit_logo.png" alt="sumit sponsor">
+            </section>
+        </div>
+
+        <!-- patička -->
+        <footer class="grid__footer relative-position">
+            <!-- logo -->
+            <div class="footer-flex">
+                <img src="images/Logo(1).png" alt="logo img">
+                <!-- sociální sítě -->
+                <dl class="social">
+                    <dt><i class="fab fa-facebook-f"></i></dt>
+                    <dd><a href="home.html">Facebook</a></dd>
+                    <dt><i class="fab fa-twitter"></i></dt>
+                    <dd><a href="home.html">Twitter</a></dd>
+                    <dt><i class="fab fa-youtube"></i></dt>
+                    <dd><a href="home.html">Youtube</a></dd>
+                    <dt><i class="fab fa-instagram"></i></dt>
+                    <dd><a href="home.html">Instagram</a></dd>
+                </dl>
+
+                <div>
+                    <!-- navigace -->
+                    <h2 class="footer__heading">Our Courses</h2>
+                    <ul class="footer__nav two-columns">
+                        <li class="footer__nav-chosen"><a href="home.html">Web Development</a></li>
+                        <li><a href="home.html">Bussiness Studies</a></li>
+                        <li><a href="home.html">Computer Engineering</a></li>
+                        <li><a href="home.html">English Learning</a></li>
+                        <li><a href="home.html">Graphics Design</a></li>
+
+                        <li><a href="home.html">Color Combinitions</a></li>
+                        <li><a href="home.html">Software Development</a></li>
+                        <li><a href="home.html">Photography</a></li>
+                        <li><a href="home.html">Advance WordPress</a></li>
+                        <li><a href="home.html">Basic PSD To HTML</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="footer__heading">Company</h2>
+                    <ul class="footer__nav">
+                        <li><a href="home.html">About Eduket</a></li>
+                        <li><a href="home.html">Meet Advisors</a></li>
+                        <li><a href="home.html">Join A Career</a></li>
+                        <li><a href="home.html">Latest Courses</a></li>
+                        <li><a href="home.html">Newsletters</a></li>
+                    </ul>
+                </div>
+                <!-- šipka na scrollnutí -->
+
+                <div class="footer-flex__newsletter-item">
+                    <!-- newsletter + formular na mail -->
+                    <h2 class="footer__heading">Newsletters</h2>
+                    <p class="newsletter__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+                    <form class="footer-form" method="POST" action="neco.php">
+                        <input class="footer-form__input" type="email" placeholder="Enter Your Email">
+                        <button class="footer-form__btn orange-bg white" type="submit">&rarr;</button>
+                    </form>
+                </div>
+
+            </div>
+            <a href="#logo" class="scroll-to-top-button"><i class="fas fa-chevron-up"></i></a>
+            <p class="footer__copyright absolute-position footer-gray">Copyright &copy; 2020 <span
+                    class="white">EduPlus</span> All Rights Reserved.</p>
+        </footer>
     </div>
-    
-        <!-- Welcome -->       
-        <section class="grid__section">
-            <h2>--- Introduced About EduPlus</h2>
-            <h3><b>Welcome To Edu</b>Plus</h3>
-            <p>Vestibulum fermentum tortor id mi. Integer tempor. Aliquam ante. Nunc auctor. Quisque porta. In dapibus augue non sapien. Aliquam id dolor. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Donec quis nibh at felis congue commodo. Nulla non lectus sed nisl molestie malesuada. Etiam posuere lacus quis dolor. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Fusce consectetuer risus a nunc. Etiam quis quam. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo.</p>
-
-
-            <h4>Proffesional &amp; Expert</h4>
-            <p>Vestibulum fermentum tortor id mi. Integer tempor. Aliquam ante. Nunc auctor. Quisque porta. In dapibus augue non sapien. Aliquam id dolor. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Donec quis nibh at felis congue commodo. Nulla non lectus sed nisl molestie malesuada. Etiam posuere lacus quis dolor. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Fusce consectetuer risus a nunc. Etiam quis quam. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo.</p>
-
-            <h4>Job Placement Support</h4>
-            <p>Vestibulum fermentum tortor id mi. Integer tempor. Aliquam ante. Nunc auctor. Quisque porta. In dapibus augue non sapien. Aliquam id dolor. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Donec quis nibh at felis congue commodo. Nulla non lectus sed nisl molestie malesuada. Etiam posuere lacus quis dolor. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Fusce consectetuer risus a nunc. Etiam quis quam. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo.</p>
-            <a href="about_us.html">Learn more &rarr;</a>
-        </section>
-
-        <!-- okna z home -->
-        
-        <section class="grid__section">
-            <!-- about us video -->
-            <h2>--- Who We Are</h2>
-            <h3>Institue Goals</h3>
-            <p>Vestibulum fermentum tortor id mi. Integer tempor. Aliquam ante. Nunc auctor. Quisque porta. In dapibus augue non sapien. Aliquam id dolor. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Donec quis nibh at felis congue commodo. Nulla non lectus sed nisl molestie malesuada. Etiam posuere lacus quis dolor. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Fusce consectetuer risus a nunc. Etiam quis quam. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo.</p>
-
-            83 %
-            Engineering Studies
-            
-            79%
-            General &amp; Other Studies
-
-        </section>
-
-        <!-- Instrutors -->
-        <!-- Students say -->
-        <!-- Blog -->
-    
-
-
-    <!-- Sponsors -->
-    <!-- Footer -->
-
-</div>
 </body>
+
 </html>

@@ -19,6 +19,7 @@
     <div class="grid">
 
 
+
         <!-- hlavička -->
         <header class="header grid__header">
             <!-- logo -->
@@ -79,7 +80,7 @@
 
 
         <!-- část o stránce -->
-        <section class="grid__info lightblue-bg relative-position">
+        <section class="grid__info relative-position">
             <!-- nadpis -->
             <div class="home-panel">
                 <h1>- - - Welcome To EduPlus</h1>
@@ -152,6 +153,7 @@
             </div>
         </section>
 
+        <div class="grid__home-bg"></div>
 
         <!-- obsah -->
         <main class="grid__content">
@@ -397,23 +399,26 @@
                 <h3 class="section__secondary-heading">Campus Gallery</h3>
 
                 <div class="align-text-center">
-                    <ul class="gallery-list">
-                        <li>Show All</li>
-                        <li>University</li>
-                        <li>Group Study</li>
-                        <li>Awards</li>
-                        <li>Students</li>
-                        <li>Teachers</li>
-                        <li>Campus</li>
-                    </ul>
-                    <div class="gallery-line"></div>
+
+                    <div class="align-text-center border-box">
+                        <button class="gallery-button">Show All</button>
+                        <button class="gallery-button">University</button>
+                        <button class="gallery-button">Group Study</button>
+                        <button class="gallery-button">Awards</button>
+                        <button class="gallery-button">Students</button>
+                        <button class="gallery-button">Teachers</button>
+                        <button class="gallery-button">Campus</button>
+                        <hr style="width: 40%; margin: 0 auto 2rem auto;">
+                    </div>
+
                     <div class="gallery-flex">
                         <article class="gallery-flex__item relative-position">
                             <img src="images/gallery1.png" alt="gallery1" class="gallery-img">
                             <div class="gallery-info absolute-position">
                                 <h2 class="gallery-flex__item-heading white">Group Study</h2>
                                 <h3 class="gallery-flex__item-subheading white">University Campus</h3>
-                                <a href="home.html" class="gallery-btn absolute-position"><i class="fas fa-arrow-right"></i></a>
+                                <a href="home.html" class="gallery-btn absolute-position"><i
+                                        class="fas fa-arrow-right"></i></a>
                             </div>
                         </article>
                         <article class="gallery-flex__item relative-position">
@@ -421,7 +426,8 @@
                             <div class="gallery-info absolute-position">
                                 <h2 class="gallery-flex__item-heading white">Group Study</h2>
                                 <h3 class="gallery-flex__item-subheading white">University Campus</h3>
-                                <a href="home.html" class="gallery-btn absolute-position"><i class="fas fa-arrow-right"></i></a>
+                                <a href="home.html" class="gallery-btn absolute-position"><i
+                                        class="fas fa-arrow-right"></i></a>
                             </div>
                         </article>
                         <article class="gallery-flex__item relative-position">
@@ -429,7 +435,8 @@
                             <div class="gallery-info absolute-position">
                                 <h2 class="gallery-flex__item-heading white">Group Study</h2>
                                 <h3 class="gallery-flex__item-subheading white">University Campus</h3>
-                                <a href="home.html" class="gallery-btn absolute-position"><i class="fas fa-arrow-right"></i></a>
+                                <a href="home.html" class="gallery-btn absolute-position"><i
+                                        class="fas fa-arrow-right"></i></a>
                             </div>
                         </article>
                         <article class="gallery-flex__item relative-position">
@@ -437,7 +444,8 @@
                             <div class="gallery-info absolute-position">
                                 <h2 class="gallery-flex__item-heading white">Group Study</h2>
                                 <h3 class="gallery-flex__item-subheading white">University Campus</h3>
-                                <a href="home.html" class="gallery-btn absolute-position"><i class="fas fa-arrow-right"></i></a>
+                                <a href="home.html" class="gallery-btn absolute-position"><i
+                                        class="fas fa-arrow-right"></i></a>
                             </div>
                         </article>
                         <article class="gallery-flex__item relative-position">
@@ -445,7 +453,8 @@
                             <div class="gallery-info absolute-position">
                                 <h2 class="gallery-flex__item-heading white">Group Study</h2>
                                 <h3 class="gallery-flex__item-subheading white">University Campus</h3>
-                                <a href="home.html" class="gallery-btn absolute-position"><i class="fas fa-arrow-right"></i></a>
+                                <a href="home.html" class="gallery-btn absolute-position"><i
+                                        class="fas fa-arrow-right"></i></a>
                             </div>
                         </article>
                         <article class="gallery-flex__item relative-position">
@@ -453,7 +462,8 @@
                             <div class="gallery-info absolute-position">
                                 <h2 class="gallery-flex__item-heading white">Group Study</h2>
                                 <h3 class="gallery-flex__item-subheading white">University Campus</h3>
-                                <a href="home.html" class="gallery-btn absolute-position"><i class="fas fa-arrow-right"></i></a>
+                                <a href="home.html" class="gallery-btn absolute-position"><i
+                                        class="fas fa-arrow-right"></i></a>
                             </div>
                         </article>
                     </div>
@@ -581,7 +591,7 @@
                                 class="fas fa-long-arrow-alt-right"></i></a>
                     </article>
 
-                    <div>
+                    <div class="event-flex__secondary-item">
                         <article class="event-flex__item">
                             <img src="images/02.jpg" width="300" height="200" alt="event img">
                             <div class="event-flex__item-price event-price-position">$20</div>
@@ -705,9 +715,8 @@
             <section class="lightblue-bg">
                 <div class="career-flex relative-position">
                     <div class="career-flex__item">
-                        <img src="images/01.png" alt="back image" width="350" />
-                        <img src="images/studentoverlay.png" class="career-flex__item-front-img" width="220"
-                            height="250" alt="front image" />
+                        <img src="images/01.png" alt="back image" class="career-flex__item-back-img"/>
+                        <img src="images/studentoverlay.png" class="career-flex__item-front-img" alt="front image" />
                     </div>
                     <div class="career-flex__item">
                         <h2 class="section__main-heading align-text-start">- - - Build A Career</h2>
@@ -833,62 +842,64 @@
         <!-- patička -->
         <footer class="grid__footer relative-position">
             <!-- logo -->
-            <img src="images/Logo(1).png" alt="logo img">
-            <!-- sociální sítě -->
-            <dl class="social absolute-position">
-                <dt><i class="fab fa-facebook blue"></i></dt>
-                <dd>Facebook</dd>
-                <dt><i class="fab fa-twitter-square light-blue"></i></dt>
-                <dd>Twitter</dd>
-                <dt><i class="fab fa-youtube-square red"></i></dt>
-                <dd>Youtube</dd>
-                <dt><i class="fab fa-instagram"></i></dt>
-                <dd>Instagram</dd>
-            </dl>
+            <div class="footer-flex">
+                <img src="images/Logo(1).png" alt="logo img">
+                <!-- sociální sítě -->
+                <dl class="social">
+                    <dt><i class="fab fa-facebook-f"></i></dt>
+                    <dd><a href="home.html">Facebook</a></dd>
+                    <dt><i class="fab fa-twitter"></i></dt>
+                    <dd><a href="home.html">Twitter</a></dd>
+                    <dt><i class="fab fa-youtube"></i></dt>
+                    <dd><a href="home.html">Youtube</a></dd>
+                    <dt><i class="fab fa-instagram"></i></dt>
+                    <dd><a href="home.html">Instagram</a></dd>
+                </dl>
 
+                <div>
+                    <!-- navigace -->
+                    <h2 class="footer__heading">Our Courses</h2>
+                    <ul class="footer__nav two-columns">
+                        <li class="footer__nav-chosen"><a href="home.html">Web Development</a></li>
+                        <li><a href="home.html">Bussiness Studies</a></li>
+                        <li><a href="home.html">Computer Engineering</a></li>
+                        <li><a href="home.html">English Learning</a></li>
+                        <li><a href="home.html">Graphics Design</a></li>
 
-            <!-- navigace -->
-            <h2>Our Courses</h2>
-            <ul class="footer__nav two-columns">
-                <li><a href="home.html">Web Development</a></li>
-                <li><a href="home.html">Bussiness Studies</a></li>
-                <li><a href="home.html">Computer Engineering</a></li>
-                <li><a href="home.html">English Learning</a></li>
-                <li><a href="home.html">Graphics Design</a></li>
+                        <li><a href="home.html">Color Combinitions</a></li>
+                        <li><a href="home.html">Software Development</a></li>
+                        <li><a href="home.html">Photography</a></li>
+                        <li><a href="home.html">Advance WordPress</a></li>
+                        <li><a href="home.html">Basic PSD To HTML</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2  class="footer__heading">Company</h2>
+                    <ul class="footer__nav">
+                        <li><a href="home.html">About Eduket</a></li>
+                        <li><a href="home.html">Meet Advisors</a></li>
+                        <li><a href="home.html">Join A Career</a></li>
+                        <li><a href="home.html">Latest Courses</a></li>
+                        <li><a href="home.html">Newsletters</a></li>
+                    </ul>
+                </div>
+                <!-- šipka na scrollnutí -->
 
-                <li><a href="home.html">Color Combinitions</a></li>
-                <li><a href="home.html">Software Development</a></li>
-                <li><a href="home.html">Photography</a></li>
-                <li><a href="home.html">Advance WordPress</a></li>
-                <li><a href="home.html">Basic PSD To HTML</a></li>
-            </ul>
+                <div class="footer-flex__newsletter-item">
+                <!-- newsletter + formular na mail -->
+                <h2  class="footer__heading">Newsletters</h2>
+                <p class="newsletter__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
 
-            <h2>Company</h2>
-            <ul class="footer__nav">
-                <li><a href="home.html">About Eduket</a></li>
-                <li><a href="home.html">Meet Advisors</a></li>
-                <li><a href="home.html">Join A Career</a></li>
-                <li><a href="home.html">Latest Courses</a></li>
-                <li><a href="home.html">Newsletters</a></li>
-            </ul>
+                <form class="footer-form" method="POST" action="neco.php">
+                    <input class="footer-form__input" type="email" placeholder="Enter Your Email">
+                    <button class="footer-form__btn orange-bg white" type="submit">&rarr;</button>
+                </form>
+            </div>
 
-            <!-- šipka na scrollnutí -->
+            </div>
             <a href="#logo" class="scroll-to-top-button"><i class="fas fa-chevron-up"></i></a>
-
-            <!-- newsletter + formular na mail -->
-            <h2>Newsletters</h2>
-            <p>LOREM IPSUM</p>
-
-            <form method="POST" action="neco.php">
-                <input type="email" placeholder="Enter Your Email">
-                <button type="submit">&rarr;</button>
-            </form>
-
-            <p>Copyright &copy; 2020 EduPlus All Rights Reserved.</p>
+            <p class="footer__copyright absolute-position footer-gray">Copyright &copy; 2020 <span class="white">EduPlus</span> All Rights Reserved.</p>
         </footer>
-
-
-
     </div>
 </body>
 
