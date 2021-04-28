@@ -9,57 +9,160 @@
 
     <title>EduPlus - Contact Us</title>
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="grid">
     <!-- Header -->
     
+    <header class="header grid__header lightblue-bg">
+        <!-- logo -->
+        <img src="images/Logo.png" class="header__item" width="140" height="50" alt="logo image" id="logo" />
+        <!-- seznam s navigací -->
+        <nav class="header__item">
+            <ul class="menu">
+                <li class="menu__item"><a href="home.html">Home <i
+                            class="fas fa-angle-down menu__item-caret"></i></a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="about_us.html">About Us</a></li>
+                        <li class="submenu__item"><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a href="courses.html">Courses <i
+                            class="fas fa-angle-down menu__item-caret"></i></a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="courses.html">Course</a></li>
+                        <li class="submenu__item"><a href="courses.html">Course List</a></li>
+                        <li class="submenu__item"><a href="course.html">Course Details</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a href="event_detail.html">Events <i
+                            class="fas fa-angle-down menu__item-caret"></i></a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="home.html">Event</a></li>
+                        <li class="submenu__item"><a href="home.html">Event List</a></li>
+                        <li class="submenu__item"><a href="event_detail.html">Event Details</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a href="home.html">Pages <i
+                            class="fas fa-angle-down menu__item-caret"></i></a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="home.html">Page</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a href="blog.html">Blog <i
+                            class="fas fa-angle-down menu__item-caret"></i></a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="blog.html">Blog</a></li>
+                        <li class="submenu__item"><a href="blog_detail.html">Blog Details</a></li>
+                        <li class="submenu__item"><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a href="contact_us.html">Contact</a></li>
+
+            </ul>
+        </nav>
+
+        <!-- pravé tlačítka -->
+        <ul class="profile-buttons header__item">
+            <li><a href="home.html" class="orange-bg"><i class="fab fa-facebook white"></i></a></li>
+            <li><a href="home.html" class="white-bg"><i class="fab fa-youtube red"></i></a></li>
+            <li><a href="home.html" class="white-bg"><i class="far fa-user-circle orange"></i> SIGN IN</a></li>
+            <li><img src="images/Bar.png" alt="menu bar" height="24" width="24"></li>
+        </ul>
+    </header>
     <!-- Banner -->
-    <section>
-        <h1>Contact Us</h1>
-        <h2>Home &gt; Contact Us</h2>
+    <section class="grid__info banner">
+        <h1 class="banner__main-heading">Contact Us</h1>
+        <h2 class="banner__secondary-heading">Home &gt; Contact Us</h2>
     </section>
 
-    <main>
-        <img src="images/Bar.png" alt="map">
+    <main class="grid__content">
+        
 
-        <section>
-            <h2>--- Quick Contact</h2>
-            <h3>Get In Touch</h3>
-            <p>In convallis. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Pellentesque ipsum. Donec quis nibh at felis congue commodo. Nulla non lectus sed nisl molestie malesuada. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Duis risus. Aenean placerat. Maecenas aliquet accumsan leo. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Maecenas aliquet accumsan leo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nullam eget nisl. Etiam dictum tincidunt diam. In enim a arcu imperdiet malesuada. Praesent in mauris eu tortor porttitor accumsan. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Pellentesque pretium lectus id turpis. Cras elementum. In dapibus augue non sapien.</p>
+        <section class="lightblue-bg">
+            <div class="half-flex">
+                <div class="half-flex__item">
+            <h2 class="section__main-heading align-text-start">- - - Quick Contact</h2>
+            <h3 class="section__secondary-heading align-text-start">Get In Touch</h3>
+            <p class="gray hind">
+                In convallis. Temporibus autem quibusdam et aut officiis debitis aut 
+                rerum necessitatibus saepe eveniet 
+                ut et voluptates repudiandae sint et molestiae non recusandae.
+            </p>
 
-            <dl>
-                <dt><i class="fas fa-map-marker-alt"></i></dt>
-                <dd>Locations</dd>
-                <dd>250 Main Street, New York</dd>
+            <div class="flex contact-icon-group-margin">
+                <div>
+                    <i class="fas fa-map-marker-alt contact-icon white orange-bg"></i>
+                </div>
+                <div class="left-padding">
+                    <span class="bold navy">Locations</span><br>
+                    <span class="navy">250 Main Street, New York</span>
+                </div>
+            </div>
 
-                <dt><i class="far fa-envelope-open"></i></dt>
-                <dd>Email Us</dd>
-                <dd>support&commat;gmail.com</dd>
+            <div class="flex contact-icon-group-margin">
+                <div>
+                    <i class="far fa-envelope-open contact-icon white orange-bg"></i>
+                </div>
+                <div class="left-padding">
+                    <span class="bold navy">Email Us</span><br>
+                    <span class="navy">support&commat;gmail.com</span>
+                </div>
+            </div>
 
-                <dt><i class="fas fa-phone"></i></dt>
-                <dd>Phone US</dd>
-                <dd>+012 (345) 6789 99</dd>
-            </dl>
+            <div class="flex margin-bottom">
+                <div>
+                    <i class="fas fa-phone contact-icon white orange-bg"></i>
+                </div>
+                <div class="left-padding">
+                    <span class="bold navy">Phone Us</span><br>
+                    <span class="navy">+012 (345) 6789 99</span>
+                </div>
+            </div>
 
-            <ul>
-                <li><a href="instructor_details.html"><i class="fab fa-facebook"></i></a></li>
+
+            <hr>
+
+            <!-- Social buttons -->
+            <ul class="contact-social">
+                <li><a href="instructor_details.html"><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href="instructor_details.html"><i class="fab fa-youtube"></i></a></li>
                 <li><a href="instructor_details.html"><i class="fab fa-twitter"></i></a></li>
                 <li><a href="instructor_details.html"><i class="fab fa-linkedin"></i></a></li>
             </ul>
+        </div>
+
+        <div class="half-flex__item">
+
+            <img src="images/map.png" class="contact-map" alt="map">
+        </div>
+
+        </div>
         </section>
 
-        <section>
-            <h2>--- Get In Touch ---</h2>
-            <h3>Leave Us Message</h3>
+        <section class="lightblue-bg">
+            <h2 class="section__main-heading">- - - Get In Touch - - -</h2>
+            <h3 class="section__secondary-heading">Leave Us Message</h3>
 
-            <form method="POST">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Adress">
-                <input type="text" placeholder="Phone Number">
-                <input type="text" placeholder="Write Message">
-                <button type="submit">SEND MESSAGE &rarr;</button>
+            <form method="POST" class="center">
+                <div class="flex space-between">
+                <div class="contact-input-container relative-position">
+                    <input type="text" class="contact-input" placeholder="Full Name">
+                    <i class="far fa-user absolute-position contact-input__icon orange"></i>
+                </div>
+                <div class="contact-input-container relative-position">
+                    <input type="email" class="contact-input" placeholder="Email Adress">
+                    <i class="far fa-envelope absolute-position contact-input__icon orange"></i>
+                </div>
+                <div class="contact-input-container relative-position">
+                    <input type="text" class="contact-input" placeholder="Phone Number">
+                    <i class="fas fa-phone absolute-position contact-input__icon orange"></i>
+                </div>
+            </div>
+                <textarea type="text" class="contact-input-text" placeholder="Write Message"></textarea>
+                <button type="submit" class="contact-form-button orange-bg white bold">SEND MESSAGE <i class="fas fa-long-arrow-alt-right"></i></button>
             </form>
         </section>
 
@@ -67,6 +170,84 @@
 
 
 
-    <!-- Footer -->
+   
+        <!-- Část před patičkou -->
+        <div class="grid__pre-footer">
+
+            <!-- část se sponsory -->
+            <section class="sponsors">
+                <img src="images/mountain_logo.png" alt="mountain sponsor">
+                <img src="images/circle_logo.png" alt="circle sponsor">
+                <img src="images/globe_logo.png" alt="globe sponsor">
+                <img src="images/paper_logo.png" alt="paper sponsor">
+                <img src="images/sumit_logo.png" alt="sumit sponsor">
+            </section>
+        </div>
+
+        <!-- patička -->
+        <footer class="grid__footer relative-position">
+            <!-- logo -->
+            <div class="footer-flex">
+                <img src="images/Logo(1).png" alt="logo img">
+                <!-- sociální sítě -->
+                <dl class="social">
+                    <dt><i class="fab fa-facebook-f"></i></dt>
+                    <dd><a href="home.html">Facebook</a></dd>
+                    <dt><i class="fab fa-twitter"></i></dt>
+                    <dd><a href="home.html">Twitter</a></dd>
+                    <dt><i class="fab fa-youtube"></i></dt>
+                    <dd><a href="home.html">Youtube</a></dd>
+                    <dt><i class="fab fa-instagram"></i></dt>
+                    <dd><a href="home.html">Instagram</a></dd>
+                </dl>
+
+                <div>
+                    <!-- navigace -->
+                    <h2 class="footer__heading">Our Courses</h2>
+                    <ul class="footer__nav two-columns">
+                        <li class="footer__nav-chosen"><a href="home.html">Web Development</a></li>
+                        <li><a href="home.html">Bussiness Studies</a></li>
+                        <li><a href="home.html">Computer Engineering</a></li>
+                        <li><a href="home.html">English Learning</a></li>
+                        <li><a href="home.html">Graphics Design</a></li>
+
+                        <li><a href="home.html">Color Combinitions</a></li>
+                        <li><a href="home.html">Software Development</a></li>
+                        <li><a href="home.html">Photography</a></li>
+                        <li><a href="home.html">Advance WordPress</a></li>
+                        <li><a href="home.html">Basic PSD To HTML</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="footer__heading">Company</h2>
+                    <ul class="footer__nav">
+                        <li><a href="home.html">About Eduket</a></li>
+                        <li><a href="home.html">Meet Advisors</a></li>
+                        <li><a href="home.html">Join A Career</a></li>
+                        <li><a href="home.html">Latest Courses</a></li>
+                        <li><a href="home.html">Newsletters</a></li>
+                    </ul>
+                </div>
+                <!-- šipka na scrollnutí -->
+
+                <div class="footer-flex__newsletter-item">
+                    <!-- newsletter + formular na mail -->
+                    <h2 class="footer__heading">Newsletters</h2>
+                    <p class="newsletter__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+                    <form class="footer-form" method="POST">
+                        <input class="footer-form__input" type="email" placeholder="Enter Your Email">
+                        <button class="footer-form__btn orange-bg white" type="submit">&rarr;</button>
+                    </form>
+                </div>
+
+            </div>
+            <a href="#logo" class="scroll-to-top-button"><i class="fas fa-chevron-up"></i></a>
+            <p class="footer__copyright absolute-position footer-gray">Copyright &copy; 2020 <span
+                    class="white">EduPlus</span> All Rights Reserved.</p>
+        </footer>
+
+
+</div>
 </body>
 </html>

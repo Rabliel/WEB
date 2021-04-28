@@ -57,7 +57,6 @@ body{
 .header{
     display: flex;
     justify-content: flex-start;
-    /** background-color: #eaf4f7; **/
     padding: 0.5rem 1rem;
 }
 
@@ -1014,10 +1013,186 @@ main>section{ padding:3rem 0 2rem 0; }
     box-sizing: border-box;
 }
 
+.text-left-border{
+    padding-left: 1rem;
+    border-left: 4px solid #ea5822;
+}
+
+.about-icon{
+    background-color: blue;
+    font-size: 1.3em;
+    border-radius: 50%;
+    padding: 1.3rem;
+    margin:2rem 0.4rem 1rem 0.4rem;
+}
+
+.about-us-video{
+    max-width: 100%;
+    margin-top: 5.5rem;
+}
+
+.about-us-back-img{ width: 300px; }
+
+.about-us-front-img{
+    width: 200px;
+    top:15rem;
+    left: 12rem;
+}
+
+.about-us-circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top: 8rem;
+    left: 8rem;
+    z-index: 10;
+    box-shadow: 5px 5px 0px 0px white;
+}
+
+.about-us-circle__years-number{ font-size: 2em; }
+
+.about-us-circle__text-center{ margin-top: 2rem; }
+
+/*** Percentage circles ***/
+.circle-wrap {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border-radius: 50%;
+}
+.circle-wrap .circle .mask {
+    clip: rect(0px, 80px, 80px, 40px);
+}
+.circle-wrap .circle .mask .fill {
+    clip: rect(0px, 40px, 80px, 0px);
+    background-color: #ea5822;
+}
+.circle-wrap .inside-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.circle-wrap .circle .mask.full,
+.circle-wrap .circle .fill {
+  transform: rotate(140deg);
+}
+
+.second-circle .circle-wrap .circle .mask.full,
+.second-circle .circle-wrap .circle .fill {
+  transform: rotate(125deg);
+}
+
+.second-circle .circle-wrap .circle .mask .fill {
+    background-color: #3662ff;
+}
 
 
+/************************/
+/****** Contact Us ******/
+/************************/
 
+.contact-map{
+    max-width: 100%;
+    margin-top: 6rem;
+}
 
+.contact-social{ 
+    list-style: none; 
+    padding-left: 0; 
+    margin-top: 2rem;
+}
+
+.contact-social > li{
+    display: inline;
+    margin-right: 1rem;
+    color:white;
+    background-color: #cae3ea;
+    padding: 0.6em;
+    border-radius: 50%;
+}
+
+.contact-social>li:first-child{
+    background-color: #3662ff;
+    padding:0.6rem 0.85rem;
+}
+
+.contact-social>li:first-child>a{ color:white; }
+
+.contact-social>li>a{
+    text-decoration: none;
+    color:#3662ff;
+}
+
+.contact-icon{
+    padding: 0.8rem;
+    border-radius: 50%;
+}
+
+.contact-icon-group-margin{margin-bottom: 1rem;}
+
+.contact-input-container{
+    width: 25%;
+    padding-right: 3rem;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+.contact-input{
+    border:none;
+    width: 92%;
+    padding:0.5rem 0 0.5rem 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.contact-input::placeholder{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color:#062a35;
+}
+
+.contact-input__icon{
+    right: 0;
+    padding: 0.5rem 0.75rem 0 0;
+    font-size: 1.2em;
+}
+
+.contact-input-text{
+    width: 100%;
+    height: 8rem;
+    border:none;
+    padding:0.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.contact-input-text::placeholder{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color:#062a35;
+}
+
+.contact-form-button{
+    width: 60%;
+    border:none;
+    padding: 0.5rem 0;
+    margin: 1rem 20%;
+}
 
 /************************/
 /** Post content styles */
@@ -1206,7 +1381,7 @@ main>section{ padding:3rem 0 2rem 0; }
 
 .padding-bottom{padding-bottom: 2rem; }
 
-.margin-botton{margin-bottom: 2rem;}
+.margin-bottom{margin-bottom: 2rem;}
 
 .border-box{box-sizing: border-box;}
 
@@ -1215,3 +1390,25 @@ main>section{ padding:3rem 0 2rem 0; }
 .footer-gray{color:#a3b5c3}
 
 .gray{ color: gray; }
+
+.hind{ font-family: 'Hind', sans-serif; }
+
+.full-width{ width: 100%; }
+
+.no-margin{margin:0;}
+
+.bold {font-weight: bold;}
+
+.inline{display: inline;}
+
+.flex{display: flex;}
+
+.wrap{flex-wrap: wrap;}
+
+.space-between{justify-content: space-between;}
+
+.left-padding{padding-left: 1rem;}
+
+.navy{color:#062a35;}
+
+.center{margin: 0 20%;}
