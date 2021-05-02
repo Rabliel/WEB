@@ -85,7 +85,7 @@
                 <div class="half-flex">
                     <!-- obrázky -->
                     <div class="half-flex__item relative-position">
-                        <img src="images/gallery4.png" alt="back picture" class="about-us-back-img">
+                        <img src="images/gallery4.png" alt="back picture" class="about-us-back-img relative-position">
                         <div class="orange-bg about-us-circle absolute-position align-text-center bold white"> 
                             <div class="about-us-circle__text-center">
                             <span class="about-us-circle__years-number">
@@ -97,9 +97,9 @@
                         <img src="images/gallery6.png" alt="front picture" class="about-us-front-img absolute-position">
                     </div>
                     <div class="half-flex__item">
-                        <h2 class="section__main-heading align-text-start">--- Introduced About EduPlus</h2>
+                        <h2 class="section__main-heading align-text-start">- - - Introduced About EduPlus</h2>
                         <h3 class="section__secondary-heading align-text-start">Welcome To EduPlus</h3>
-                        <p class="gray hind text-left-border">
+                        <p class="gray hind text-left-border welcome-text">
                             Vestibulum fermentum tortor id mi. Integer tempor. Aliquam ante.
                             Nunc auctor. Quisque porta.
                             Aliquam ante. Nunc auctor. Vestibulum fermentum tortor id mi.
@@ -111,7 +111,7 @@
                             </div>
                             <div class="left-padding">
                                 <h4 class="navy">Proffesional &amp; Expert</h4>
-                                <p class="gray hind">Vestibulum fermentum tortor id mi. Integer tempor. Aliquam ante.
+                                <p class="gray hind welcome-text">Vestibulum fermentum tortor id mi. Integer tempor. Aliquam ante.
                                     Nunc
                                     auctor. Quisque porta.
                                 </p>
@@ -125,7 +125,7 @@
                             </div>
                             <div class="left-padding">
                                 <h4 class="navy">Job Placement Support</h4>
-                                <p class="gray hind">Vestibulum fermentum tortor id mi. Integer tempor. Aliquam ante.
+                                <p class="gray hind welcome-text">Vestibulum fermentum tortor id mi. Integer tempor. Aliquam ante.
                                     Nunc
                                     auctor. Quisque porta.
                                 </p>
@@ -139,48 +139,55 @@
                 </div>
 
                 <!-- Stats panel -->
-                <div class="stats-flex">
-                    <div class="stats-flex__item">
-                        <i class="fas fa-users stats-flex__item-icon"></i>
+                <div class="stats-flex relative-position">
+                    <div class="stats-flex__item relative-position">
+                        <i class="fas fa-users stats-flex__item-icon absolute-position"></i>
+                        <div class="stats-flex__item-container">
                         <span class="stats-flex__item-count">
                             3045+
-                        </span>
-                        <span class="stats-flex__item-text">
+                        </span><br>
+                        <span class="stats-flex__item-text hind">
                             Satisfied Students
                         </span>
                     </div>
-
-                    <div class="stats-flex__item">
-                        <i class="fas fa-book stats-flex__item-icon"></i>
+                    </div>
+    
+                    <div class="stats-flex__item relative-position">
+                        <i class="fas fa-book stats-flex__item-icon absolute-position"></i>
+                        <div class="stats-flex__item-container">
                         <span class=" stats-flex__item-count">
                             7852+
-                        </span>
-                        <span class="stats-flex__item-text">
+                        </span><br>
+                        <span class="stats-flex__item-text hind">
                             Available Courses
                         </span>
                     </div>
-
-                    <div class="stats-flex__item">
-                        <i class="fas fa-graduation-cap stats-flex__item-icon"></i>
+                    </div>
+    
+                    <div class="stats-flex__item relative-position">
+                        <i class="fas fa-graduation-cap stats-flex__item-icon absolute-position"></i>
+                        <div class="stats-flex__item-container">
                         <span class=" stats-flex__item-count">
                             9862+
-                        </span>
-                        <span class="stats-flex__item-text">
+                        </span><br>
+                        <span class="stats-flex__item-text hind">
                             Graduate Students
                         </span>
                     </div>
-
-                    <div class="stats-flex__item">
-                        <i class="fas fa-laptop-code stats-flex__item-icon"></i>
+                    </div>
+    
+                    <div class="stats-flex__item relative-position">
+                        <i class="fas fa-laptop-code stats-flex__item-icon absolute-position"></i>                   
+                        <div class="stats-flex__item-container">
                         <span class=" stats-flex__item-count">
                             8963+
-                        </span>
-                        <span class="stats-flex__item-text">
+                        </span><br>
+                        <span class="stats-flex__item-text hind">
                             Active Students
                         </span>
-
+                        </div>
                     </div>
-
+    
                 </div>
             </section>
 
@@ -535,7 +542,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h2 class="footer__heading">Company</h2>
+                    <h2  class="footer__heading">Company</h2>
                     <ul class="footer__nav">
                         <li><a href="home.html">About Eduket</a></li>
                         <li><a href="home.html">Meet Advisors</a></li>
@@ -547,20 +554,21 @@
                 <!-- šipka na scrollnutí -->
 
                 <div class="footer-flex__newsletter-item">
-                    <!-- newsletter + formular na mail -->
-                    <h2 class="footer__heading">Newsletters</h2>
-                    <p class="newsletter__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                <!-- newsletter + formular na mail -->
+                <h2  class="footer__heading">Newsletters</h2>
+                <p class="newsletter__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
 
-                    <form class="footer-form" method="POST">
-                        <input class="footer-form__input" type="email" placeholder="Enter Your Email">
-                        <button class="footer-form__btn orange-bg white" type="submit">&rarr;</button>
-                    </form>
-                </div>
-
+                <form class="footer-form" method="POST">
+                    <input class="footer-form__input" type="email" placeholder="Enter Your Email">
+                    <button class="footer-form__btn orange-bg white" type="submit">&rarr;</button>
+                </form>
             </div>
-            <a href="#logo" class="scroll-to-top-button"><i class="fas fa-chevron-up"></i></a>
-            <p class="footer__copyright absolute-position footer-gray">Copyright &copy; 2020 <span
-                    class="white">EduPlus</span> All Rights Reserved.</p>
+
+            </div>          
+
+            <button class="scroll-to-top-button" onclick="scrollToTop()"><i class="fas fa-chevron-up"></i></button>
+
+            <p class="footer__copyright absolute-position footer-gray">Copyright &copy; 2020 <span class="white">EduPlus</span> All Rights Reserved.</p>
         </footer>
     </div>
 </body>

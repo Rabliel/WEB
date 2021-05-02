@@ -86,6 +86,9 @@ body{
     text-decoration: none;
 }
 
+/** Disable links on tablet **/
+.disable{pointer-events: none;}
+
 .menu__item{
     margin: 0 0.5rem 0 0.5rem;
     font-weight: bold;
@@ -238,44 +241,41 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position:relative;
-    top:55px;
     margin:0 20%;
+    top:2.5rem;
 }
 
 .stats-flex__item{
     box-shadow: 0px 2px 2px 2px gray;
     background-color: white;
-    margin:1rem;
-    width: 180px;
-    height: 100px;
-    text-align: center;
+    width: 20%;
     box-sizing: border-box;
-    padding-top:12px;
-    padding-left: 5px;
-    align-items: center;
+    padding-top: 1em;
+    padding-left: 0.3em;
 }
 
 .stats-flex__item-icon{
-    font-size: 40px;
+    font-size: 2em;
     color:#ea5822;
-    margin-right: 10px;
+    top:30%;
+    left:0.1em;
 }
 
 .stats-flex__item-count{
-    font-size: 35px;
+    font-size: 1.5rem;
     color:#ea5822;
     font-weight: bold;
-    margin-right: 60px;;
 }
 
 .stats-flex__item-text{
-    margin-left: 5px;
-    font-size: 15px;
+    font-size: 0.75em;
     color:gray;
     font-weight: bold;
-    line-height: 30px;
-    font-family: 'Hind', sans-serif;
+}
+
+.stats-flex__item-container{
+    margin-left: 2.75em;
+    margin-bottom: 0.5em;
 }
 
 /***** Banner *****/
@@ -312,7 +312,7 @@ main>section{ padding:3rem 0 2rem 0; }
 /** flexboxy **/
 .categories-flex, .course-flex, .instructor-flex,
  .blog-flex, .career-flex, .event-flex, .students-flex,
- .gallery-flex{
+ .gallery-flex, .faq-flex{
     display:flex;
     justify-content: space-between;
     align-content: space-between;
@@ -678,7 +678,7 @@ main>section{ padding:3rem 0 2rem 0; }
 .event-flex__main-item{
     width: 550px;
     background-color: #eaf4f7;
-
+    margin-bottom: 1rem;
     padding-bottom: 2rem;
 }
 
@@ -707,13 +707,22 @@ main>section{ padding:3rem 0 2rem 0; }
 
 .event-flex__secondary-item{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     width: fit-content;
     align-content: space-between;
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
 .event-flex__item{ position:relative; }
+
+.event-flex__item::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(0deg,#052935 0%, rgba(17,33,45,0) 100%);
+}
 
 .event-flex__item > .def-list{
     position:absolute;
@@ -732,7 +741,7 @@ main>section{ padding:3rem 0 2rem 0; }
 
 .main-event-price-position{
     right: 5%;
-    top:43%;
+    top:42%;
 }
 
 .event-price-position{
@@ -800,14 +809,14 @@ main>section{ padding:3rem 0 2rem 0; }
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-bottom:2rem;
+    margin-bottom:4rem;
 }
 
 .student-message__name{
     font-size: 1.2em;
     position: absolute;
     left: 25%;
-    bottom: 18%;
+    bottom: 6rem;
 }
 
 .student-message__occupation{
@@ -815,7 +824,7 @@ main>section{ padding:3rem 0 2rem 0; }
     color: #ea5822;
     position:absolute;
     left:25%;
-    bottom:13%;
+    bottom:5rem;
 }
 
 .student-message__quote{
@@ -833,6 +842,7 @@ main>section{ padding:3rem 0 2rem 0; }
 .student-message__button{
     font-size: 0.8em;
     padding:0.4em;
+    border:none;
 }
 
 
@@ -929,14 +939,15 @@ main>section{ padding:3rem 0 2rem 0; }
 .career-flex__item:nth-child(2){ padding: 5%; }
 
 .career-flex__item-back-img{
-    width: 350px;
+    width: 16rem;
+    top:5rem;
 }
 
 .career-flex__item-front-img{
     position: absolute;
-    width: 220px;
-    top:10rem;
-    left:12rem;
+    width: 10rem;
+    top:15rem;
+    left:10rem;
     z-index: 10;
 }
 
@@ -996,6 +1007,7 @@ main>section{ padding:3rem 0 2rem 0; }
 
 
 
+
 /*************************/
 /******** About US *******/
 /*************************/
@@ -1018,6 +1030,8 @@ main>section{ padding:3rem 0 2rem 0; }
     border-left: 4px solid #ea5822;
 }
 
+.welcome-text{font-size: 0.7em;}
+
 .about-icon{
     background-color: blue;
     font-size: 1.3em;
@@ -1031,25 +1045,26 @@ main>section{ padding:3rem 0 2rem 0; }
     margin-top: 5.5rem;
 }
 
-.about-us-back-img{ width: 300px; }
+.about-us-back-img{ width: 50%; top:5rem; }
 
 .about-us-front-img{
-    width: 200px;
-    top:15rem;
-    left: 12rem;
+    width: 50%;
+    top:12rem;
+    left: 45%;
 }
 
 .about-us-circle{
-    width: 150px;
-    height: 150px;
+    width: 6.5rem;
+    height: 6.5rem;
     border-radius: 50%;
-    top: 8rem;
-    left: 8rem;
+    font-size: 0.6rem;
+    top: 11rem;
+    left: 30%;
     z-index: 10;
     box-shadow: 5px 5px 0px 0px white;
 }
 
-.about-us-circle__years-number{ font-size: 2em; }
+.about-us-circle__years-number{ font-size: 1.9em; }
 
 .about-us-circle__text-center{ margin-top: 2rem; }
 
@@ -1194,6 +1209,112 @@ main>section{ padding:3rem 0 2rem 0; }
     margin: 1rem 20%;
 }
 
+/***********************/
+/********* FAQ *********/
+/***********************/
+
+.faq-avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 3rem auto;
+    display: block;
+    position: relative;
+    top:2rem;
+}
+
+.faq-ceo__text{
+    padding:1rem;
+    margin:0;
+    font-size: 0.7em;
+}
+.faq-ceo__name{ font-size: 1.2em; }
+.faq-ceo__position{
+    font-size: 0.8em;
+    color: #ea5822;
+
+}
+
+.faq-flex__side{ width: 25%; }
+.faq-flex__questions{
+    width: 65%;
+    padding: 1rem;
+}
+.collapse{
+    width: 95%;
+    margin:0 auto;
+}
+
+.collapse__button{
+    display: block;
+    padding:1rem 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+    text-align:left;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+.collapse__button--active{ color:#ea5822; }
+
+.collapse__button--active + .collapse__content{display: block;}
+
+.collapse__content{
+    display: none;
+    overflow: auto;
+    width: 100%;
+}
+.collapse__content>p{ margin: 0; }
+
+.collapse__button::after{
+    content: '\02C3';
+    color:#ea5822;
+    float: right;
+    transform: scale(1.5);
+}
+.collapse__button--active::after{ content: '\02C5'; }
+
+.faq-input-wrapper{
+    width: 80%;
+    margin: 0.2rem auto;
+    padding-right: 2rem;
+    border:1px solid gray;
+}
+.faq-input-wrapper > input,.faq-input-wrapper>textarea{
+    border:none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color:#062a35;
+    padding:0.5rem 0;
+}
+.faq-input-wrapper > input::placeholder,.faq-input-wrapper>textarea::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color:#062a35;
+}
+.faq-form-icon{
+    font-size: 0.8em;
+    right: 1rem;
+    top:0.2rem;
+}
+
+.faq-form-button{
+    width: 100%;
+    border: none;
+    padding:0.3rem 0;
+    margin: 1rem 0;
+}
+.faq-button-wrapper{
+    width: 80%;
+    margin:0.2rem auto 0 auto;
+}
+
 /************************/
 /** Post content styles */
 /************************/
@@ -1207,6 +1328,31 @@ main>section{ padding:3rem 0 2rem 0; }
     padding: 1em 20%;
     flex-wrap: wrap;
 }
+
+
+.become-left{
+    padding-left: 20%;
+    background-color: #0e1851;
+    padding:6rem 4rem 5rem 20%;
+}
+
+.become-right{
+    padding-right: 20%;
+    padding:6rem 20% 5rem 4rem;
+    background-color: #000846;
+}
+
+.become-button{
+    display: block;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.contact-left-bg{background-color: #0e1851;}
+
+.contact-right-bg{background-color: #000846;}
 
 
 /******************/
@@ -1233,7 +1379,9 @@ main>section{ padding:3rem 0 2rem 0; }
 /** Social sites list**/
 .social{
     width:60%;
-    top: 2rem;
+    top: 1rem;
+    font-size: 0.5em;
+    position: relative;
 }
 
 .social > dt{
@@ -1272,7 +1420,7 @@ main>section{ padding:3rem 0 2rem 0; }
     list-style: none;
     margin: 0;
     padding:0;
-    font-size: 0.9em;
+    font-size: 0.7em;
 }
 .footer__nav > li{
     margin-bottom: 0.5rem;
@@ -1334,6 +1482,7 @@ main>section{ padding:3rem 0 2rem 0; }
     position: absolute;
     right:15%;
     top:45%;
+    border: none;
 }
 
 /*****************/
@@ -1383,6 +1532,8 @@ main>section{ padding:3rem 0 2rem 0; }
 
 .margin-bottom{margin-bottom: 2rem;}
 
+.margin-top{margin-top: 2rem;}
+
 .border-box{box-sizing: border-box;}
 
 .two-columns{ columns:2; }
@@ -1412,3 +1563,46 @@ main>section{ padding:3rem 0 2rem 0; }
 .navy{color:#062a35;}
 
 .center{margin: 0 20%;}
+
+.become-button-blue-bg{ background-color: #3662ff;}
+
+.no-resize{ resize: none; }
+
+
+
+
+
+/********************************/
+/********************************/
+/********************************/
+/****** Breakpoint changes ******/
+/********************************/
+/********************************/
+/********************************/
+
+
+/*** Monitor ***/
+@media (min-width: 992px) { 
+
+.event-flex__secondary-item{flex-flow: column wrap;}
+
+.main-event-price-position{top:42%}
+.footer__nav{font-size: 0.9em;}
+.social{font-size: 1em; top:0;}
+.welcome-text{font-size:0.9em;}
+
+
+}
+
+/*** Tablet ***/
+@media (min-width: 576px) { 
+    .career-button{font-size:0.6em}
+
+    .career-half-flex__item-heading{font-size: 1.2em;}
+}
+
+/*** Phone ***/
+@media (max-width: 575px) { 
+    .career-button{font-size:0.6em}
+    .instructor-name{font-size: 1em;}
+}

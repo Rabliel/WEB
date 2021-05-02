@@ -9,6 +9,9 @@
     <meta name="author" content="Daniel Rábel">
 
     <title>EduPlus - Home</title>
+
+    <script type="text/javascript" src="js/scroll.js"></script>
+
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/page.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -108,46 +111,53 @@
 
             </div>
 
-            <div class="stats-flex">
-                <div class="stats-flex__item">
-                    <i class="fas fa-users stats-flex__item-icon"></i>
+            <div class="stats-flex relative-position">
+                <div class="stats-flex__item relative-position">
+                    <i class="fas fa-users stats-flex__item-icon absolute-position"></i>
+                    <div class="stats-flex__item-container">
                     <span class="stats-flex__item-count">
                         3045+
-                    </span>
-                    <span class="stats-flex__item-text">
+                    </span><br>
+                    <span class="stats-flex__item-text hind">
                         Satisfied Students
                     </span>
                 </div>
+                </div>
 
-                <div class="stats-flex__item">
-                    <i class="fas fa-book stats-flex__item-icon"></i>
+                <div class="stats-flex__item relative-position">
+                    <i class="fas fa-book stats-flex__item-icon absolute-position"></i>
+                    <div class="stats-flex__item-container">
                     <span class=" stats-flex__item-count">
                         7852+
-                        </span>
-                        <span class="stats-flex__item-text">
-                            Available Courses
-                        </span>
+                    </span><br>
+                    <span class="stats-flex__item-text hind">
+                        Available Courses
+                    </span>
+                </div>
                 </div>
 
-                <div class="stats-flex__item">
-                    <i class="fas fa-graduation-cap stats-flex__item-icon"></i>
+                <div class="stats-flex__item relative-position">
+                    <i class="fas fa-graduation-cap stats-flex__item-icon absolute-position"></i>
+                    <div class="stats-flex__item-container">
                     <span class=" stats-flex__item-count">
                         9862+
-                        </span>
-                        <span class="stats-flex__item-text">
-                            Graduate Students
-                        </span>
+                    </span><br>
+                    <span class="stats-flex__item-text hind">
+                        Graduate Students
+                    </span>
+                </div>
                 </div>
 
-                <div class="stats-flex__item">
-                    <i class="fas fa-laptop-code stats-flex__item-icon"></i>                   
+                <div class="stats-flex__item relative-position">
+                    <i class="fas fa-laptop-code stats-flex__item-icon absolute-position"></i>                   
+                    <div class="stats-flex__item-container">
                     <span class=" stats-flex__item-count">
                         8963+
-                        </span>
-                        <span class="stats-flex__item-text">
-                            Active Students
-                        </span>
-
+                    </span><br>
+                    <span class="stats-flex__item-text hind">
+                        Active Students
+                    </span>
+                    </div>
                 </div>
 
             </div>
@@ -587,13 +597,13 @@
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id tortor.
                             Suspendisse sagittis ultrices augue.
                         </p>
-                        <a href="home.html" class="event-flex__main-item-join-btn">JOIN EVENT <i
+                        <a href="event_detail.html" class="event-flex__main-item-join-btn">JOIN EVENT <i
                                 class="fas fa-long-arrow-alt-right"></i></a>
                     </article>
 
                     <div class="event-flex__secondary-item">
                         <article class="event-flex__item">
-                            <img src="images/02.jpg" width="300" height="200" alt="event img">
+                            <img src="images/02.jpg" width="275" height="200" alt="event img">
                             <div class="event-flex__item-price event-price-position">$20</div>
                             <dl class="def-list">
                                 <dt><i class="far fa-calendar-alt"></i></dt>
@@ -603,12 +613,12 @@
                                 <dd>08 AM - 09 PM</dd>
                             </dl>
                             <h2 class="event-flex__item-name">Annual Conference 2020</h2>
-                            <a href="home.html" class="event-flex__item-join-btn">JOIN EVENT <i
+                            <a href="event_detail.html" class="event-flex__item-join-btn">JOIN EVENT <i
                                     class="fas fa-long-arrow-alt-right"></i></a>
                         </article>
 
                         <article class="event-flex__item">
-                            <img src="images/03.jpg" width="300" height="200" alt="event img">
+                            <img src="images/03.jpg" width="275" height="200" alt="event img">
                             <div class="event-flex__item-price event-price-position">$20</div>
                             <dl class="def-list">
                                 <dt><i class="far fa-calendar-alt"></i></dt>
@@ -618,7 +628,7 @@
                                 <dd>08 AM - 09 PM</dd>
                             </dl>
                             <h2 class="event-flex__item-name">Annual Conference 2020</h2>
-                            <a href="home.html" class="event-flex__item-join-btn">JOIN EVENT <i
+                            <a href="event_detail.html" class="event-flex__item-join-btn">JOIN EVENT <i
                                     class="fas fa-long-arrow-alt-right"></i></a>
                         </article>
                     </div>
@@ -653,8 +663,8 @@
                             <h3 class="student-message__occupation">CEO &amp; Founder</h3>
 
                             <div class="student-message__button-group">
-                                <a class="student-message__button lightblue-bg"><i class="fas fa-arrow-left"></i></a>
-                                <a class="student-message__button orange-bg"><i class="fas fa-arrow-right"></i></a>
+                                <button type="button" class="student-message__button lightblue-bg"><i class="fas fa-arrow-left"></i></button>
+                                <button class="student-message__button orange-bg"><i class="fas fa-arrow-right"></i></button>
                             </div>
 
                             <div class="student-message__quote">
@@ -678,8 +688,8 @@
                             <h3 class="student-message__occupation">CEO &amp; Founder</h3>
 
                             <div class="student-message__button-group">
-                                <a class="student-message__button lightblue-bg"><i class="fas fa-arrow-left"></i></a>
-                                <a class="student-message__button orange-bg"><i class="fas fa-arrow-right"></i></a>
+                                <button type="button" class="student-message__button lightblue-bg"><i class="fas fa-arrow-left"></i></button>
+                                <button class="student-message__button orange-bg"><i class="fas fa-arrow-right"></i></button>
                             </div>
 
                             <div class="student-message__quote">
@@ -715,7 +725,7 @@
             <section class="lightblue-bg">
                 <div class="career-flex relative-position">
                     <div class="career-flex__item">
-                        <img src="images/01.png" alt="back image" class="career-flex__item-back-img"/>
+                        <img src="images/01.png" alt="back image" class="career-flex__item-back-img relative-position"/>
                         <img src="images/studentoverlay.png" class="career-flex__item-front-img" alt="front image" />
                     </div>
                     <div class="career-flex__item">
@@ -896,8 +906,10 @@
                 </form>
             </div>
 
-            </div>
-            <a href="#logo" class="scroll-to-top-button"><i class="fas fa-chevron-up"></i></a>
+            </div>          
+
+            <button class="scroll-to-top-button" onclick="scrollToTop()"><i class="fas fa-chevron-up"></i></button>
+
             <p class="footer__copyright absolute-position footer-gray">Copyright &copy; 2020 <span class="white">EduPlus</span> All Rights Reserved.</p>
         </footer>
     </div>
