@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="utf-8">
     <meta name="description"
@@ -8,120 +9,427 @@
     <meta name="author" content="Daniel Rábel">
 
     <title>EduPlus - Course</title>
+
+    <script type="text/javascript" src="js/scroll.js"></script>
+
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind&family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
-    <!-- Header -->
-    
-    <!-- Banner -->
-    <section>
-        <h1>Our Courses</h1>
-        <h2>Home &gt; Courses</h2>
-    </section>
+    <div class="grid">
 
-    <main>
-        <aside>
-            <section>
-                <dl>
-                    <dt><i class="fas fa-donate"></i>Course Price</dt>
-                    <dd>&dollar;59</dd>
+        <!-- hlavička -->
+        <header class="header grid__header">
+            <!-- logo -->
+            <img src="images/Logo.png" class="header__item" width="140" height="50" alt="logo image" id="logo" />
+            <!-- seznam s navigací -->
+            <nav class="header__item">
+                <ul class="menu">
+                    <li class="menu__item"><a href="home.html">Home <i
+                                class="fas fa-angle-down menu__item-caret"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="about_us.html">About Us</a></li>
+                            <li class="submenu__item"><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="courses.html">Courses <i
+                                class="fas fa-angle-down menu__item-caret"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="courses.html">Course</a></li>
+                            <li class="submenu__item"><a href="courses.html">Course List</a></li>
+                            <li class="submenu__item"><a href="course.html">Course Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="event_detail.html">Events <i
+                                class="fas fa-angle-down menu__item-caret"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="home.html">Event</a></li>
+                            <li class="submenu__item"><a href="home.html">Event List</a></li>
+                            <li class="submenu__item"><a href="event_detail.html">Event Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="home.html">Pages <i
+                                class="fas fa-angle-down menu__item-caret"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="home.html">Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="blog.html">Blog <i
+                                class="fas fa-angle-down menu__item-caret"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="blog.html">Blog</a></li>
+                            <li class="submenu__item"><a href="blog_detail.html">Blog Details</a></li>
+                            <li class="submenu__item"><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="contact_us.html">Contact</a></li>
 
-                    <dt><i class="far fa-user-circle"></i>Instructor</dt>
-                    <dd>David Warner</dd>
+                </ul>
+            </nav>
 
-                    <dt><i class="far fa-clock"></i>Duration</dt>
-                    <dd>360 Hours</dd>
+            <!-- pravé tlačítka -->
+            <ul class="profile-buttons header__item">
+                <li><a href="home.html" class="orange-bg"><i class="fab fa-facebook white"></i></a></li>
+                <li><a href="home.html" class="white-bg"><i class="fab fa-youtube red"></i></a></li>
+                <li><a href="home.html" class="white-bg"><i class="far fa-user-circle orange"></i> SIGN IN</a></li>
+                <li><img src="images/Bar.png" alt="menu bar" height="24" width="24"></li>
+            </ul>
+        </header>
 
-                    <dt><i class="fas fa-book"></i>Lectures</dt>
-                    <dd>20 Lessons</dd>
+        <!-- Banner -->
+        <section class="grid__info banner">
+            <h1 class="banner__main-heading">Our Course</h1>
+            <h2 class="banner__secondary-heading">Home &gt; Course</h2>
+        </section>
 
-                    <dt><i class="fas fa-users"></i>Enrolled</dt>
-                    <dd>963 Students</dd>
+        <div class="grid__content main-aside-flex">
 
-                    <dt><i class="far fa-flag"></i>Language</dt>
-                    <dd>English</dd>
+            <main class="main-aside-flex__main-item margin-top">
 
-                    <dt><i class="far fa-calendar-alt"></i>Deadline</dt>
-                    <dd><time datetime="2021-03-21">06 March 2021</time></dd>
-                </dl>
-                <a href="course.html">ENROLLED NOW &rarr;</a>
+                <section class="main-aside-flex__main-item-section no-padding-top">
+                    <img src="images/course-vid.png" alt="video img" class="full-width-img">
+                    <div class="orange">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                    <h2 class="navy">How To Improve Web Design Skills</h2>
+                    <p class="gray hind">
+                        In convallis. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+                        eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Pellentesque ipsum. Donec
+                        quis nibh at felis congue commodo. Nulla non lectus sed nisl molestie malesuada. Sed ut
+                        perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                        rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                        sunt explicabo. Duis risus. Aenean placerat. Maecenas aliquet accumsan leo. Etiam sapien elit,
+                        consequat eget, tristique non, venenatis quis, ante. Maecenas aliquet accumsan leo. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum. Nullam eget nisl. Etiam dictum tincidunt diam. In enim a arcu imperdiet malesuada.
+                    </p>
+                </section>
+
+                <section class="main-aside-flex__main-item-section">
+                    <h2 class="navy">Curriculum</h2>
+                    <p class="gray hind">
+                        In convallis. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+                        eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Pellentesque ipsum. Donec
+                        quis nibh at felis congue commodo. Nulla non lectus sed nisl molestie malesuada.
+                    </p>
+
+
+                    <!-- Play buttons -->
+                    <button class="course-play-button bold flex space-between navy">
+                        Lesson 01: Introduced About Web Design<span class="gray"><i
+                                class="far fa-play-circle orange"></i> 05:59hr</span>
+                    </button>
+
+                    <button class="course-play-button bold flex space-between navy">
+                        Lesson 02: What Is UX/UI Design?<span class="gray"><i class="far fa-play-circle orange"></i>
+                            05:59hr</span>
+                    </button>
+
+                    <button class="course-play-button bold flex space-between navy">
+                        Lesson 03: Why Need UX/UI Role In Web Design?<span class="gray"><i
+                                class="far fa-play-circle orange"></i> 05:59hr</span>
+                    </button>
+
+                    <button class="course-play-button bold flex space-between navy">
+                        Lesson 04: What Is UX Manager?<span class="gray"><i class="far fa-play-circle orange"></i>
+                            05:59hr</span>
+                    </button>
+
+                    <button class="course-play-button bold flex space-between navy">
+                        Lesson 05: What's Your Design Goals?<span class="gray"><i class="far fa-play-circle orange"></i>
+                            05:59hr</span>
+                    </button>
+                </section>
+
+                <section class="main-aside-flex__main-item-section">
+                    <img src="images/course-mid.png" alt="course mid people" class="full-width-img">
+                    <h2 class="navy">Frequently Asked Questions</h2>
+                    <p class="gray hind">
+                        In convallis. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+                        eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Pellentesque ipsum. Donec
+                        quis nibh at felis congue commodo. Nulla non lectus sed nisl molestie malesuada. Sed ut
+                        perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                        rem aperiam.
+                    </p>
+
+                    <div class="collapse">
+                        <!-- question -->
+                        <button type="button" class="collapse__button collapse__button--course-font">
+                            Best Online Course For Basic Web Design For Beginners
+                        </button>
+                        <!-- answer -->
+                        <div class="collapse__content">
+                            <div class="flex space-between margin-top">
+                                <div class="collapse__content-img-item">
+                                    <img src="images/02.jpg" alt="faq answer image" class="full-width-img">
+                                </div>
+                                <p class="hind gray collapse__content-text-item">
+                                    In convallis. Temporibus autem quibusdam et aut officiis debitis aut rerum
+                                    necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
+                                    non recusandae.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse">
+                        <!-- question -->
+                        <button type="button" class="collapse__button collapse__button--course-font">
+                            Why We Are The Best Online Courses
+                        </button>
+                        <!-- answer -->
+                        <div class="collapse__content">
+                            <div class="flex space-between margin-top">
+                                <div class="collapse__content-img-item">
+                                    <img src="images/02.jpg" alt="faq answer image" class="full-width-img">
+                                </div>
+                                <p class="hind gray collapse__content-text-item">
+                                    In convallis. Temporibus autem quibusdam et aut officiis debitis aut rerum
+                                    necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
+                                    non recusandae.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse">
+                        <!-- question -->
+                        <button type="button" class="collapse__button collapse__button--course-font">
+                            Creating Secure Password Flows With NodeJS And MySQL
+                        </button>
+                        <!-- answer -->
+                        <div class="collapse__content">
+                            <div class="flex space-between margin-top">
+                                <div class="collapse__content-img-item">
+                                    <img src="images/02.jpg" alt="faq answer image" class="full-width-img">
+                                </div>
+                                <p class="hind gray collapse__content-text-item">
+                                    In convallis. Temporibus autem quibusdam et aut officiis debitis aut rerum
+                                    necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
+                                    non recusandae.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse">
+                        <!-- question -->
+                        <button type="button" class="collapse__button collapse__button--course-font">
+                            Creating Secure Password Flows With NodeJS And MySQL
+                        </button>
+                        <!-- answer -->
+                        <div class="collapse__content">
+                            <div class="flex space-between margin-top">
+                                <div class="collapse__content-img-item">
+                                    <img src="images/02.jpg" alt="faq answer image" class="full-width-img">
+                                </div>
+                                <p class="hind gray collapse__content-text-item">
+                                    In convallis. Temporibus autem quibusdam et aut officiis debitis aut rerum
+                                    necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
+                                    non recusandae.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="main-aside-flex__main-item-section">
+                    <h2>Course Instructors</h2>
+                    <div class="flex space-between wrap">
+                        <article class="course-flex-instructor__item align-text-center">
+                            <img src="images/05.jpg" alt="instructor Warner" class="course-instructor-avatar">
+                            <h2 class="course-instructor-name navy">David Warner</h2>
+                            <h3 class="course-instructor-position gray hind">Math Teacher</h3>
+                        </article>
+
+                        <article class="course-flex-instructor__item align-text-center">
+                            <img src="images/05.jpg" alt="instructor Warner" class="course-instructor-avatar">
+                            <h2 class="course-instructor-name navy">Zavib Makaullah</h2>
+                            <h3 class="course-instructor-position gray hind">Math Teacher</h3>
+                        </article>
+
+                        <article class="course-flex-instructor__item align-text-center">
+                            <img src="images/05.jpg" alt="instructor Warner" class="course-instructor-avatar">
+                            <h2 class="course-instructor-name navy">Jhonson Maxwell</h2>
+                            <h3 class="course-instructor-position gray hind">Math Teacher</h3>
+                        </article>
+
+                        <article class="course-flex-instructor__item align-text-center">
+                            <img src="images/05.jpg" alt="instructor Warner" class="course-instructor-avatar">
+                            <h2 class="course-instructor-name navy">Somalia D Silva</h2>
+                            <h3 class="course-instructor-position gray hind">Math Teacher</h3>
+                        </article>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="main-aside-flex__aside-item margin-top">
+
+                <section class="course-aside-section">
+                    <div class="course-aside-list">
+                        <div class="flex space-between padding-side">
+                            <div class="navy bold">
+                                <i class="fas fa-donate orange"></i> Course Price
+                            </div>
+                            <div class="orange bold">
+                                &dollar;59
+                            </div>
+                        </div>
+
+                        <hr class="course-line">
+                        <div class="flex space-between padding-side">
+                            <div class="navy bold">
+                                <i class="far fa-user-circle orange"></i> Instructor
+                            </div>
+                            <div class="orange bold">
+                                David Warner
+                            </div>
+                        </div>
+
+                        <hr class="course-line">
+                        <div class="flex space-between padding-side">
+                            <div class="navy bold">
+                                <i class="far fa-clock orange"></i> Duration
+                            </div>
+                            <div class="orange bold">
+                                360 Hours
+                            </div>
+                        </div>
+
+                        <hr class="course-line">
+                        <div class="flex space-between padding-side">
+                            <div class="navy bold">
+                                <i class="fas fa-book orange"></i> Lectures
+                            </div>
+                            <div class="orange bold">
+                                20 Lessons
+                            </div>
+                        </div>
+
+                        <hr class="course-line">
+                        <div class="flex space-between padding-side">
+                            <div class="navy bold">
+                                <i class="fas fa-users orange"></i> Enrolled
+                            </div>
+                            <div class="orange bold">
+                                963 Students
+                            </div>
+                        </div>
+
+                        <hr class="course-line">
+                        <div class="flex space-between padding-side">
+                            <div class="navy bold">
+                                <i class="far fa-flag orange"></i> Language
+                            </div>
+                            <div class="orange bold">
+                                English
+                            </div>
+                        </div>
+
+                        <hr class="course-line">
+                        <div class="flex space-between padding-side">
+                            <div class="navy bold">
+                                <i class="far fa-calendar-alt orange"></i> Deadline
+                            </div>
+                            <div class="orange bold">
+                                <time datetime="2021-03-21">06 March 2021</time>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="align-text-center margin-bottom margin-top">
+                        <a href="course.html" class="white course-aside-button no-decoration bold">ENROLLED NOW <i
+                                class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </section>
+
+                <!-- Add img -->
+                <img src="images/add.png" alt="sidebar add" class="full-width-img margin-top">
+            </aside>
+        </div>
+
+
+        <!-- Část před patičkou -->
+        <div class="grid__pre-footer">
+
+            <!-- část se sponsory -->
+            <section class="sponsors">
+                <img src="images/mountain_logo.png" alt="mountain sponsor">
+                <img src="images/circle_logo.png" alt="circle sponsor">
+                <img src="images/globe_logo.png" alt="globe sponsor">
+                <img src="images/paper_logo.png" alt="paper sponsor">
+                <img src="images/sumit_logo.png" alt="sumit sponsor">
             </section>
-            <img src="images/Bar.png" alt="add">
-        </aside>
-<
-    <!-- video + hodnoceni -->
+        </div>
 
-    <section>
-        <h2>How To Improve Web Design Skills</h2>
-        <p>In convallis. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Pellentesque ipsum. Donec quis nibh at felis congue commodo. Nulla non lectus sed nisl molestie malesuada. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Duis risus. Aenean placerat. Maecenas aliquet accumsan leo. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Maecenas aliquet accumsan leo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nullam eget nisl. Etiam dictum tincidunt diam. In enim a arcu imperdiet malesuada. Praesent in mauris eu tortor porttitor accumsan. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Pellentesque pretium lectus id turpis. Cras elementum. In dapibus augue non sapien.</p>
-    </section>
+        <!-- patička -->
+        <footer class="grid__footer relative-position">
+            <!-- logo -->
+            <div class="footer-flex">
+                <img src="images/Logo(1).png" alt="logo img">
+                <!-- sociální sítě -->
+                <dl class="social">
+                    <dt><i class="fab fa-facebook-f"></i></dt>
+                    <dd><a href="home.html">Facebook</a></dd>
+                    <dt><i class="fab fa-twitter"></i></dt>
+                    <dd><a href="home.html">Twitter</a></dd>
+                    <dt><i class="fab fa-youtube"></i></dt>
+                    <dd><a href="home.html">Youtube</a></dd>
+                    <dt><i class="fab fa-instagram"></i></dt>
+                    <dd><a href="home.html">Instagram</a></dd>
+                </dl>
 
-    <section>
-        <h2>Curriculum</h2>
-        <p>In convallis. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Pellentesque ipsum. Donec quis nibh at felis congue commodo. Nulla non lectus sed nisl molestie malesuada. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Duis risus. Aenean placerat. Maecenas aliquet accumsan leo. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Maecenas aliquet accumsan leo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nullam eget nisl. Etiam dictum tincidunt diam. In enim a arcu imperdiet malesuada. Praesent in mauris eu tortor porttitor accumsan. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Pellentesque pretium lectus id turpis. Cras elementum. In dapibus augue non sapien.</p>
-    
-        <!-- opakovat lekce -->
-        <ul>
-            <li>
-                Lesson 01: Best Online Course For Basic Web Design For Beginners
- 
-                <i class="far fa-play-circle"></i> 05:59 hr
-            </li>
-        </ul>
-    
-    
-    </section>
+                <div>
+                    <!-- navigace -->
+                    <h2 class="footer__heading">Our Courses</h2>
+                    <ul class="footer__nav two-columns">
+                        <li class="footer__nav-chosen"><a href="home.html">Web Development</a></li>
+                        <li><a href="home.html">Bussiness Studies</a></li>
+                        <li><a href="home.html">Computer Engineering</a></li>
+                        <li><a href="home.html">English Learning</a></li>
+                        <li><a href="home.html">Graphics Design</a></li>
 
-    <img src="images/Bar.png" alt="people">
+                        <li><a href="home.html">Color Combinitions</a></li>
+                        <li><a href="home.html">Software Development</a></li>
+                        <li><a href="home.html">Photography</a></li>
+                        <li><a href="home.html">Advance WordPress</a></li>
+                        <li><a href="home.html">Basic PSD To HTML</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="footer__heading">Company</h2>
+                    <ul class="footer__nav">
+                        <li><a href="home.html">About Eduket</a></li>
+                        <li><a href="home.html">Meet Advisors</a></li>
+                        <li><a href="home.html">Join A Career</a></li>
+                        <li><a href="home.html">Latest Courses</a></li>
+                        <li><a href="home.html">Newsletters</a></li>
+                    </ul>
+                </div>
+                <!-- šipka na scrollnutí -->
 
-    <section>
-        <h2>Frequently Asked Questions</h2>
-        <p>In convallis. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Pellentesque ipsum. Donec quis nibh at felis congue commodo. Nulla non lectus sed nisl molestie malesuada. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Duis risus. Aenean placerat. Maecenas aliquet accumsan leo. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Maecenas aliquet accumsan leo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nullam eget nisl. Etiam dictum tincidunt diam. In enim a arcu imperdiet malesuada. Praesent in mauris eu tortor porttitor accumsan. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Pellentesque pretium lectus id turpis. Cras elementum. In dapibus augue non sapien.</p>
+                <div class="footer-flex__newsletter-item">
+                    <!-- newsletter + formular na mail -->
+                    <h2 class="footer__heading">Newsletters</h2>
+                    <p class="newsletter__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
 
-        <ul>
-            <li>
-                Best Online Course For Basic Web Design For Beginners
-                <!-- zabalit do neceho + javascript-->>
-                <img src="images/Bar.png">
-                <p>In convallis. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Pellentesque ipsum. Donec quis nibh at felis congue commodo. Nulla non lectus sed nisl molestie malesuada. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Duis risus. Aenean placerat. Maecenas aliquet accumsan leo. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Maecenas aliquet accumsan leo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nullam eget nisl. Etiam dictum tincidunt diam. In enim a arcu imperdiet malesuada. Praesent in mauris eu tortor porttitor accumsan. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Pellentesque pretium lectus id turpis. Cras elementum. In dapibus augue non sapien.</p>
- 
-            </li>
-        </ul>
+                    <form class="footer-form" method="POST">
+                        <input class="footer-form__input" type="email" placeholder="Enter Your Email">
+                        <button class="footer-form__btn orange-bg white" type="submit">&rarr;</button>
+                    </form>
+                </div>
 
-    </section>
+            </div>
 
-    <section>
-        <h2>Course Instructors</h2>
-        <article>
-            <img src="images/Bar.png" alt="instructor">
-            <h3>David Warner</h3>
-            <h4>Math Teacher</h4>
-        </article>
+            <button class="scroll-to-top-button" onclick="scrollToTop()"><i class="fas fa-chevron-up"></i></button>
 
-        <article>
-            <img src="images/Bar.png" alt="instructor">
-            <h3>Zavib Makaullah</h3>
-            <h4>Math Teacher</h4>
-        </article>
-        
-        <article>
-            <img src="images/Bar.png" alt="instructor">
-            <h3>Jhonson Maxwell</h3>
-            <h4>Math Teacher</h4>
-        </article>
-        
-        <article>
-            <img src="images/Bar.png" alt="instructor">
-            <h3>Somalia D Silva</h3>
-            <h4>Math Teacher</h4>
-        </article>
-    </section>
-
-    </main>
-
-
-    <!-- Sponsors -->
-    <!-- Footer -->
+            <p class="footer__copyright absolute-position footer-gray">Copyright &copy; 2020 <span
+                    class="white">EduPlus</span> All Rights Reserved.</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/collapse.js"></script>
 </body>
+
 </html>
