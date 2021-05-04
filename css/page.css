@@ -320,7 +320,7 @@ main>section{ padding:3rem 0 2rem 0; }
     margin: 0 20% 0 20%;
 }
 
-.blog-flex{justify-content: center;}
+.blog-flex, .course-flex{justify-content: center;}
 
 /* Section headings*/
 
@@ -394,7 +394,11 @@ main>section{ padding:3rem 0 2rem 0; }
 /*************/
 
 /** home page courses **/
-.course-flex__item{ flex:0 0 content; margin-bottom: 1rem;}
+.course-flex__item{ 
+    flex:0 0 content; 
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
 
 .course-wrapper {
     position: relative;
@@ -1510,7 +1514,187 @@ main>section{ padding:3rem 0 2rem 0; }
 }
 
 /************************/
+/***** Event Detail *****/
+/************************/
+
+
+.event-details-list,.blog-details-list{
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-top: 2rem;
+}
+
+.event-details-list > dd,.blog-details-list>dd{
+    display: inline;
+    font-size: 0.7em;
+    color:gray;
+    margin:0 0.75rem 0 0.25rem;
+}
+.event-details-list > dt,.blog-details-list>dt{
+    display: inline-block;
+    font-size: 0.7em;
+    color:#ea5822;
+}
+
+.blog-details-list{padding:0;}
+
+.event-detail-heading{ font-size: 2.5em; }
+
+.event-detail-price{
+    padding:0.5rem 1rem;
+    background-color: #3662ff;
+    font-size: 1.2em;
+    top: 9rem;
+    right:12rem;
+}
+
+.event-detail-join-button{
+    padding: 0.5rem 1rem;
+    font-size: 1.2em;
+    top:9rem;
+    right:1rem;
+}
+
+.event-detail-check-list{ font-size: 0.85em; }
+
+.event-detail-check-list > li{ padding-bottom: 1em; }
+
+.event-detail-check-list>li>i{ font-size: 1.5em;}
+
+
+/***********************/
+/****** Blog grid ******/
+/***********************/
+
+/** Blog quote **/
+.blog-quote{
+    padding:0.5rem;
+    margin:2rem 0;
+    font-size: 0.7em;
+}
+
+/** Blog summary **/
+.blog-summary{ padding:1rem 1rem 2rem 1rem; }
+
+.blog-details-list{ font-size: 0.75em; }
+
+.blog-summary__type{
+    padding:0.5rem 1rem;
+    width: fit-content;
+    border-radius: 15px;
+    font-size: 0.8em;
+    margin:1rem 0;
+}
+
+.blog-summary__button{
+    padding:0.5rem 2rem;
+    margin:2rem 0;
+    font-size: 0.75em;
+}
+
+/**** Blog aside  ****/
+.blog-aside__search, .blog-aside__gallery,
+.blog-aside__tags, .blog-aside__news{padding: 0.75rem 0.5rem;}
+
+.blog-aside__search-heading, .blog-aside__tags-heading,
+.blog-aside__gallery-heading,.blog-aside__news-heading{ font-size: 1.1em;}
+
+/** Search section **/
+
+.blog-aside__search-form{
+    width: 85%;
+    margin:1rem auto;
+    background-color: #f5f6fa;
+    border-radius: 20px;
+    padding:0.5rem 0.75rem;
+}
+
+.blog-aside__search-form>form{width: 90%;}
+
+.blog-aside__search-form > form > input{ 
+    background-color: #f5f6fa;
+    width: 90%;
+}
+
+/** Blog aside buttons **/
+.blog-aside__button{
+    width: 100%;
+    border:none;
+    font-size: 0.7em;
+    padding: 0.75rem 1rem;
+    margin:0.1rem 0;
+}
+
+.blog-aside__button::after{
+    content: '\02C3';
+    float: right;
+    transform: scale(1.2);
+}
+
+.blog-aside__button:active,.blog-aside__button:focus{
+    background-color: #ea5822;
+    color:white;
+}
+
+/** Blogs news section **/
+
+.blog-news__img{ width: 30%; }
+
+.blog-news__text{ width: 65%; }
+
+.blog-news__heading{
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
+.blog-news__author{ font-size: 0.6em; }
+
+.blog-news{ margin-bottom: 0.5rem; }
+
+
+/** Blogs gallery section **/
+.blog-aside__gallery-item{ width: 45%; margin-bottom: 1rem; }
+
+.blog-aside__gallery-item:hover .gallery-item__overlay{ display:block; }
+
+.blog-aside__gallery-item > img{
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-item__overlay{  
+    width: 100%;
+    height: 100%;
+    background-color: #ee591e;
+    opacity: 0.8;
+    display: none;
+    top:0;
+    left:0;
+}
+
+.gallery-item__overlay-icon{
+    font-size: 2em;
+    margin-top:38%;
+}
+
+/** Blog tags section **/
+.blog-aside__tags-tag{
+    border:none;
+    background-color: #fcfcfc;
+    color:#6a6a6a;
+    padding:0.5em 0.75em;
+    margin-bottom: 0.5em;
+}
+
+.blog-aside__tags-tag:active,.blog-aside__tags-tag:focus{
+    background-color: #ea5822;
+    color:white;
+}
+
+/************************/
+/************************/
 /** Post content styles */
+/************************/
 /************************/
 
 /* Sponsors banner*/
@@ -1689,6 +1873,11 @@ main>section{ padding:3rem 0 2rem 0; }
     margin:10% 10%;
 }
 
+.hr-line{
+    width: 60%;
+    margin:0 20%
+}
+
 
 /****************/
 /* Line classes */
@@ -1742,6 +1931,10 @@ main>section{ padding:3rem 0 2rem 0; }
 
 .no-margin{margin:0;}
 
+.no-margin-top{margin-top: 0;}
+
+.no-padding{padding: 0;}
+
 .bold {font-weight: bold;}
 
 .inline{display: inline;}
@@ -1774,7 +1967,15 @@ main>section{ padding:3rem 0 2rem 0; }
 
 .padding-side{padding-left: 1rem; padding-right: 1rem;}
 
+.padding-top{padding-top:2rem;}
+
 .no-decoration{text-decoration: none;}
+
+.no-list-style{list-style: none;}
+
+.special-blue-bg{background-color: #3662ff;}
+
+.no-border{border:none;}
 
 /********************************/
 /********************************/
@@ -1784,6 +1985,17 @@ main>section{ padding:3rem 0 2rem 0; }
 /********************************/
 /********************************/
 
+
+/*** Phone ***/
+@media (max-width: 575px) { 
+
+    .career-button{font-size:0.6em}
+    
+    .instructor-name{font-size: 1em;}
+    
+    
+    
+}
 
 /*** Monitor ***/
 @media (min-width: 992px) { 
@@ -1798,7 +2010,7 @@ main>section{ padding:3rem 0 2rem 0; }
 
 .welcome-text{font-size:0.9em;}
 
-.blog-flex{justify-content: space-between;}
+.blog-flex,.course-flex{justify-content: space-between;}
 
 .course-instructor-avatar{ width: 8em; height: 8em; }
 
@@ -1808,6 +2020,16 @@ main>section{ padding:3rem 0 2rem 0; }
 
 .course-aside-button{ font-size:1em ;}
 
+.course-flex__item{margin-right: 0;}
+
+.event-details-list{
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.blog-aside__button{font-size: 1em;}
+.blog-details-list{ font-size: 1.3em; }
+.blog-quote{font-size: 1em;}
 }
 
 /*** Tablet ***/
@@ -1817,16 +2039,6 @@ main>section{ padding:3rem 0 2rem 0; }
 
 .career-half-flex__item-heading{font-size: 1.2em;}
 
-
+.event-details-list{ font-size: 1.2em; }
 }
 
-/*** Phone ***/
-@media (max-width: 575px) { 
-
-.career-button{font-size:0.6em}
-
-.instructor-name{font-size: 1em;}
-
-
-
-}
