@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -10,7 +10,8 @@
 
     <title>EduPlus - About Us</title>
 
-    <script type="text/javascript" src="js/scroll.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/students.js"></script>
 
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/page.css">
@@ -350,23 +351,56 @@
 
                 <div class="students-flex padding-bottom">
                     <div class="students-flex__item">
+
+                        <!-- Student message 1 -->
+                        <article class="students-message relative-position students-message--active">
+                            <p class="student-message__main-text">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id
+                                tortor.
+                                Suspendisse sagittis ultrices augue.
+                            <p class="student-message__secondary-text">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id
+                                tortor.
+                                Suspendisse sagittis ultrices augue.
+                            </p>
+                            <img src="images/05.jpg" class="student-message__avatar" alt="founder img">
+                            <h2 class="student-message__name">Sousa Fernandes</h2>
+                            <h3 class="student-message__occupation">CEO &amp; Founder</h3>
+
+                            <div class="student-message__button-group">
+                                <button class="student-message__button navy" onclick="showPreviousStudentMessage()">
+                                    <i class="fas fa-arrow-left"></i>
+                                </button>
+                                <button class="student-message__button navy" onclick="showNextStudentMessage()">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+
+                            <div class="student-message__quote">
+                                <i class="fas fa-quote-left orange student-message__quote"></i>
+                            </div>
+                        </article>
+
+                        <!-- Student message 2 -->
                         <article class="students-message relative-position">
                             <p class="student-message__main-text">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id
-                                tortor.
-                                Suspendisse sagittis ultrices augue.
+                                Vestibulum fermentum tortor id mi. Cras elementum. In laoreet, magna id viverra
+                                tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.
                             <p class="student-message__secondary-text">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id
-                                tortor.
-                                Suspendisse sagittis ultrices augue.
+                                Aenean id metus id velit ullamcorper pulvinar.
+                                Phasellus faucibus molestie nisl. Aliquam ante. Aenean fermentum risus id tortor.
                             </p>
-                            <img src="images/05.jpg" class="student-message__avatar" alt="founder img">
-                            <h2 class="student-message__name">Sousa Fernandes</h2>
-                            <h3 class="student-message__occupation">CEO &amp; Founder</h3>
+                            <img src="images/somalia.png" class="student-message__avatar" alt="founder img">
+                            <h2 class="student-message__name">Somalia D Silva</h2>
+                            <h3 class="student-message__occupation">CFO</h3>
 
                             <div class="student-message__button-group">
-                                <a class="student-message__button lightblue-bg"><i class="fas fa-arrow-left"></i></a>
-                                <a class="student-message__button orange-bg"><i class="fas fa-arrow-right"></i></a>
+                                <button class="student-message__button navy" onclick="showPreviousStudentMessage()">
+                                    <i class="fas fa-arrow-left"></i>
+                                </button>
+                                <button class="student-message__button navy" onclick="showNextStudentMessage()">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
                             </div>
 
                             <div class="student-message__quote">
@@ -374,30 +408,33 @@
                             </div>
                         </article>
 
-                        <!-- article na vymenu? -->
-                        <article style="display: none;" class="students-message relative-position">
+                        <!-- Student message 3 -->
+                        <article class="students-message relative-position">
                             <p class="student-message__main-text">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id
-                                tortor.
-                                Suspendisse sagittis ultrices augue.
+                                Donec iaculis gravida nulla. Etiam posuere lacus quis dolor. In dapibus augue non
+                                sapien. Fusce tellus. In sem justo, commodo ut, suscipit at.
                             <p class="student-message__secondary-text">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id
-                                tortor.
-                                Suspendisse sagittis ultrices augue.
+                                Integer pellentesque quam vel velit. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                             </p>
-                            <img src="images/05.jpg" class="student-message__avatar" alt="founder img">
-                            <h2 class="student-message__name">Sousa Fernandes</h2>
-                            <h3 class="student-message__occupation">CEO &amp; Founder</h3>
+                            <img src="images/student1.png" class="student-message__avatar" alt="founder img">
+                            <h2 class="student-message__name">Shaine Watson</h2>
+                            <h3 class="student-message__occupation">CRO</h3>
 
                             <div class="student-message__button-group">
-                                <a class="student-message__button lightblue-bg"><i class="fas fa-arrow-left"></i></a>
-                                <a class="student-message__button orange-bg"><i class="fas fa-arrow-right"></i></a>
+                                <button class="student-message__button navy" onclick="showPreviousStudentMessage()">
+                                    <i class="fas fa-arrow-left"></i>
+                                </button>
+                                <button class="student-message__button navy" onclick="showNextStudentMessage()">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
                             </div>
 
                             <div class="student-message__quote">
                                 <i class="fas fa-quote-left orange student-message__quote"></i>
                             </div>
                         </article>
+                        
                     </div>
 
 

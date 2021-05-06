@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -10,7 +10,8 @@
 
     <title>EduPlus - Blog</title>
 
-    <script type="text/javascript" src="js/scroll.js"></script>
+    <script src="js/scroll.js"></script>
+    <script defer src="js/lightbox.js"></script>
 
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/page.css">
@@ -82,9 +83,10 @@
 
         <!-- Banner -->
         <section class="grid__info banner">
-            <h1 class="banner__main-heading">Blog grid</h1>
+            <h1 class="banner__main-heading">Blog Grid</h1>
             <h2 class="banner__secondary-heading">Home &gt; Blog Grid</h2>
         </section>
+
         <div class="grid__content lightblue-bg">
             <div class="main-aside-flex margin-bottom padding-top">
                 <!-- Main blog grid content -->
@@ -96,7 +98,7 @@
                         <div class="blog-summary">
                             <div class="blog-summary__type white bold orange-bg">DESIGN</div>
 
-                            <h2>Inspire Desing Desicion With Ott Storch When Idea How To Space And Kern Punctuation</h2>
+                            <h2 class="navy">Inspire Desing Desicion With Ott Storch When Idea How To Space And Kern Punctuation</h2>
 
                             <dl class="blog-details-list">
                                 <dt><i class="far fa-user-circle"></i></dt>
@@ -104,7 +106,7 @@
 
                                 <dt><i class="far fa-calendar-alt"></i></dt>
                                 <dd>
-                                    <date datetime="2020-11-25">25 Nov 2020</date>
+                                    25 Nov 2020
                                 </dd>
 
                                 <dt><i class="far fa-comments"></i></dt>
@@ -134,7 +136,7 @@
                         <div class="blog-summary">
                             <div class="blog-summary__type white bold orange-bg">DESIGN</div>
 
-                            <h2>Inspire Desing Desicion With Ott Storch When Idea How To Space And Kern Punctuation</h2>
+                            <h2 class="navy">Inspire Desing Desicion With Ott Storch When Idea How To Space And Kern Punctuation</h2>
 
                             <dl class="blog-details-list">
                                 <dt><i class="far fa-user-circle"></i></dt>
@@ -142,7 +144,7 @@
 
                                 <dt><i class="far fa-calendar-alt"></i></dt>
                                 <dd>
-                                    <date datetime="2020-11-25">25 Nov 2020</date>
+                                    25 Nov 2020
                                 </dd>
 
                                 <dt><i class="far fa-comments"></i></dt>
@@ -173,7 +175,7 @@
                         <div class="blog-summary">
                             <div class="blog-summary__type white bold orange-bg">DESIGN</div>
 
-                            <h2>Inspire Desing Desicion With Ott Storch When Idea How To Space And Kern Punctuation</h2>
+                            <h2 class="navy">Inspire Desing Desicion With Ott Storch When Idea How To Space And Kern Punctuation</h2>
 
                             <dl class="blog-details-list">
                                 <dt><i class="far fa-user-circle"></i></dt>
@@ -181,7 +183,7 @@
 
                                 <dt><i class="far fa-calendar-alt"></i></dt>
                                 <dd>
-                                    <date datetime="2020-11-25">25 Nov 2020</date>
+                                    25 Nov 2020
                                 </dd>
 
                                 <dt><i class="far fa-comments"></i></dt>
@@ -218,7 +220,7 @@
                         <div class="blog-summary">
                             <div class="blog-summary__type white bold orange-bg">DESIGN</div>
 
-                            <h2>Inspire Desing Desicion With Ott Storch When Idea How To Space And Kern Punctuation</h2>
+                            <h2 class="navy">Inspire Desing Desicion With Ott Storch When Idea How To Space And Kern Punctuation</h2>
 
                             <dl class="blog-details-list">
                                 <dt><i class="far fa-user-circle"></i></dt>
@@ -226,7 +228,7 @@
 
                                 <dt><i class="far fa-calendar-alt"></i></dt>
                                 <dd>
-                                    <date datetime="2020-11-25">25 Nov 2020</date>
+                                    25 Nov 2020
                                 </dd>
 
                                 <dt><i class="far fa-comments"></i></dt>
@@ -350,50 +352,44 @@
                         <div class="flex wrap space-between">
 
                             <div class="blog-aside__gallery-item relative-position">
-                                <img src="images/01.jpg" alt="gallery1 img">
-                                <div class="align-text-center absolute-position gallery-item__overlay">
-                                    <a href="blog.html"><i
-                                            class="fab fa-instagram white gallery-item__overlay-icon"></i></a>
+                                <img src="images/01.png" alt="gallery1 img" class="gallery-item__img">
+                                <div class="align-text-center absolute-position gallery-item__overlay">     
+                                        <i class="fab fa-instagram white gallery-item__overlay-icon"></i>
                                 </div>
                             </div>
 
                             <div class="blog-aside__gallery-item relative-position">
-                                <img src="images/blog_gallery2.png" alt="gallery1 img">
+                                <img src="images/blog_gallery2.png" alt="gallery1 img" class="gallery-item__img">
                                 <div class="align-text-center absolute-position gallery-item__overlay">
-                                    <a href="blog.html"><i
-                                            class="fab fa-instagram white gallery-item__overlay-icon"></i></a>
+                                    <i class="fab fa-instagram white gallery-item__overlay-icon"></i>
                                 </div>
                             </div>
 
                             <div class="blog-aside__gallery-item relative-position">
-                                <img src="images/02.jpg" alt="gallery1 img">
+                                <img src="images/02.jpg" alt="gallery1 img" class="gallery-item__img">
                                 <div class="align-text-center absolute-position gallery-item__overlay">
-                                    <a href="blog.html"><i
-                                            class="fab fa-instagram white gallery-item__overlay-icon"></i></a>
+                                    <i class="fab fa-instagram white gallery-item__overlay-icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="blog-aside__gallery-item relative-position" >
+                                <img src="images/blog_gallery4.png" alt="gallery1 img" class="gallery-item__img">
+                                <div class="align-text-center absolute-position gallery-item__overlay">     
+                                    <i class="fab fa-instagram white gallery-item__overlay-icon"></i>
                                 </div>
                             </div>
 
                             <div class="blog-aside__gallery-item relative-position">
-                                <img src="images/blog_gallery4.png" alt="gallery1 img">
+                                <img src="images/blog_gallery5.png" alt="gallery1 img" class="gallery-item__img">
                                 <div class="align-text-center absolute-position gallery-item__overlay">
-                                    <a href="blog.html"><i
-                                            class="fab fa-instagram white gallery-item__overlay-icon"></i></a>
+                                    <i class="fab fa-instagram white gallery-item__overlay-icon"></i>
                                 </div>
                             </div>
 
                             <div class="blog-aside__gallery-item relative-position">
-                                <img src="images/blog_gallery5.png" alt="gallery1 img">
+                                <img src="images/blog_gallery6.png" alt="gallery1 img" class="gallery-item__img">
                                 <div class="align-text-center absolute-position gallery-item__overlay">
-                                    <a href="blog.html"><i
-                                            class="fab fa-instagram white gallery-item__overlay-icon"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="blog-aside__gallery-item relative-position">
-                                <img src="images/blog_gallery6.png" alt="gallery1 img">
-                                <div class="align-text-center absolute-position gallery-item__overlay">
-                                    <a href="blog.html"><i
-                                            class="fab fa-instagram white gallery-item__overlay-icon"></i></a>
+                                    <i class="fab fa-instagram white gallery-item__overlay-icon"></i>
                                 </div>
                             </div>
 

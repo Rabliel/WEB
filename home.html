@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -10,7 +10,8 @@
 
     <title>EduPlus - Home</title>
 
-    <script type="text/javascript" src="js/scroll.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/students.js"></script>
 
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/page.css">
@@ -40,9 +41,10 @@
                     <li class="menu__item"><a href="courses.html">Courses <i
                                 class="fas fa-angle-down menu__item-caret"></i></a>
                         <ul class="submenu">
-                            <li class="submenu__item"><a href="courses.html">Course</a></li>
-                            <li class="submenu__item"><a href="courses.html">Course List</a></li>
+                            <li class="submenu__item"><a href="courses.html">Courses</a></li>
+                            
                             <li class="submenu__item"><a href="course.html">Course Details</a></li>
+                            <li class="submenu__item"><a href="instructor_details.html">Instructor Details</a></li>
                         </ul>
                     </li>
                     <li class="menu__item"><a href="event_detail.html">Events <i
@@ -115,48 +117,48 @@
                 <div class="stats-flex__item relative-position">
                     <i class="fas fa-users stats-flex__item-icon absolute-position"></i>
                     <div class="stats-flex__item-container">
-                    <span class="stats-flex__item-count">
-                        3045+
-                    </span><br>
-                    <span class="stats-flex__item-text hind">
-                        Satisfied Students
-                    </span>
-                </div>
+                        <span class="stats-flex__item-count">
+                            3045+
+                        </span><br>
+                        <span class="stats-flex__item-text hind">
+                            Satisfied Students
+                        </span>
+                    </div>
                 </div>
 
                 <div class="stats-flex__item relative-position">
                     <i class="fas fa-book stats-flex__item-icon absolute-position"></i>
                     <div class="stats-flex__item-container">
-                    <span class=" stats-flex__item-count">
-                        7852+
-                    </span><br>
-                    <span class="stats-flex__item-text hind">
-                        Available Courses
-                    </span>
-                </div>
+                        <span class=" stats-flex__item-count">
+                            7852+
+                        </span><br>
+                        <span class="stats-flex__item-text hind">
+                            Available Courses
+                        </span>
+                    </div>
                 </div>
 
                 <div class="stats-flex__item relative-position">
                     <i class="fas fa-graduation-cap stats-flex__item-icon absolute-position"></i>
                     <div class="stats-flex__item-container">
-                    <span class=" stats-flex__item-count">
-                        9862+
-                    </span><br>
-                    <span class="stats-flex__item-text hind">
-                        Graduate Students
-                    </span>
-                </div>
+                        <span class=" stats-flex__item-count">
+                            9862+
+                        </span><br>
+                        <span class="stats-flex__item-text hind">
+                            Graduate Students
+                        </span>
+                    </div>
                 </div>
 
                 <div class="stats-flex__item relative-position">
-                    <i class="fas fa-laptop-code stats-flex__item-icon absolute-position"></i>                   
+                    <i class="fas fa-laptop-code stats-flex__item-icon absolute-position"></i>
                     <div class="stats-flex__item-container">
-                    <span class=" stats-flex__item-count">
-                        8963+
-                    </span><br>
-                    <span class="stats-flex__item-text hind">
-                        Active Students
-                    </span>
+                        <span class=" stats-flex__item-count">
+                            8963+
+                        </span><br>
+                        <span class="stats-flex__item-text hind">
+                            Active Students
+                        </span>
                     </div>
                 </div>
 
@@ -407,7 +409,7 @@
 
 
                 <div class="align-text-center">
-                    <a class="view-courses-button" href="home.html">VIEW ALL COURSES <i
+                    <a class="view-courses-button" href="courses.html">VIEW ALL COURSES <i
                             class="fas fa-long-arrow-alt-right"></i></a>
                 </div>
             </section>
@@ -568,7 +570,7 @@
                             </ul>
                         </div>
                         <h2 class="instructor-name">Shaine Watson</h2>
-                        <h3 class="instructor-focus">Math Teachers</h3>
+                        <h3 class="instructor-focus">Math Teacher</h3>
                         <div class="line"></div>
                         <dl class="def-list">
                             <dt><i class="fas fa-book"></i></dt>
@@ -657,23 +659,56 @@
 
                 <div class="students-flex padding-bottom">
                     <div class="students-flex__item">
+
+                        <!-- Student message 1 -->
+                        <article class="students-message relative-position students-message--active">
+                            <p class="student-message__main-text">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id
+                                tortor.
+                                Suspendisse sagittis ultrices augue.
+                            <p class="student-message__secondary-text">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id
+                                tortor.
+                                Suspendisse sagittis ultrices augue.
+                            </p>
+                            <img src="images/05.jpg" class="student-message__avatar" alt="founder img">
+                            <h2 class="student-message__name">Sousa Fernandes</h2>
+                            <h3 class="student-message__occupation">CEO &amp; Founder</h3>
+
+                            <div class="student-message__button-group">
+                                <button class="student-message__button navy" onclick="showPreviousStudentMessage()">
+                                    <i class="fas fa-arrow-left"></i>
+                                </button>
+                                <button class="student-message__button navy" onclick="showNextStudentMessage()">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+
+                            <div class="student-message__quote">
+                                <i class="fas fa-quote-left orange student-message__quote"></i>
+                            </div>
+                        </article>
+
+                        <!-- Student message 2 -->
                         <article class="students-message relative-position">
                             <p class="student-message__main-text">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id
-                                tortor.
-                                Suspendisse sagittis ultrices augue.
+                                Vestibulum fermentum tortor id mi. Cras elementum. In laoreet, magna id viverra
+                                tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.
                             <p class="student-message__secondary-text">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id
-                                tortor.
-                                Suspendisse sagittis ultrices augue.
+                                Aenean id metus id velit ullamcorper pulvinar.
+                                Phasellus faucibus molestie nisl. Aliquam ante. Aenean fermentum risus id tortor.
                             </p>
-                            <img src="images/05.jpg" class="student-message__avatar" alt="founder img">
-                            <h2 class="student-message__name">Sousa Fernandes</h2>
-                            <h3 class="student-message__occupation">CEO &amp; Founder</h3>
+                            <img src="images/somalia.png" class="student-message__avatar" alt="founder img">
+                            <h2 class="student-message__name">Somalia D Silva</h2>
+                            <h3 class="student-message__occupation">CFO</h3>
 
                             <div class="student-message__button-group">
-                                <button type="button" class="student-message__button lightblue-bg"><i class="fas fa-arrow-left"></i></button>
-                                <button class="student-message__button orange-bg"><i class="fas fa-arrow-right"></i></button>
+                                <button class="student-message__button navy" onclick="showPreviousStudentMessage()">
+                                    <i class="fas fa-arrow-left"></i>
+                                </button>
+                                <button class="student-message__button navy" onclick="showNextStudentMessage()">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
                             </div>
 
                             <div class="student-message__quote">
@@ -681,30 +716,33 @@
                             </div>
                         </article>
 
-                        <!-- article na vymenu? -->
-                        <article style="display: none;" class="students-message relative-position">
+                        <!-- Student message 3 -->
+                        <article class="students-message relative-position">
                             <p class="student-message__main-text">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id
-                                tortor.
-                                Suspendisse sagittis ultrices augue.
+                                Donec iaculis gravida nulla. Etiam posuere lacus quis dolor. In dapibus augue non
+                                sapien. Fusce tellus. In sem justo, commodo ut, suscipit at.
                             <p class="student-message__secondary-text">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id
-                                tortor.
-                                Suspendisse sagittis ultrices augue.
+                                Integer pellentesque quam vel velit. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                             </p>
-                            <img src="images/05.jpg" class="student-message__avatar" alt="founder img">
-                            <h2 class="student-message__name">Sousa Fernandes</h2>
-                            <h3 class="student-message__occupation">CEO &amp; Founder</h3>
+                            <img src="images/student1.png" class="student-message__avatar" alt="founder img">
+                            <h2 class="student-message__name">Shaine Watson</h2>
+                            <h3 class="student-message__occupation">CRO</h3>
 
                             <div class="student-message__button-group">
-                                <button type="button" class="student-message__button lightblue-bg"><i class="fas fa-arrow-left"></i></button>
-                                <button class="student-message__button orange-bg"><i class="fas fa-arrow-right"></i></button>
+                                <button class="student-message__button navy" onclick="showPreviousStudentMessage()">
+                                    <i class="fas fa-arrow-left"></i>
+                                </button>
+                                <button class="student-message__button navy" onclick="showNextStudentMessage()">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
                             </div>
 
                             <div class="student-message__quote">
                                 <i class="fas fa-quote-left orange student-message__quote"></i>
                             </div>
                         </article>
+                        
                     </div>
 
 
@@ -734,7 +772,8 @@
             <section class="lightblue-bg">
                 <div class="career-flex relative-position">
                     <div class="career-flex__item">
-                        <img src="images/01.png" alt="back image" class="career-flex__item-back-img relative-position"/>
+                        <img src="images/01.png" alt="back image"
+                            class="career-flex__item-back-img relative-position" />
                         <img src="images/studentoverlay.png" class="career-flex__item-front-img" alt="front image" />
                     </div>
                     <div class="career-flex__item">
@@ -893,7 +932,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h2  class="footer__heading">Company</h2>
+                    <h2 class="footer__heading">Company</h2>
                     <ul class="footer__nav">
                         <li><a href="home.html">About Eduket</a></li>
                         <li><a href="home.html">Meet Advisors</a></li>
@@ -905,21 +944,22 @@
                 <!-- šipka na scrollnutí -->
 
                 <div class="footer-flex__newsletter-item">
-                <!-- newsletter + formular na mail -->
-                <h2  class="footer__heading">Newsletters</h2>
-                <p class="newsletter__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <!-- newsletter + formular na mail -->
+                    <h2 class="footer__heading">Newsletters</h2>
+                    <p class="newsletter__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
 
-                <form class="footer-form" method="POST">
-                    <input class="footer-form__input" type="email" placeholder="Enter Your Email">
-                    <button class="footer-form__btn orange-bg white" type="submit">&rarr;</button>
-                </form>
+                    <form class="footer-form" method="POST">
+                        <input class="footer-form__input" type="email" placeholder="Enter Your Email">
+                        <button class="footer-form__btn orange-bg white" type="submit">&rarr;</button>
+                    </form>
+                </div>
+
             </div>
-
-            </div>          
 
             <button class="scroll-to-top-button" onclick="scrollToTop()"><i class="fas fa-chevron-up"></i></button>
 
-            <p class="footer__copyright absolute-position footer-gray">Copyright &copy; 2020 <span class="white">EduPlus</span> All Rights Reserved.</p>
+            <p class="footer__copyright absolute-position footer-gray">Copyright &copy; 2020 <span
+                    class="white">EduPlus</span> All Rights Reserved.</p>
         </footer>
     </div>
 </body>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="description"
@@ -8,122 +9,635 @@
     <meta name="author" content="Daniel Rábel">
 
     <title>EduPlus - FAQ</title>
+
+    <script src="js/scroll.js"></script>
+    <script defer src="js/lightbox.js"></script>
+
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind&family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
-    <!-- Header -->
-    
-    <!-- Banner -->
-    <section>
-        <h1>About Us</h1>
-        <h2>Home &gt; About Us</h2>
-    </section>
+    <div class="grid">
+        <!-- hlavička -->
+        <header class="header grid__header">
+            <!-- logo -->
+            <img src="images/Logo.png" class="header__item" width="140" height="50" alt="logo image" id="logo" />
+            <!-- seznam s navigací -->
+            <nav class="header__item">
+                <ul class="menu">
+                    <li class="menu__item"><a href="home.html">Home <i
+                                class="fas fa-angle-down menu__item-caret"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="about_us.html">About Us</a></li>
+                            <li class="submenu__item"><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="courses.html">Courses <i
+                                class="fas fa-angle-down menu__item-caret"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="courses.html">Course</a></li>
+                            <li class="submenu__item"><a href="courses.html">Course List</a></li>
+                            <li class="submenu__item"><a href="course.html">Course Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="event_detail.html">Events <i
+                                class="fas fa-angle-down menu__item-caret"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="home.html">Event</a></li>
+                            <li class="submenu__item"><a href="home.html">Event List</a></li>
+                            <li class="submenu__item"><a href="event_detail.html">Event Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="home.html">Pages <i
+                                class="fas fa-angle-down menu__item-caret"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="home.html">Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="blog.html">Blog <i
+                                class="fas fa-angle-down menu__item-caret"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="blog.html">Blog</a></li>
+                            <li class="submenu__item"><a href="blog_detail.html">Blog Details</a></li>
+                            <li class="submenu__item"><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="contact_us.html">Contact</a></li>
 
-    <main>
-        <!-- aside z blogu -->
-
-        <article>
-            <img src="images/Bar.png" alt="students">
-            
-            <div>DESIGN</div>
-
-            <h2>Inspire Design Decision With Ott Storch When Idea How To Space And Kern Punctuation</h2>
-
-            <dl>
-                <dt><i class="far fa-user-circle"></i></dt>
-                <dd>By Somalia Doe</dd>
-
-                <dt><i class="far fa-calendar-alt"></i></dt>
-                <dd><date datetime="2020-11-25">25 Nov 2020</date></dd>
-
-                <dt><i class="far fa-comments"></i></dt>
-                <dd>Comments(05)</dd>
-
-                <dt><i class="far fa-heart"></i></dt>
-                <dd>Like(1K)</dd>
-            </dl>
-
-            <p>In convallis. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Pellentesque ipsum. Donec quis nibh at felis congue commodo. Nulla non lectus sed nisl molestie malesuada. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Duis risus. Aenean placerat. Maecenas aliquet accumsan leo. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Maecenas aliquet accumsan leo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nullam eget nisl. Etiam dictum tincidunt diam. In enim a arcu imperdiet malesuada. Praesent in mauris eu tortor porttitor accumsan. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Pellentesque pretium lectus id turpis. Cras elementum. In dapibus augue non sapien.</p>
-
-            <section>
-                <h2>Why Needs Education</h2>
-                <p>In convallis. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Pellentesque ipsum. Donec quis nibh at felis congue commodo. Nulla non lectus sed nisl molestie malesuada. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Duis risus. Aenean placerat. Maecenas aliquet accumsan leo. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Maecenas aliquet accumsan leo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nullam eget nisl. Etiam dictum tincidunt diam. In enim a arcu imperdiet malesuada. Praesent in mauris eu tortor porttitor accumsan. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Pellentesque pretium lectus id turpis. Cras elementum. In dapibus augue non sapien.</p>
-                <img src="images/Bar.png" alt="people">
-                <ul>
-                    <li><i class="far fa-check-circle"></i>Inspired Design Desicions With Neville Brody: Design Cannot Remain Neutral</li>
-                    <li><i class="far fa-check-circle"></i>Avoid Keyboard Event-Related Bugs In Browser-Based Transliteration</li>
-                    <li><i class="far fa-check-circle"></i>Embrace The Possibilities (March 2020 Wallpapers)</li>
                 </ul>
-            </section>
+            </nav>
 
-            <section>
-                <h2>Best Articles For Web Design</h2>
-                <p>In convallis. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Pellentesque ipsum. Donec quis nibh at felis congue commodo. Nulla non lectus sed nisl molestie malesuada. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Duis risus. Aenean placerat. Maecenas aliquet accumsan leo. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Maecenas aliquet accumsan leo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nullam eget nisl. Etiam dictum tincidunt diam. In enim a arcu imperdiet malesuada. Praesent in mauris eu tortor porttitor accumsan. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Pellentesque pretium lectus id turpis. Cras elementum. In dapibus augue non sapien.</p>
-            </section>
-
-            <article>
-                <h2>How To Build An Accesible Front-End Application With Chakra UI And Nuxt.js</h2>
-                <h3><i class="fas fa-quote-left"></i>Norman S. Roberts</h3>
-            </article>
-
-            <section>
-                <img src="images/Bar.png" alt="author">
-                <h2>Eugene A. Pearson</h2>
-                <p>But must explain to you how all this mistake idea deounci asure and praising pain was born and will give you comete account the system, and expound the actual teach.</p>
-                <ul>
-                    <li><a href="blog_detail.html"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="blog_detail.html"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="blog_detail.html"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="blog_detail.html"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </section>
-
-            <section>
-                <article>
-                    <img src="images/Bar.png" alt="news img">
-                    <h2>Mixing Tangible &amp; Intan Interfaces Using</h2>
-                    <dl>
-                        <dt><i class="far fa-user"></i></dt>
-                        <dd>Soamlia</dd>
-
-                        <dt><i class="far fa-user"></i></dt>
-                        <dd><date datetime="2020-08-05">05 Aug 2020</date></dd>
-                    </dl>
-                </article>
-                <article>
-                    <img src="images/Bar.png" alt="news img">
-                    <h2>Mixing Tangible &amp; Intan Interfaces Using</h2>
-                    <dl>
-                        <dt><i class="far fa-user"></i></dt>
-                        <dd>Soamlia</dd>
-
-                        <dt><i class="far fa-user"></i></dt>
-                        <dd><date datetime="2020-08-05">05 Aug 2020</date></dd>
-                    </dl>
-                </article>
-            </section>
-
-            <section>
-                <h2>People's Comments</h2>
-            </section>
-
-            <section>
-                <form method="POST" action="neco.js">
-                    <input type="text" placeholder="Full Name Here">
-                    <input type="email" placeholder="Email Here">                
-                    <input type="text" placeholder="Comments">
-                    <button type="submit">SEND COMMENTS &rarr;</button>
-                </form>
-            </section>
-
-        </article>
+            <!-- pravé tlačítka -->
+            <ul class="profile-buttons header__item">
+                <li><a href="home.html" class="orange-bg"><i class="fab fa-facebook white"></i></a></li>
+                <li><a href="home.html" class="white-bg"><i class="fab fa-youtube red"></i></a></li>
+                <li><a href="home.html" class="white-bg"><i class="far fa-user-circle orange"></i> SIGN IN</a></li>
+                <li><img src="images/Bar.png" alt="menu bar" height="24" width="24"></li>
+            </ul>
+        </header>
 
 
-    </main>
+        <!-- Banner -->
+        <section class="grid__info banner">
+            <h1 class="banner__main-heading">Blog Details</h1>
+            <h2 class="banner__secondary-heading">Home &gt; Blog Details</h2>
+        </section>
 
 
-    <!-- Sponsors -->
-    <!-- Footer -->
+
+        <div class="grid__content lightblue-bg">
+            <div class="main-aside-flex margin-bottom padding-top">
+
+
+                <main class="main-aside-flex__main-item">
+
+                    <article class="white-bg margin-bottom">
+                        <img src="images/blog2.png" alt="students blog img" class="full-width-img">
+                        <div class="blog-summary">
+                            <!-- Summary section -->
+                            <section>
+                                <div class="blog-summary__type white bold orange-bg">DESIGN</div>
+                                <h2 class="navy">Inspire Design Decision With Ott Storch When Idea How To Space And Kern
+                                    Punctuation</h2>
+
+                                <dl class="blog-details-list">
+                                    <dt><i class="far fa-user-circle"></i></dt>
+                                    <dd>By Somalia Doe</dd>
+
+                                    <dt><i class="far fa-calendar-alt"></i></dt>
+                                    <dd>
+                                        <date datetime="2020-11-25">25 Nov 2020</date>
+                                    </dd>
+
+                                    <dt><i class="far fa-comments"></i></dt>
+                                    <dd>Comments(05)</dd>
+
+                                    <dt><i class="far fa-heart"></i></dt>
+                                    <dd>Like(1K)</dd>
+                                </dl>
+
+                                <p class="gray hind">
+                                    In convallis. Temporibus autem quibusdam et aut officiis debitis aut
+                                    rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
+                                    non
+                                    recusandae. Pellentesque ipsum. Donec quis nibh at felis congue commodo. Nulla non
+                                    lectus sed nisl molestie malesuada. Sed ut perspiciatis unde omnis iste natus error
+                                    sit
+                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                                    illo
+                                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Duis
+                                    risus.
+                                    Aenean placerat. Maecenas aliquet accumsan leo. Etiam sapien elit, consequat eget,
+                                    tristique non, venenatis quis, ante. Maecenas aliquet accumsan leo. Excepteur sint
+                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    est
+                                    laborum. Nullam eget nisl.
+                                </p>
+                            </section>
+
+                            <!-- Why Needs Education section -->
+                            <section>
+                                <h2 class="navy">Why Needs Education</h2>
+                                <p class="gray hind">
+                                    In convallis. Temporibus autem quibusdam et aut officiis debitis
+                                    aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et
+                                    molestiae non recusandae. Pellentesque ipsum. Donec quis nibh at felis congue
+                                    commodo. Nulla non lectus sed nisl molestie malesuada. Sed ut perspiciatis unde
+                                    omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                                    vitae dicta sunt explicabo.
+                                </p>
+                                <img src="images/blog_details1.png" alt="blog details people" class="full-width-img">
+                                <ul class="no-list-style no-padding gray hind blog-details-check-list">
+                                    <li><i class="far fa-check-circle orange"></i> Inspired Design Desicions With
+                                        Neville Brody: Design Cannot Remain Neutral</li>
+                                    <li><i class="far fa-check-circle orange"></i> Avoid Keyboard Event-Related Bugs In
+                                        Browser-Based Transliteration</li>
+                                    <li><i class="far fa-check-circle orange"></i> Embrace The Possibilities (March 2020
+                                        Wallpapers)</li>
+                                </ul>
+                            </section>
+
+                            <!-- Best Articles section -->
+                            <section>
+                                <h2 class="navy">Best Articles For Web Design</h2>
+                                <p class="gray hind">
+                                    In convallis. Temporibus autem quibusdam et aut officiis debitis
+                                    aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et
+                                    molestiae non recusandae. Pellentesque ipsum. Donec quis nibh at felis congue
+                                    commodo. Nulla non lectus sed nisl molestie malesuada. Sed ut perspiciatis unde
+                                    omnis iste natus error.
+                                </p>
+                            </section>
+
+                            <!-- Random blog quote -->
+                            <article class="blog-quote special-blue-bg white bold">
+                                <h2>How To Build An Accesible Front-End Application With Chakra UI And Nuxt.js</h2>
+                                <h3><i class="fas fa-quote-left"></i> Norman S. Roberts</h3>
+                            </article>
+
+                            <!-- Tags & Social media links -->
+                            <div class="flex space-between tags-and-social">
+                                <div class="gray">
+                                    <span class="navy bold">Tags: </span>
+                                    Business Cart, Design &amp; Branding
+                                </div>
+                                <div>
+                                    <span class="bold navy">Share: </span>
+                                    <ul class="no-list-style blog__social-list no-margin" style="margin-left: 1em;">
+                                        <li>
+                                            <a href="blog_detail.html" class="gray">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog_detail.html" class="gray">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog_detail.html" class="gray">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog_detail.html" class="gray">
+                                                <i class="fab fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <!-- Blog article author -->
+                            <section class="lightblue-bg blog-author flex space-between">
+
+                                <div class="blog-author__img">
+                                    <img src="images/somalia.png" alt="author avatar img" class="blog-author__avatar">
+                                </div>
+
+                                <div class="blog-author__text">
+                                    <h2 class="navy bold">Eugene A. Pearson</h2>
+                                    <p class="gray hind blog-author__quote">
+                                        But must explain to you how all this mistake
+                                        idea deounci asure and praising pain was born and will give you comete account
+                                        the system, and expound the actual teach.
+                                    </p>
+                                    <ul class="no-list-style blog__social-list">
+                                        <li>
+                                            <a href="blog_detail.html" class="gray">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog_detail.html" class="gray">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog_detail.html" class="gray">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog_detail.html" class="gray">
+                                                <i class="fab fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                            <!-- BLog news articles -->
+                            <hr>
+                            <section class="flex space-between" style="margin:1em 0;">
+                                <article class="blog-news-article flex space-between">
+                                    <div class="blog-news-article__img">
+                                        <img src="images/blog_details_news1.png" alt="blog news img 1"
+                                            class="full-width-img">
+                                    </div>
+                                    <div class="blog-news-article__text">
+                                        <h2>Mixing Tangible &amp; Intan Interfaces Using</h2>
+                                        <dl class="blog-details-list no-margin">
+                                            <dt><i class="far fa-user"></i></dt>
+                                            <dd>Soamlia</dd>
+
+                                            <dt><i class="far fa-user"></i></dt>
+                                            <dd>
+                                                <date datetime="2020-08-05">05 Aug 2020</date>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </article>
+
+                                <article class="blog-news-article flex space-between">
+                                    <div class="blog-news-article__img">
+                                        <img src="images/blog_details_news2.png" alt="blog news img 2"
+                                            class="full-width-img">
+                                    </div>
+                                    <div class="blog-news-article__text">
+                                        <h2>Mixing Tangible &amp; Intan Interfaces Using</h2>
+                                        <dl class="blog-details-list no-margin">
+                                            <dt><i class="far fa-user"></i></dt>
+                                            <dd>Soamlia</dd>
+
+                                            <dt><i class="far fa-user"></i></dt>
+                                            <dd>
+                                                <date datetime="2020-08-05">05 Aug 2020</date>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </article>
+                            </section>
+                            <hr>
+
+                            <!-- People's comments -->
+                            <section>
+                                <h2 class="navy">People's Comments</h2>
+
+                                <article class="flex space-between relative-position comment">
+                                    <div class="comment-img">
+                                        <img src="images/somalia.png" alt="person comment avatar" class="comment-img__avatar">
+                                    </div>
+                                    <div class="comment-text">
+                                        <h2 class="navy">David Angel Makel</h2>
+                                        <h3 class="orange">IT Consultant</h3>
+                                        <p class="gray hind">
+                                            It is a long established fact that a reader will be sidtracted by the
+                                            readable content of page looking at it's layout. The point of using Lorem
+                                            Ipsum normal.
+                                        </p>
+                                    </div>
+                                    <a href="blog_detail.html" class="comment-link gray bold absolute-position no-decoration">
+                                        REPLY COMMENTS <i class="fas fa-long-arrow-alt-right"></i>
+                                    </a>
+                                </article>
+
+                                <article class="flex space-between relative-position comment-reply comment">
+                                    <div class="comment-img">
+                                        <img src="images/05.jpg" alt="person comment avatar" class="comment-img__avatar">
+                                    </div>
+                                    <div class="comment-text">
+                                        <h2 class="navy">Michel Rason Roy</h2>
+                                        <h3 class="orange">Product Designer</h3>
+                                        <p class="gray hind">
+                                            It is a long established fact that a reader will be sidtracted by the
+                                            readable content of page looking at it's layout. The point of using
+                                        </p>
+                                    </div>
+                                    <a href="blog_detail.html" class="comment-link gray bold absolute-position no-decoration">
+                                        REPLY COMMENTS <i class="fas fa-long-arrow-alt-right"></i>
+                                    </a>
+                                </article>
+
+                                <article class="flex space-between relative-position comment">
+                                    <div class="comment-img">
+                                        <img src="images/04.jpg" alt="person comment avatar" class="comment-img__avatar">
+                                    </div>
+                                    <div class="comment-text">
+                                        <h2 class="navy">David Angel Makel</h2>
+                                        <h3 class="orange">IT Consultant</h3>
+                                        <p class="gray hind">
+                                            It is a long established fact that a reader will be sidtracted by the
+                                            readable content of page looking at it's layout. The point of using
+                                        </p>
+                                    </div>
+                                    <a href="blog_detail.html" class="comment-link gray bold absolute-position no-decoration">
+                                        REPLY COMMENTS <i class="fas fa-long-arrow-alt-right"></i>
+                                    </a>
+                                </article>
+
+                            </section>
+                            <hr>
+
+                            <!-- Reply comments form -->
+                            <section>
+                                <h2 class="navy">Reply Comments</h2>
+                                <form method="POST">
+                                    <div class="flex space-between wrap">
+                                        <div class="relative-position blog-comment-input half-width-input">
+                                            <input type="text" placeholder="Full Name Here">
+                                            <i class="far fa-user absolute-position orange"></i>
+                                        </div>
+
+                                        <div class="relative-position blog-comment-input half-width-input">
+                                            <input type="email" placeholder="Email Here">
+                                            <i class="far fa-envelope absolute-position orange"></i>
+                                        </div>
+
+                                        <div class="relative-position blog-comment-input full-width-input">
+                                            <textarea placeholder="Comments" class="no-resize"></textarea>
+                                            <i class="fas fa-pencil-alt absolute-position orange"></i>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="orange-bg white bold blog-comment-button">SEND COMMENTS
+                                        <i class="fas fa-long-arrow-alt-right"></i></button>
+
+
+                                </form>
+                            </section>
+                        </div>
+                    </article>
+                </main>
+                <aside class="main-aside-flex__aside-item">
+
+                    <!-- Search -->
+                    <section class="white-bg blog-aside__search">
+                        <h2 class="navy bold blog-aside__search-heading">Search Here</h2>
+                        <div class="blog-aside__search-form flex">
+                            <form method="POST">
+                                <input type="text" placeholder="Keywords" class="no-border">
+                            </form>
+                            <div>
+                                <i class="fas fa-search bold orange"></i>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Buttons -->
+                    <section class="margin-top">
+                        <button class="blog-aside__button white-bg navy bold align-text-start">
+                            Web Design
+                        </button>
+
+                        <button class="blog-aside__button white-bg navy bold align-text-start">
+                            Computer Engineering
+                        </button>
+
+                        <button class="blog-aside__button white-bg navy bold align-text-start">
+                            Bussiness Studies
+                        </button>
+
+                        <button class="blog-aside__button white-bg navy bold align-text-start">
+                            Medical &amp; Health
+                        </button>
+
+                        <button class="blog-aside__button white-bg navy bold align-text-start">
+                            Web Development
+                        </button>
+
+                        <button class="blog-aside__button white-bg navy bold align-text-start">
+                            Learning English
+                        </button>
+                    </section>
+
+                    <!-- News -->
+                    <section class="white-bg blog-aside__news margin-top">
+                        <h2 class="navy bold blog-aside__news-heading">Recent News</h2>
+                        <article class="flex space-between blog-news">
+                            <div class="blog-news__img">
+                                <img src="images/blog_news1.png" alt="news img" class="full-width-img">
+                            </div>
+                            <div class="blog-news__text">
+                                <h2 class="navy bold blog-news__heading">Smaing Podcast Epis Ode 15 With Phile</h2>
+                                <h3 class="gray blog-news__author"><span class="orange">&gt;</span> By Silva Hola</h3>
+                            </div>
+                        </article>
+
+                        <hr>
+                        <article class="flex space-between blog-news">
+                            <div class="blog-news__img">
+                                <img src="images/blog_news2.png" alt="news img" class="full-width-img">
+                            </div>
+                            <div class="blog-news__text">
+                                <h2 class="navy bold blog-news__heading">Smaing Podcast Epis Ode 15 With Phile</h2>
+                                <h3 class="gray blog-news__author"><span class="orange">&gt;</span> By Silva Hola</h3>
+                            </div>
+                        </article>
+
+                        <hr>
+                        <article class="flex space-between blog-news">
+                            <div class="blog-news__img">
+                                <img src="images/blog_news3.png" alt="news img" class="full-width-img">
+                            </div>
+                            <div class="blog-news__text">
+                                <h2 class="navy bold blog-news__heading">Smaing Podcast Epis Ode 15 With Phile</h2>
+                                <h3 class="gray blog-news__author"><span class="orange">&gt;</span> By Silva Hola</h3>
+                            </div>
+                        </article>
+
+                        <hr>
+                        <article class="flex space-between blog-news">
+                            <div class="blog-news__img">
+                                <img src="images/blog_news4.png" alt="news img" class="full-width-img">
+                            </div>
+                            <div class="blog-news__text">
+                                <h2 class="navy bold blog-news__heading">Smaing Podcast Epis Ode 15 With Phile</h2>
+                                <h3 class="gray blog-news__author"><span class="orange">&gt;</span> By Silva Hola</h3>
+                            </div>
+                        </article>
+                    </section>
+
+                    <!-- Gallery -->
+                    <section class="white-bg blog-aside__gallery margin-top">
+                        <h2 class="navy bold blog-aside__gallery-heading">Photo Gallery</h2>
+
+                        <div class="flex wrap space-between">
+
+                            <div class="blog-aside__gallery-item relative-position">
+                                <img src="images/01.png" alt="gallery1 img" class="gallery-item__img">
+                                <div class="align-text-center absolute-position gallery-item__overlay">
+                                    <i class="fab fa-instagram white gallery-item__overlay-icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="blog-aside__gallery-item relative-position">
+                                <img src="images/blog_gallery2.png" alt="gallery1 img" class="gallery-item__img">
+                                <div class="align-text-center absolute-position gallery-item__overlay">
+                                    <i class="fab fa-instagram white gallery-item__overlay-icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="blog-aside__gallery-item relative-position">
+                                <img src="images/02.jpg" alt="gallery1 img" class="gallery-item__img">
+                                <div class="align-text-center absolute-position gallery-item__overlay">
+                                    <i class="fab fa-instagram white gallery-item__overlay-icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="blog-aside__gallery-item relative-position">
+                                <img src="images/blog_gallery4.png" alt="gallery1 img" class="gallery-item__img">
+                                <div class="align-text-center absolute-position gallery-item__overlay">
+                                    <i class="fab fa-instagram white gallery-item__overlay-icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="blog-aside__gallery-item relative-position">
+                                <img src="images/blog_gallery5.png" alt="gallery1 img" class="gallery-item__img">
+                                <div class="align-text-center absolute-position gallery-item__overlay">
+                                    <i class="fab fa-instagram white gallery-item__overlay-icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="blog-aside__gallery-item relative-position">
+                                <img src="images/blog_gallery6.png" alt="gallery1 img" class="gallery-item__img">
+                                <div class="align-text-center absolute-position gallery-item__overlay">
+                                    <i class="fab fa-instagram white gallery-item__overlay-icon"></i>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </section>
+
+                    <!-- Tags -->
+                    <section class="white-bg blog-aside__tags margin-top margin-bottom">
+                        <h2 class="bold navy blog-aside__tags-heading">Popular Tags</h2>
+
+                        <div class="flex wrap">
+                            <button class="blog-aside__tags-tag bold">
+                                Design
+                            </button>
+
+                            <button class="blog-aside__tags-tag bold">
+                                Portfolio
+                            </button>
+
+                            <button class="blog-aside__tags-tag bold">
+                                Energy
+                            </button>
+
+                            <button class="blog-aside__tags-tag bold">
+                                Resume
+                            </button>
+
+                            <button class="blog-aside__tags-tag bold">
+                                Gallery
+                            </button>
+
+                            <button class="blog-aside__tags-tag bold">
+                                Renewable
+                            </button>
+                        </div>
+
+                    </section>
+
+                    <!-- Add -->
+                    <img src="images/add.png" alt="add img" class="full-width-img">
+                </aside>
+
+
+
+            </div>
+        </div>
+
+
+        <!-- Část před patičkou -->
+        <div class="grid__pre-footer">
+
+        </div>
+
+        <!-- patička -->
+        <footer class="grid__footer relative-position">
+            <!-- logo -->
+            <div class="footer-flex">
+                <img src="images/Logo(1).png" alt="logo img">
+                <!-- sociální sítě -->
+                <dl class="social">
+                    <dt><i class="fab fa-facebook-f"></i></dt>
+                    <dd><a href="home.html">Facebook</a></dd>
+                    <dt><i class="fab fa-twitter"></i></dt>
+                    <dd><a href="home.html">Twitter</a></dd>
+                    <dt><i class="fab fa-youtube"></i></dt>
+                    <dd><a href="home.html">Youtube</a></dd>
+                    <dt><i class="fab fa-instagram"></i></dt>
+                    <dd><a href="home.html">Instagram</a></dd>
+                </dl>
+
+                <div>
+                    <!-- navigace -->
+                    <h2 class="footer__heading">Our Courses</h2>
+                    <ul class="footer__nav two-columns">
+                        <li class="footer__nav-chosen"><a href="home.html">Web Development</a></li>
+                        <li><a href="home.html">Bussiness Studies</a></li>
+                        <li><a href="home.html">Computer Engineering</a></li>
+                        <li><a href="home.html">English Learning</a></li>
+                        <li><a href="home.html">Graphics Design</a></li>
+
+                        <li><a href="home.html">Color Combinitions</a></li>
+                        <li><a href="home.html">Software Development</a></li>
+                        <li><a href="home.html">Photography</a></li>
+                        <li><a href="home.html">Advance WordPress</a></li>
+                        <li><a href="home.html">Basic PSD To HTML</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="footer__heading">Company</h2>
+                    <ul class="footer__nav">
+                        <li><a href="home.html">About Eduket</a></li>
+                        <li><a href="home.html">Meet Advisors</a></li>
+                        <li><a href="home.html">Join A Career</a></li>
+                        <li><a href="home.html">Latest Courses</a></li>
+                        <li><a href="home.html">Newsletters</a></li>
+                    </ul>
+                </div>
+                <!-- šipka na scrollnutí -->
+
+                <div class="footer-flex__newsletter-item">
+                    <!-- newsletter + formular na mail -->
+                    <h2 class="footer__heading">Newsletters</h2>
+                    <p class="newsletter__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+                    <form class="footer-form" method="POST">
+                        <input class="footer-form__input" type="email" placeholder="Enter Your Email">
+                        <button class="footer-form__btn orange-bg white" type="submit">&rarr;</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <button class="scroll-to-top-button" onclick="scrollToTop()"><i class="fas fa-chevron-up"></i></button>
+
+            <p class="footer__copyright absolute-position footer-gray">Copyright &copy; 2020 <span
+                    class="white">EduPlus</span> All Rights Reserved.</p>
+        </footer>
+    </div>
 </body>
+
 </html>
