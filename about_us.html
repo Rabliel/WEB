@@ -7,6 +7,7 @@
         content="Our company focuses on online education and we offer online courses, educational events and other things related to education. Professionals can also apply for teaching jobs.">
     <meta name="keywords" content="courses, education, teaching">
     <meta name="author" content="Daniel Rábel">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <title>EduPlus - About Us</title>
 
@@ -20,48 +21,46 @@
 
 <body>
     <div class="grid">
-        <!-- Hlavička -->
+        <!-- Header -->
         <header class="header grid__header lightblue-bg">
-            <!-- logo -->
+            <!-- Logo -->
             <img src="images/Logo.png" class="header__item" width="140" height="50" alt="logo image" id="logo" />
-            <!-- seznam s navigací -->
-            <nav class="header__item">
-                <ul class="menu">
-                    <li class="menu__item"><a href="home.html">Home <i
-                                class="fas fa-angle-down menu__item-caret"></i></a>
+
+            <!-- Hamburger For Menu -->
+            <button class="hamburger header__item" id="hamburger">
+                <i class="fas fa-bars orange"></i>
+            </button>
+
+            <!-- Navigation List -->
+            <nav class="header__item header__item--menu" id="menu-list">
+                <ul class="menu" id="menu">
+                    <li class="menu__item">
+                        <a href="home.html" class="menu__item-link">Home <i class="fas fa-angle-down menu__item-caret"></i></a>
                         <ul class="submenu">
+                            <li class="submenu__item"><a href="home.html">Home</a></li>
                             <li class="submenu__item"><a href="about_us.html">About Us</a></li>
                             <li class="submenu__item"><a href="faq.html">FAQ</a></li>
                         </ul>
                     </li>
-                    <li class="menu__item"><a href="courses.html">Courses <i
-                                class="fas fa-angle-down menu__item-caret"></i></a>
+                    <li class="menu__item">
+                        <a href="courses.html" class="menu__item-link">Courses <i class="fas fa-angle-down menu__item-caret"></i></a>
                         <ul class="submenu">
-                            <li class="submenu__item"><a href="courses.html">Course</a></li>
-                            <li class="submenu__item"><a href="courses.html">Course List</a></li>
+                            <li class="submenu__item"><a href="courses.html">Courses</a></li>                         
                             <li class="submenu__item"><a href="course.html">Course Details</a></li>
+                            <li class="submenu__item"><a href="instructor_details.html">Instructor Details</a></li>
                         </ul>
                     </li>
-                    <li class="menu__item"><a href="event_detail.html">Events <i
-                                class="fas fa-angle-down menu__item-caret"></i></a>
+                    <li class="menu__item">
+                        <a href="event_detail.html" class="menu__item-link">Events <i class="fas fa-angle-down menu__item-caret"></i></a>
                         <ul class="submenu">
-                            <li class="submenu__item"><a href="home.html">Event</a></li>
-                            <li class="submenu__item"><a href="home.html">Event List</a></li>
                             <li class="submenu__item"><a href="event_detail.html">Event Details</a></li>
                         </ul>
                     </li>
-                    <li class="menu__item"><a href="home.html">Pages <i
-                                class="fas fa-angle-down menu__item-caret"></i></a>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="home.html">Page</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item"><a href="blog.html">Blog <i
-                                class="fas fa-angle-down menu__item-caret"></i></a>
+                    <li class="menu__item">
+                        <a href="blog.html" class="menu__item-link">Blog <i class="fas fa-angle-down menu__item-caret"></i></a>
                         <ul class="submenu">
                             <li class="submenu__item"><a href="blog.html">Blog</a></li>
                             <li class="submenu__item"><a href="blog_detail.html">Blog Details</a></li>
-                            <li class="submenu__item"><a href="faq.html">FAQ</a></li>
                         </ul>
                     </li>
                     <li class="menu__item"><a href="contact_us.html">Contact</a></li>
@@ -69,7 +68,7 @@
                 </ul>
             </nav>
 
-            <!-- pravé tlačítka -->
+            <!-- Profile Buttons -->
             <ul class="profile-buttons header__item">
                 <li><a href="home.html" class="orange-bg"><i class="fab fa-facebook white"></i></a></li>
                 <li><a href="home.html" class="white-bg"><i class="fab fa-youtube red"></i></a></li>
@@ -77,6 +76,7 @@
                 <li><img src="images/Bar.png" alt="menu bar" height="24" width="24"></li>
             </ul>
         </header>
+
         <!-- Banner -->
         <section class="grid__info banner">
             <h1 class="banner__main-heading">About Us</h1>
@@ -87,11 +87,11 @@
             <!-- Welcome -->
             <section>
                 <div class="half-flex">
-                    <!-- obrázky -->
+                    <!-- Images -->
                     <div class="half-flex__item relative-position">
                         <img src="images/gallery4.png" alt="back picture" class="about-us-back-img relative-position">
-                        <div class="orange-bg about-us-circle absolute-position align-text-center bold white"> 
-                            <div class="about-us-circle__text-center">
+                        <div class="orange-bg about-us-circle absolute-position align-text-center bold white flex align-items-center"> 
+                            <div>
                             <span class="about-us-circle__years-number">
                                 25
                             </span><br>
@@ -100,6 +100,8 @@
                         </div>
                         <img src="images/gallery6.png" alt="front picture" class="about-us-front-img absolute-position">
                     </div>
+
+                    <!-- Text -->
                     <div class="half-flex__item">
                         <h2 class="section__main-heading align-text-start">- - - Introduced About EduPlus</h2>
                         <h3 class="section__secondary-heading align-text-start">Welcome To EduPlus</h3>
@@ -110,7 +112,7 @@
                         </p>
 
                         <div class="flex">
-                            <div>
+                            <div class="flex align-items-center">
                                 <i class="fas fa-book about-icon white"></i>
                             </div>
                             <div class="left-padding">
@@ -124,7 +126,7 @@
                         <hr>
 
                         <div class="flex margin-bottom">
-                            <div>
+                            <div class="flex align-items-center">
                                 <i class="fas fa-trophy about-icon white"></i>
                             </div>
                             <div class="left-padding">
@@ -337,9 +339,6 @@
                         </dl>
 
                     </article>
-
-
-
                 </div>
             </section>
 
@@ -468,10 +467,8 @@
 
                 <div class="blog-flex padding-bottom">
                     <article class="blog-flex__item">
-                        <img src="images/news1.png" width="258" alt="blog img">
+                        <img src="images/news1.png" class="blog-flex__item-img" alt="blog img">
                         <img src="images/05.jpg" class="blog-flex__item-avatar" alt="author img">
-
-
 
                         <dl class="def-list">
                             <dt><i class="far fa-calendar-alt"></i></dt>
@@ -487,10 +484,8 @@
                     </article>
 
                     <article class="blog-flex__item">
-                        <img src="images/news2.png" width="258" alt="blog img">
+                        <img src="images/news2.png" class="blog-flex__item-img" alt="blog img">
                         <img src="images/05.jpg" class="blog-flex__item-avatar" alt="author img">
-
-
 
                         <dl class="def-list">
                             <dt><i class="far fa-calendar-alt"></i></dt>
@@ -507,10 +502,8 @@
                     </article>
 
                     <article class="blog-flex__item">
-                        <img src="images/news3.png" width="258" alt="blog img">
+                        <img src="images/news3.png" class="blog-flex__item-img" alt="blog img">
                         <img src="images/05.jpg" class="blog-flex__item-avatar" alt="author img">
-
-
 
                         <dl class="def-list">
                             <dt><i class="far fa-calendar-alt"></i></dt>
@@ -534,10 +527,10 @@
 
         </main>
 
-        <!-- Část před patičkou -->
+        <!-- Pre-footer content -->
         <div class="grid__pre-footer">
 
-            <!-- část se sponsory -->
+            <!-- Sponsor section -->
             <section class="sponsors">
                 <img src="images/mountain_logo.png" class="sponsors__item" alt="mountain sponsor">
                 <img src="images/circle_logo.png" class="sponsors__item" alt="circle sponsor">
@@ -547,12 +540,12 @@
             </section>
         </div>
 
-        <!-- patička -->
+        <!-- Footer -->
         <footer class="grid__footer relative-position">
-            <!-- logo -->
+            <!-- Logo -->
             <div class="footer-flex">
-                <img src="images/Logo(1).png" alt="logo img">
-                <!-- sociální sítě -->
+                <img src="images/Logo(1).png" class="footer__logo" alt="logo img">
+                <!-- Social networks -->
                 <dl class="social">
                     <dt><i class="fab fa-facebook-f"></i></dt>
                     <dd><a href="home.html">Facebook</a></dd>
@@ -565,7 +558,7 @@
                 </dl>
 
                 <div>
-                    <!-- navigace -->
+                    <!-- Navigation -->
                     <h2 class="footer__heading">Our Courses</h2>
                     <ul class="footer__nav two-columns">
                         <li class="footer__nav-chosen"><a href="home.html">Web Development</a></li>
@@ -582,7 +575,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h2  class="footer__heading">Company</h2>
+                    <h2 class="footer__heading">Company</h2>
                     <ul class="footer__nav">
                         <li><a href="home.html">About Eduket</a></li>
                         <li><a href="home.html">Meet Advisors</a></li>
@@ -590,27 +583,30 @@
                         <li><a href="home.html">Latest Courses</a></li>
                         <li><a href="home.html">Newsletters</a></li>
                     </ul>
-                </div>
-                <!-- šipka na scrollnutí -->
+                </div>             
 
+                <!-- Newsletter -->
                 <div class="footer-flex__newsletter-item">
-                <!-- newsletter + formular na mail -->
-                <h2  class="footer__heading">Newsletters</h2>
-                <p class="newsletter__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <h2 class="footer__heading">Newsletters</h2>
+                    <p class="newsletter__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
 
-                <form class="footer-form" method="POST">
-                    <input class="footer-form__input" type="email" placeholder="Enter Your Email">
-                    <button class="footer-form__btn orange-bg white" type="submit">&rarr;</button>
-                </form>
+                    <form class="footer-form" method="POST">
+                        <input class="footer-form__input" type="email" placeholder="Enter Your Email">
+                        <button class="footer-form__btn orange-bg white" type="submit">&rarr;</button>
+                    </form>
+                </div>
+
             </div>
 
-            </div>          
-
+            <!-- Scroll to top button -->
             <button class="scroll-to-top-button" onclick="scrollToTop()"><i class="fas fa-chevron-up"></i></button>
 
-            <p class="footer__copyright absolute-position footer-gray">Copyright &copy; 2020 <span class="white">EduPlus</span> All Rights Reserved.</p>
+            <!-- Copyright Text -->
+            <p class="footer__copyright absolute-position footer-gray">Copyright &copy; 2020 <span
+                    class="white">EduPlus</span> All Rights Reserved.</p>
         </footer>
     </div>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

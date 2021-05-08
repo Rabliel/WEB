@@ -7,6 +7,7 @@
         content="Our company focuses on online education and we offer online courses, educational events and other things related to education. Professionals can also apply for teaching jobs.">
     <meta name="keywords" content="courses, education, teaching">
     <meta name="author" content="Daniel Rábel">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <title>EduPlus - FAQ</title>
 
@@ -22,48 +23,46 @@
 <body>
     <div class="grid">
 
-        <!-- hlavička -->
+        <!-- Header -->
         <header class="header grid__header lightblue-bg">
-            <!-- logo -->
+            <!-- Logo -->
             <img src="images/Logo.png" class="header__item" width="140" height="50" alt="logo image" id="logo" />
-            <!-- seznam s navigací -->
-            <nav class="header__item">
-                <ul class="menu">
-                    <li class="menu__item"><a href="home.html">Home <i
-                                class="fas fa-angle-down menu__item-caret"></i></a>
+
+            <!-- Hamburger For Menu -->
+            <button class="hamburger header__item" id="hamburger">
+                <i class="fas fa-bars orange"></i>
+            </button>
+
+            <!-- Navigation List -->
+            <nav class="header__item header__item--menu" id="menu-list">
+                <ul class="menu" id="menu">
+                    <li class="menu__item">
+                        <a href="home.html" class="menu__item-link">Home <i class="fas fa-angle-down menu__item-caret"></i></a>
                         <ul class="submenu">
+                            <li class="submenu__item"><a href="home.html">Home</a></li>
                             <li class="submenu__item"><a href="about_us.html">About Us</a></li>
                             <li class="submenu__item"><a href="faq.html">FAQ</a></li>
                         </ul>
                     </li>
-                    <li class="menu__item"><a href="courses.html">Courses <i
-                                class="fas fa-angle-down menu__item-caret"></i></a>
+                    <li class="menu__item">
+                        <a href="courses.html" class="menu__item-link">Courses <i class="fas fa-angle-down menu__item-caret"></i></a>
                         <ul class="submenu">
-                            <li class="submenu__item"><a href="courses.html">Course</a></li>
-                            <li class="submenu__item"><a href="courses.html">Course List</a></li>
+                            <li class="submenu__item"><a href="courses.html">Courses</a></li>                         
                             <li class="submenu__item"><a href="course.html">Course Details</a></li>
+                            <li class="submenu__item"><a href="instructor_details.html">Instructor Details</a></li>
                         </ul>
                     </li>
-                    <li class="menu__item"><a href="event_detail.html">Events <i
-                                class="fas fa-angle-down menu__item-caret"></i></a>
+                    <li class="menu__item">
+                        <a href="event_detail.html" class="menu__item-link">Events <i class="fas fa-angle-down menu__item-caret"></i></a>
                         <ul class="submenu">
-                            <li class="submenu__item"><a href="home.html">Event</a></li>
-                            <li class="submenu__item"><a href="home.html">Event List</a></li>
                             <li class="submenu__item"><a href="event_detail.html">Event Details</a></li>
                         </ul>
                     </li>
-                    <li class="menu__item"><a href="home.html">Pages <i
-                                class="fas fa-angle-down menu__item-caret"></i></a>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="home.html">Page</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item"><a href="blog.html">Blog <i
-                                class="fas fa-angle-down menu__item-caret"></i></a>
+                    <li class="menu__item">
+                        <a href="blog.html" class="menu__item-link">Blog <i class="fas fa-angle-down menu__item-caret"></i></a>
                         <ul class="submenu">
                             <li class="submenu__item"><a href="blog.html">Blog</a></li>
                             <li class="submenu__item"><a href="blog_detail.html">Blog Details</a></li>
-                            <li class="submenu__item"><a href="faq.html">FAQ</a></li>
                         </ul>
                     </li>
                     <li class="menu__item"><a href="contact_us.html">Contact</a></li>
@@ -71,7 +70,7 @@
                 </ul>
             </nav>
 
-            <!-- pravé tlačítka -->
+            <!-- Profile Buttons -->
             <ul class="profile-buttons header__item">
                 <li><a href="home.html" class="orange-bg"><i class="fab fa-facebook white"></i></a></li>
                 <li><a href="home.html" class="white-bg"><i class="fab fa-youtube red"></i></a></li>
@@ -79,6 +78,7 @@
                 <li><img src="images/Bar.png" alt="menu bar" height="24" width="24"></li>
             </ul>
         </header>
+
         <!-- Banner -->
         <section class="grid__info banner">
             <h1 class="banner__main-heading">FAQ</h1>
@@ -102,7 +102,7 @@
                     </section>
 
                     <!-- Form -->
-                    <section class="white-bg">
+                    <section class="white-bg margin-bottom">
                         <h2 class="navy align-text-center">Get In Touch</h2>
                         <form method="POST">
                             <div class="faq-input-wrapper relative-position">
@@ -382,8 +382,8 @@
 
             <p class="footer__copyright absolute-position footer-gray">Copyright &copy; 2020 <span class="white">EduPlus</span> All Rights Reserved.</p>
         </footer>
-
     </div>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>
