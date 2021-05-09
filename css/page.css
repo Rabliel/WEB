@@ -2504,96 +2504,95 @@ main>section{ padding:3rem 0 2rem 0; }
 /*** Monitor ***/
 @media screen and (min-width: 992px) {  
     /** Content**/
-.event-flex__secondary-item{flex-flow: column wrap;}
+    .event-flex__secondary-item{flex-flow: column wrap;}
 
-.main-event-price-position{top:42%}
+    .main-event-price-position{top:42%}
 
-.welcome-text{font-size:0.9em;}
+    .welcome-text{font-size:0.9em;}
 
-.blog-flex,.course-flex{justify-content: space-between;}
+    .blog-flex,.course-flex{justify-content: space-between;}
 
-.course-instructor-avatar{ width: 8em; height: 8em; }
+    .course-instructor-avatar{ width: 8em; height: 8em; }
 
-.collapse__content-text-item{ font-size: 1em; }
+    .collapse__content-text-item{ font-size: 1em; }
 
-.course-aside-list{ font-size: 1em; }
+    .course-aside-list{ font-size: 1em; }
 
-.course-aside-button{ font-size:1em ;}
+    .course-aside-button{ font-size:1em ;}
 
-.course-flex__item{margin-right: 0;}
+    .course-flex__item{margin-right: 0;}
 
-.event-details-list{
-    padding: 0;
-    font-size: 1.2em;
-}
+    .event-details-list{
+        padding: 0;
+        font-size: 1.2em;
+    }
 
-/** FAQ **/
-.collapse__button{ font-size: 1.1em; }
+    /** FAQ **/
+    .collapse__button{ font-size: 1.1em; }
 
-.collapse__content{ font-size: 1em; }
+    .collapse__content{ font-size: 1em; }
 
-/** Course Details **/
-.collapse__button--course-font{font-size: 0.9em;}
+    /** Course Details **/
+    .collapse__button--course-font{font-size: 0.9em;}
 
-.collapse__content-text-item{font-size: 1em;}
+    .collapse__content-text-item{font-size: 1em;}
 
-/** Blog **/
-.blog-aside__button{font-size: 1em;}
+    /** Blog **/
+    .blog-aside__button{font-size: 1em;}
 
-.blog-details-list{ font-size: 1.3em; }
+    .blog-details-list{ font-size: 1.3em; }
 
-.blog-quote{font-size: 1em;}
+    .blog-quote{font-size: 1em;}
 
-.blog-news{font-size: 1.1em;}
+    .blog-news{font-size: 1.1em;}
 
-/** Blog Details **/
-.blog-details-check-list{ font-size: 0.85em; }
+    /** Blog Details **/
+    .blog-details-check-list{ font-size: 0.85em; }
 
-.tags-and-social{ font-size: 0.85em; }
+    .tags-and-social{ font-size: 0.85em; }
 
-.blog-news-article__text{ font-size: 0.6em;}
+    .blog-news-article__text{ font-size: 0.6em;}
 
-.comment-img__avatar{
-    height: 4.5em;
-    width: 4.5em;
-}
+    .comment-img__avatar{
+        height: 4.5em;
+        width: 4.5em;
+    }
 
-.comment-link{font-size: 0.65em;}
+    .comment-link{font-size: 0.65em;}
 
-/** Event Details **/
-.event-flex--details{justify-content:space-between;}
+    /** Event Details **/
+    .event-flex--details{justify-content:space-between;}
 
-.event-flex__item--details,
-.event-flex__item--details:nth-child(1){margin: 0;}
+    .event-flex__item--details,
+    .event-flex__item--details:nth-child(1){margin: 0;}
 
-.event-detail-check-list{ font-size: 0.85em; }
+    .event-detail-check-list{ font-size: 0.85em; }
 
 
     /** Footer **/
-.footer__nav{font-size: 0.9em;}
+    .footer__nav{font-size: 0.9em;}
 
-.social{font-size: 1em; top:0;}
+    .social{font-size: 1em; top:0;}
 
-.newsletter__text{font-size: 1em;}
-
+    .newsletter__text{font-size: 1em;}
 }
+
 /*** Tablet ***/
 @media screen and (min-width: 576px) and (max-width:992px){ 
 
-/** Menu **/
-.profile-buttons>li:nth-child(1),.profile-buttons>li:nth-child(2),.profile-buttons>li:nth-child(4){display: none;}
+    /** Menu **/
+    .profile-buttons>li:nth-child(1),.profile-buttons>li:nth-child(2),.profile-buttons>li:nth-child(4){display: none;}
 
-.menu-item a{pointer-events: none;}
-.career-button{font-size:0.6em}
+    .menu-item a{pointer-events: none;}
+    .career-button{font-size:0.6em}
 
-.career-half-flex__item-heading{font-size: 1.2em;}
+    .career-half-flex__item-heading{font-size: 1.2em;}
 
-.event-details-list{ font-size: 1.16em; }
+    .event-details-list{ font-size: 1.16em; }
 
-.menu__item-link{pointer-events: none;}
+    .menu__item-link{pointer-events: none;}
 
-.header{flex-wrap: wrap;}
-.header__item--menu{order: 3;width: 100%;}
-
+    .header{flex-wrap: wrap;}
+    .header__item--menu{order: 3;width: 100%;}
 }
 
